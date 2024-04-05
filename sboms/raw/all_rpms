@@ -1,0 +1,2071 @@
+UUID: bade03f1-7e54-4efd-a455-1c9a210a9489
+Name: bluechi-ctl
+Version: 0.8.0
+Release: 0.202404041101.git72c7ccb0.el9
+Architecture: x86_64
+Install_Date: (not installed)
+Group: Unspecified
+Size: 87156
+License: LGPL-2.1-or-later AND CC0-1.0
+Signature: (none)
+Source_RPM: bluechi-0.8.0-0.202404041101.git72c7ccb0.el9.src.rpm
+Build_Date: Thu Apr  4 11:01:57 2024
+Build_Host: 9497d1181b83
+Packager: 
+Vendor: 
+Summary: BlueChi service controller command line tool
+URL: https://github.com/containers/bluechi
+Description: BlueChi is a systemd service controller for multi-nodes environements with a
+
+UUID: 4b03c3ff-8df8-49e9-b137-fca4a378bd49
+Name: bluechi-agent
+Version: 0.8.0
+Release: 0.202404041101.git72c7ccb0.el9
+Architecture: x86_64
+Install_Date: (not installed)
+Group: Unspecified
+Size: 170478
+License: LGPL-2.1-or-later AND CC0-1.0
+Signature: (none)
+Source_RPM: bluechi-0.8.0-0.202404041101.git72c7ccb0.el9.src.rpm
+Build_Date: Thu Apr  4 11:01:57 2024
+Build_Host: 9497d1181b83
+Packager: 
+Vendor: 
+Summary: BlueChi service controller agent
+URL: https://github.com/containers/bluechi
+Description: BlueChi is a systemd service controller for multi-nodes environements with a
+
+UUID: 11cf46ea-cb82-4388-b608-727bd5de0616
+Name: bluechi-selinux
+Version: 0.8.0
+Release: 0.202404041101.git72c7ccb0.el9
+Architecture: noarch
+Install_Date: (not installed)
+Group: Unspecified
+Size: 17487
+License: LGPL-2.1-or-later AND CC0-1.0
+Signature: (none)
+Source_RPM: bluechi-0.8.0-0.202404041101.git72c7ccb0.el9.src.rpm
+Build_Date: Thu Apr  4 11:01:57 2024
+Build_Host: 9497d1181b83
+Packager: 
+Vendor: 
+Summary: BlueChi SELinux policy
+URL: https://github.com/containers/bluechi
+Description: SELinux policy associated with the bluechi and bluechi-agent daemons
+
+UUID: 9dcf43ce-d721-47cd-acc0-85dd8954f61d
+Name: bluechi-controller
+Version: 0.8.0
+Release: 0.202404041101.git72c7ccb0.el9
+Architecture: x86_64
+Install_Date: (not installed)
+Group: Unspecified
+Size: 195005
+License: LGPL-2.1-or-later AND CC0-1.0
+Signature: (none)
+Source_RPM: bluechi-0.8.0-0.202404041101.git72c7ccb0.el9.src.rpm
+Build_Date: Thu Apr  4 11:01:57 2024
+Build_Host: 9497d1181b83
+Packager: 
+Vendor: 
+Summary: BlueChi service controller
+URL: https://github.com/containers/bluechi
+Description: BlueChi is a systemd service controller for multi-nodes environements with a
+
+UUID: bcb2d66c-4c54-4fc8-8be6-0f883cedb6e0
+Name: python3-bluechi
+Version: 0.8.0
+Release: 0.202404041101.git72c7ccb0.el9
+Architecture: noarch
+Install_Date: (not installed)
+Group: Unspecified
+Size: 107259
+License: LGPL-2.1-or-later AND CC0-1.0
+Signature: (none)
+Source_RPM: bluechi-0.8.0-0.202404041101.git72c7ccb0.el9.src.rpm
+Build_Date: Thu Apr  4 11:01:57 2024
+Build_Host: 9497d1181b83
+Packager: 
+Vendor: 
+Summary: Python bindings for BlueChi
+URL: https://github.com/containers/bluechi
+Description: bluechi is a python module to access the public D-Bus API of BlueChi project.
+
+UUID: 226088f0-cc1b-4240-b031-da680092ee85
+Name: python3
+Version: 3.9.18
+Release: 3.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:47 2024
+Group: Unspecified
+Size: 33013
+License: Python
+Signature: RSA/SHA256, Mon Jan 29 19:41:20 2024, Key ID 05b555b38483c65d
+Source_RPM: python3.9-3.9.18-3.el9.src.rpm
+Build_Date: Fri Jan 26 18:21:55 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Python 3.9 interpreter
+URL: https://www.python.org/
+Description: Python 3.9 is an accessible, high-level, dynamically typed, interpreted
+
+UUID: 785ece77-9bf0-46f9-a58b-e3cdb5d1cbfb
+Name: python3-dasbus
+Version: 1.4
+Release: 5.el9
+Architecture: noarch
+Install_Date: Fri Apr  5 06:23:27 2024
+Group: Unspecified
+Size: 337074
+License: LGPLv2+
+Signature: RSA/SHA256, Thu Aug 12 23:08:01 2021, Key ID 05b555b38483c65d
+Source_RPM: python-dasbus-1.4-5.el9.src.rpm
+Build_Date: Tue Aug 10 03:43:42 2021
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: DBus library in Python 3
+URL: https://pypi.python.org/pypi/dasbus
+Description: Dasbus is a DBus library written in Python 3, based on
+
+UUID: a80ad346-fb0f-48de-9aa3-4137f340943b
+Name: python3-gobject-base
+Version: 3.40.1
+Release: 6.el9
+Architecture: x86_64
+Install_Date: Fri Apr  5 06:23:27 2024
+Group: Unspecified
+Size: 546171
+License: LGPLv2+ and MIT
+Signature: RSA/SHA256, Wed Jun 15 09:23:57 2022, Key ID 05b555b38483c65d
+Source_RPM: pygobject3-3.40.1-6.el9.src.rpm
+Build_Date: Tue Jun 14 13:03:28 2022
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Python 3 bindings for GObject Introspection base package
+URL: https://wiki.gnome.org/Projects/PyGObject
+Description: This package provides the non-cairo specific bits of the GObject Introspection
+
+UUID: d9ac40cd-3a1e-4586-9777-daa4ee270327
+Name: gobject-introspection
+Version: 1.68.0
+Release: 11.el9
+Architecture: x86_64
+Install_Date: Fri Apr  5 06:23:27 2024
+Group: Unspecified
+Size: 936649
+License: GPLv2+ and LGPLv2+ and MIT
+Signature: RSA/SHA256, Fri Nov  4 22:10:58 2022, Key ID 05b555b38483c65d
+Source_RPM: gobject-introspection-1.68.0-11.el9.src.rpm
+Build_Date: Fri Nov  4 14:41:19 2022
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Introspection system for GObject-based libraries
+URL: https://wiki.gnome.org/Projects/GObjectIntrospection
+Description: GObject Introspection can scan C header and source files in order to
+
+UUID: b8d01c8d-34f9-486a-b925-3121118ed2e7
+Name: glibc
+Version: 2.34
+Release: 103.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: Unspecified
+Size: 6456099
+License: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+Signature: RSA/SHA256, Mon Mar 18 15:57:15 2024, Key ID 05b555b38483c65d
+Source_RPM: glibc-2.34-103.el9.src.rpm
+Build_Date: Tue Mar 12 17:54:38 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The GNU libc libraries
+URL: http://www.gnu.org/software/glibc/
+Description: The glibc package contains standard libraries which are used by
+
+UUID: dd822dd6-f042-461e-af63-1c89ca862f14
+Name: libffi
+Version: 3.4.2
+Release: 8.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 65761
+License: MIT
+Signature: RSA/SHA256, Mon Apr 17 16:39:56 2023, Key ID 05b555b38483c65d
+Source_RPM: libffi-3.4.2-8.el9.src.rpm
+Build_Date: Mon Apr 17 14:06:57 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A portable foreign function interface library
+URL: http://sourceware.org/libffi
+Description: Compilers for high level languages generate code that follow certain
+
+UUID: 120b59af-09c5-469a-8fbb-3e4956607eb5
+Name: glib2
+Version: 2.68.4
+Release: 14.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:49 2024
+Group: Unspecified
+Size: 13441007
+License: LGPLv2+
+Signature: RSA/SHA256, Wed Feb 21 19:20:27 2024, Key ID 05b555b38483c65d
+Source_RPM: glib2-2.68.4-14.el9.src.rpm
+Build_Date: Wed Feb 21 15:03:39 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A library of handy utility functions
+URL: http://www.gtk.org
+Description: GLib is the low-level core library that forms the basis for projects
+
+UUID: e51c9263-7841-4f56-b3cb-b43d5b9b81ce
+Name: python3-gobject-base-noarch
+Version: 3.40.1
+Release: 6.el9
+Architecture: noarch
+Install_Date: Fri Apr  5 06:23:27 2024
+Group: Unspecified
+Size: 706541
+License: LGPLv2+ and MIT
+Signature: RSA/SHA256, Wed Jun 15 09:24:02 2022, Key ID 05b555b38483c65d
+Source_RPM: pygobject3-3.40.1-6.el9.src.rpm
+Build_Date: Tue Jun 14 13:03:27 2022
+Build_Host: aarch64-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Python 3 bindings for GObject Introspection base (not architecture dependent)
+URL: https://wiki.gnome.org/Projects/PyGObject
+Description: This package provides the non-cairo specific bits of the GObject Introspection
+
+UUID: e86b5446-3a7c-462f-a540-9e0ae97a5b91
+Name: glibc-gconv-extra
+Version: 2.34
+Release: 103.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:22 2024
+Group: Unspecified
+Size: 8157140
+License: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+Signature: RSA/SHA256, Mon Mar 18 15:57:07 2024, Key ID 05b555b38483c65d
+Source_RPM: glibc-2.34-103.el9.src.rpm
+Build_Date: Tue Mar 12 17:54:38 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: All iconv converter modules for glibc.
+URL: http://www.gnu.org/software/glibc/
+Description: This package contains all iconv converter modules built in glibc.
+
+UUID: 79ad3e3c-730e-4f86-8d92-24fcdc64b2a8
+Name: basesystem
+Version: 11
+Release: 13.el9
+Architecture: noarch
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: Unspecified
+Size: 0
+License: Public Domain
+Signature: RSA/SHA256, Wed Aug 11 23:44:57 2021, Key ID 05b555b38483c65d
+Source_RPM: basesystem-11-13.el9.src.rpm
+Build_Date: Mon Aug  9 19:32:41 2021
+Build_Host: ppc64le-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The skeleton package which defines a simple Red Hat Enterprise Linux 9 system
+URL: 
+Description: Basesystem defines the components of a basic Red Hat Enterprise Linux 9 system
+
+UUID: ba5d4b55-fe82-41d5-9d30-e8d9240cb47e
+Name: glibc-common
+Version: 2.34
+Release: 103.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: Unspecified
+Size: 1083801
+License: LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+Signature: RSA/SHA256, Mon Mar 18 15:58:48 2024, Key ID 05b555b38483c65d
+Source_RPM: glibc-2.34-103.el9.src.rpm
+Build_Date: Tue Mar 12 17:54:38 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Common binaries and locale data for glibc
+URL: http://www.gnu.org/software/glibc/
+Description: The glibc-common package includes common binaries for the GNU libc
+
+UUID: 821f664c-34ea-4948-b8f0-ecd11c4e717a
+Name: 
+Version: 
+Release: 
+Architecture: 
+Install_Date: 
+Group: 
+Size: 
+License: 
+Signature: 
+Source_RPM: 
+Build_Date: 
+Build_Host: 
+Packager: 
+Vendor: 
+Summary: 
+URL: 
+Description: 
+
+UUID: 770e4951-a191-4760-8086-6936abd0128c
+Name: libgcc
+Version: 11.4.1
+Release: 3.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:43 2024
+Group: Unspecified
+Size: 198756
+License: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+Signature: RSA/SHA256, Wed Jan  3 15:49:46 2024, Key ID 05b555b38483c65d
+Source_RPM: gcc-11.4.1-3.el9.src.rpm
+Build_Date: Tue Dec 19 15:13:53 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: GCC version 11 shared support library
+URL: http://gcc.gnu.org
+Description: This package contains GCC shared support library which is needed
+
+UUID: 12e1bc9c-da58-4719-9cbd-58205f2ef501
+Name: tzdata
+Version: 2024a
+Release: 2.el9
+Architecture: noarch
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: Unspecified
+Size: 1707934
+License: Public Domain
+Signature: RSA/SHA256, Fri Mar 15 20:47:48 2024, Key ID 05b555b38483c65d
+Source_RPM: tzdata-2024a-2.el9.src.rpm
+Build_Date: Thu Mar 14 19:19:35 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Timezone data
+URL: https://www.iana.org/time-zones
+Description: This package contains data files with rules for various timezones around
+
+UUID: 971bff3a-2d57-43f9-ba4e-2785254ab628
+Name: filesystem
+Version: 3.16
+Release: 2.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: System Environment/Base
+Size: 106
+License: Public Domain
+Signature: RSA/SHA256, Thu Aug 12 01:55:35 2021, Key ID 05b555b38483c65d
+Source_RPM: filesystem-3.16-2.el9.src.rpm
+Build_Date: Mon Aug  9 20:40:26 2021
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The basic directory layout for a Linux system
+URL: https://pagure.io/filesystem
+Description: The filesystem package is one of the basic packages that is installed
+
+UUID: d16a18a0-1cde-48e6-8f6e-14d8c53fa702
+Name: setup
+Version: 2.13.7
+Release: 10.el9
+Architecture: noarch
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: System Environment/Base
+Size: 725932
+License: Public Domain
+Signature: RSA/SHA256, Fri Feb 16 23:05:36 2024, Key ID 05b555b38483c65d
+Source_RPM: setup-2.13.7-10.el9.src.rpm
+Build_Date: Wed Feb  7 08:40:46 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A set of system configuration and setup files
+URL: https://pagure.io/setup/
+Description: The setup package contains a set of important system configuration and
+
+UUID: e3236dbf-d148-47d8-bae5-bb026b6754b3
+Name: 
+Version: 
+Release: 
+Architecture: 
+Install_Date: 
+Group: 
+Size: 
+License: 
+Signature: 
+Source_RPM: 
+Build_Date: 
+Build_Host: 
+Packager: 
+Vendor: 
+Summary: 
+URL: 
+Description: 
+
+UUID: 983e71cb-8f69-49b1-9fdc-0c86b32a6b25
+Name: python3-libs
+Version: 3.9.18
+Release: 3.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:49 2024
+Group: Unspecified
+Size: 32513867
+License: Python
+Signature: RSA/SHA256, Mon Jan 29 19:41:20 2024, Key ID 05b555b38483c65d
+Source_RPM: python3.9-3.9.18-3.el9.src.rpm
+Build_Date: Fri Jan 26 18:21:55 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Python runtime libraries
+URL: https://www.python.org/
+Description: This package contains runtime libraries for use by Python:
+
+UUID: a0d0783e-8c8b-40da-a413-39321d05f70e
+Name: bzip2-libs
+Version: 1.0.8
+Release: 8.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 78740
+License: BSD
+Signature: RSA/SHA256, Thu Aug 12 00:41:18 2021, Key ID 05b555b38483c65d
+Source_RPM: bzip2-1.0.8-8.el9.src.rpm
+Build_Date: Mon Aug  9 19:44:35 2021
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Libraries for applications using bzip2
+URL: http://www.bzip.org/
+Description: 
+
+UUID: 0c62285a-543c-41a5-9e0c-452f42eec215
+Name: libxcrypt
+Version: 4.4.18
+Release: 3.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 270692
+License: LGPLv2+ and BSD and Public Domain
+Signature: RSA/SHA256, Thu Aug 12 05:10:15 2021, Key ID 05b555b38483c65d
+Source_RPM: libxcrypt-4.4.18-3.el9.src.rpm
+Build_Date: Tue Aug 10 00:14:44 2021
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Extended crypt library for descrypt, md5crypt, bcrypt, and others
+URL: https://github.com/besser82/libxcrypt
+Description: libxcrypt is a modern library for one-way hashing of passwords.  It
+
+UUID: 5ce96e33-b817-482d-9587-902562ee445c
+Name: openssl-libs
+Version: 3.0.7
+Release: 27.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:47 2024
+Group: Unspecified
+Size: 6776462
+License: ASL 2.0
+Signature: RSA/SHA256, Thu Feb 22 14:27:36 2024, Key ID 05b555b38483c65d
+Source_RPM: openssl-3.0.7-27.el9.src.rpm
+Build_Date: Wed Feb 21 10:55:18 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A general purpose cryptography library with TLS implementation
+URL: http://www.openssl.org/
+Description: OpenSSL is a toolkit for supporting cryptography. The openssl-libs
+
+UUID: 94ec4eed-0b1f-4356-ae9b-56862aab8dba
+Name: expat
+Version: 2.5.0
+Release: 2.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 309434
+License: MIT
+Signature: RSA/SHA256, Wed Mar 20 17:09:04 2024, Key ID 05b555b38483c65d
+Source_RPM: expat-2.5.0-2.el9.src.rpm
+Build_Date: Wed Mar 20 13:33:58 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: An XML parser library
+URL: https://libexpat.github.io/
+Description: This is expat, the C library for parsing XML, written by James Clark. Expat
+
+UUID: 33f11676-0223-49b4-825c-3eb5e2ceafb5
+Name: gdbm-libs
+Version: 1.19
+Release: 4.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 116306
+License: GPLv3+
+Signature: RSA/SHA256, Wed Aug 11 21:07:43 2021, Key ID 05b555b38483c65d
+Source_RPM: gdbm-1.19-4.el9.src.rpm
+Build_Date: Mon Aug  9 21:02:47 2021
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Libraries files for gdbm
+URL: http://www.gnu.org/software/gdbm/
+Description: Libraries for the Gdbm GNU database indexing library
+
+UUID: 88faa466-0e9d-4a40-a635-27098687ac77
+Name: xz-libs
+Version: 5.2.5
+Release: 8.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 181557
+License: Public Domain
+Signature: RSA/SHA256, Fri Jun 10 11:09:10 2022, Key ID 05b555b38483c65d
+Source_RPM: xz-5.2.5-8.el9.src.rpm
+Build_Date: Tue May 31 14:09:49 2022
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Libraries for decoding LZMA compression
+URL: https://tukaani.org/xz/
+Description: Libraries for decoding files compressed with LZMA or XZ utils.
+
+UUID: 6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6
+Name: ncurses-libs
+Version: 6.2
+Release: 10.20210508.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: Unspecified
+Size: 994375
+License: MIT
+Signature: RSA/SHA256, Mon Aug 21 22:01:48 2023, Key ID 05b555b38483c65d
+Source_RPM: ncurses-6.2-10.20210508.el9.src.rpm
+Build_Date: Mon Aug 21 14:04:53 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Ncurses libraries
+URL: https://invisible-island.net/ncurses/ncurses.html
+Description: The curses library routines are a terminal-independent method of
+
+UUID: 1f6aaa3b-3788-420a-84fa-6ef9bc7f6a05
+Name: readline
+Version: 8.1
+Release: 4.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 492844
+License: GPLv3+
+Signature: RSA/SHA256, Thu Aug 12 16:11:31 2021, Key ID 05b555b38483c65d
+Source_RPM: readline-8.1-4.el9.src.rpm
+Build_Date: Tue Aug 10 04:15:23 2021
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A library for editing typed command lines
+URL: https://tiswww.case.edu/php/chet/readline/rltop.html
+Description: The Readline library provides a set of functions that allow users to
+
+UUID: 7a26dce1-df5b-4f83-b3a1-dd74d06dcede
+Name: sqlite-libs
+Version: 3.34.1
+Release: 7.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 1310936
+License: Public Domain
+Signature: RSA/SHA256, Fri Jan  5 12:11:25 2024, Key ID 05b555b38483c65d
+Source_RPM: sqlite-3.34.1-7.el9.src.rpm
+Build_Date: Thu Jan  4 15:32:50 2024
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Shared library for the sqlite3 embeddable SQL database engine.
+URL: http://www.sqlite.org/
+Description: This package contains the shared library for sqlite.
+
+UUID: 37239448-9f49-4f30-b6cb-65ee09809c3f
+Name: libuuid
+Version: 2.37.4
+Release: 18.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 38109
+License: BSD
+Signature: RSA/SHA256, Wed Feb 21 11:49:41 2024, Key ID 05b555b38483c65d
+Source_RPM: util-linux-2.37.4-18.el9.src.rpm
+Build_Date: Thu Feb  8 17:52:27 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Universally unique ID library
+URL: http://en.wikipedia.org/wiki/Util-linux
+Description: This is the universally unique ID library, part of util-linux.
+
+UUID: 108af79a-825a-4976-abc4-761ed8f8894f
+Name: zlib
+Version: 1.2.11
+Release: 41.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 203041
+License: zlib and Boost
+Signature: RSA/SHA256, Mon Nov 13 03:14:34 2023, Key ID 05b555b38483c65d
+Source_RPM: zlib-1.2.11-41.el9.src.rpm
+Build_Date: Mon Oct 30 09:15:53 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Compression and decompression library
+URL: https://www.zlib.net/
+Description: Zlib is a general-purpose, patent-free, lossless data compression
+
+UUID: a26a3842-8eda-4251-893c-3612889c035d
+Name: python3-pip-wheel
+Version: 21.2.3
+Release: 8.el9
+Architecture: noarch
+Install_Date: Mon Mar 25 04:10:47 2024
+Group: Unspecified
+Size: 1220838
+License: MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
+Signature: RSA/SHA256, Sat Feb 17 22:14:53 2024, Key ID 05b555b38483c65d
+Source_RPM: python-pip-21.2.3-8.el9.src.rpm
+Build_Date: Wed Feb 14 17:26:19 2024
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The pip wheel
+URL: https://pip.pypa.io/
+Description: A Python wheel of pip to use with venv.
+
+UUID: 299ffd21-c8f1-4ee0-9e6f-562d57b47d64
+Name: python3-setuptools-wheel
+Version: 53.0.0
+Release: 12.el9
+Architecture: noarch
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: Unspecified
+Size: 562584
+License: MIT and (BSD or ASL 2.0)
+Signature: RSA/SHA256, Fri Jan 13 19:10:58 2023, Key ID 05b555b38483c65d
+Source_RPM: python-setuptools-53.0.0-12.el9.src.rpm
+Build_Date: Thu Jan 12 15:38:50 2023
+Build_Host: ppc64le-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The setuptools wheel
+URL: https://pypi.python.org/pypi/setuptools
+Description: A Python wheel of setuptools to use with venv.
+
+UUID: c7b987ae-8f2a-4849-a70a-f7290a8639af
+Name: ca-certificates
+Version: 2023.2.60_v7.0.306
+Release: 90.1.el9
+Architecture: noarch
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 2354652
+License: Public Domain
+Signature: RSA/SHA256, Wed Aug 30 15:11:49 2023, Key ID 05b555b38483c65d
+Source_RPM: ca-certificates-2023.2.60_v7.0.306-90.1.el9.src.rpm
+Build_Date: Tue Aug 29 17:17:10 2023
+Build_Host: aarch64-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The Mozilla CA root certificate bundle
+URL: https://fedoraproject.org/wiki/CA-Certificates
+Description: This package contains the set of CA certificates chosen by the
+
+UUID: 30319830-8a6b-42e7-ad7a-2711206fff3a
+Name: bash
+Version: 5.1.8
+Release: 6.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 7738626
+License: GPLv3+
+Signature: RSA/SHA256, Thu Nov 24 17:41:10 2022, Key ID 05b555b38483c65d
+Source_RPM: bash-5.1.8-6.el9.src.rpm
+Build_Date: Thu Nov 24 14:21:35 2022
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The GNU Bourne Again shell
+URL: https://www.gnu.org/software/bash
+Description: The GNU Bourne Again shell (Bash) is a shell or command language
+
+UUID: 17629ca2-6471-4a71-9c05-b1620a2fd9e3
+Name: 
+Version: 
+Release: 
+Architecture: 
+Install_Date: 
+Group: 
+Size: 
+License: 
+Signature: 
+Source_RPM: 
+Build_Date: 
+Build_Host: 
+Packager: 
+Vendor: 
+Summary: 
+URL: 
+Description: 
+
+UUID: 9775aab9-612f-4167-9829-c6dad344383f
+Name: grep
+Version: 3.6
+Release: 5.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 857840
+License: GPLv3+
+Signature: RSA/SHA256, Thu Aug 12 19:05:23 2021, Key ID 05b555b38483c65d
+Source_RPM: grep-3.6-5.el9.src.rpm
+Build_Date: Mon Aug  9 21:43:06 2021
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Pattern matching utilities
+URL: https://www.gnu.org/software/grep/
+Description: The GNU versions of commonly used grep utilities. Grep searches through
+
+UUID: 9dae989a-522c-401b-bff0-c6ce5def092b
+Name: p11-kit
+Version: 0.25.3
+Release: 2.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 2530636
+License: BSD-3-Clause
+Signature: RSA/SHA256, Mon Nov 27 19:24:46 2023, Key ID 05b555b38483c65d
+Source_RPM: p11-kit-0.25.3-2.el9.src.rpm
+Build_Date: Thu Nov 23 13:56:20 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Library for loading and sharing PKCS#11 modules
+URL: http://p11-glue.freedesktop.org/p11-kit.html
+Description: p11-kit provides a way to load and enumerate PKCS#11 modules, as well
+
+UUID: 795d771c-6cdb-4c7c-a003-20ce2dc6f1d5
+Name: p11-kit-trust
+Version: 0.25.3
+Release: 2.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 478148
+License: BSD-3-Clause
+Signature: RSA/SHA256, Mon Nov 27 19:24:46 2023, Key ID 05b555b38483c65d
+Source_RPM: p11-kit-0.25.3-2.el9.src.rpm
+Build_Date: Thu Nov 23 13:56:20 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: System trust module from p11-kit
+URL: http://p11-glue.freedesktop.org/p11-kit.html
+Description: The p11-kit-trust package contains a system trust PKCS#11 module which
+
+UUID: 7c586c9c-2122-48bd-9458-cdd8637c1101
+Name: sed
+Version: 4.8
+Release: 9.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 813599
+License: GPLv3+
+Signature: RSA/SHA256, Fri Aug 13 20:48:13 2021, Key ID 05b555b38483c65d
+Source_RPM: sed-4.8-9.el9.src.rpm
+Build_Date: Tue Aug 10 04:31:15 2021
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A GNU stream text editor
+URL: http://sed.sourceforge.net/
+Description: The sed (Stream EDitor) editor is a stream or batch (non-interactive)
+
+UUID: 12c1d504-c348-45e6-9357-923b17858ff3
+Name: libacl
+Version: 2.3.1
+Release: 4.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 40554
+License: LGPLv2+
+Signature: RSA/SHA256, Mon Nov 27 19:15:51 2023, Key ID 05b555b38483c65d
+Source_RPM: acl-2.3.1-4.el9.src.rpm
+Build_Date: Fri Oct  6 12:16:52 2023
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Dynamic library for access control list support
+URL: https://savannah.nongnu.org/projects/acl
+Description: This package contains the libacl.so dynamic library which contains
+
+UUID: b880524c-82d4-4686-849a-a0e9268db88c
+Name: libselinux
+Version: 3.6
+Release: 1.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 176853
+License: Public Domain
+Signature: RSA/SHA256, Tue Dec 19 05:41:45 2023, Key ID 05b555b38483c65d
+Source_RPM: libselinux-3.6-1.el9.src.rpm
+Build_Date: Thu Dec 14 07:14:35 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: SELinux library and simple utilities
+URL: https://github.com/SELinuxProject/selinux/wiki
+Description: Security-enhanced Linux is a feature of the Linux® kernel and a number
+
+UUID: 987dbe20-b7cb-46a2-9d0a-4b10bbb3085d
+Name: pcre2
+Version: 10.40
+Release: 5.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 652298
+License: BSD
+Signature: RSA/SHA256, Mon Feb 19 23:05:12 2024, Key ID 05b555b38483c65d
+Source_RPM: pcre2-10.40-5.el9.src.rpm
+Build_Date: Sat Feb 17 19:51:22 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Perl-compatible regular expression library
+URL: https://www.pcre.org/
+Description: PCRE2 is a re-working of the original PCRE (Perl-compatible regular
+
+UUID: fd6e6e61-0f5b-4e49-8ce9-2a867234ab71
+Name: libsepol
+Version: 3.6
+Release: 1.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 829251
+License: LGPLv2+
+Signature: RSA/SHA256, Tue Dec 19 05:43:10 2023, Key ID 05b555b38483c65d
+Source_RPM: libsepol-3.6-1.el9.src.rpm
+Build_Date: Wed Dec 13 19:02:53 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: SELinux binary policy manipulation library
+URL: https://github.com/SELinuxProject/selinux/wiki
+Description: Security-enhanced Linux is a feature of the Linux® kernel and a number
+
+UUID: 41c3595f-6d1e-4442-8859-84b65ee03ca8
+Name: pcre2-syntax
+Version: 10.40
+Release: 5.el9
+Architecture: noarch
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: Unspecified
+Size: 234324
+License: BSD
+Signature: RSA/SHA256, Mon Feb 19 23:05:21 2024, Key ID 05b555b38483c65d
+Source_RPM: pcre2-10.40-5.el9.src.rpm
+Build_Date: Sat Feb 17 19:51:32 2024
+Build_Host: aarch64-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Documentation for PCRE2 regular expressions
+URL: https://www.pcre.org/
+Description: This is a set of manual pages that document a syntax of the regular
+
+UUID: d1ba9b1c-a2bb-4059-bbeb-904f29e2097a
+Name: libattr
+Version: 2.5.1
+Release: 3.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 29429
+License: LGPLv2+
+Signature: RSA/SHA256, Thu Aug 12 03:30:02 2021, Key ID 05b555b38483c65d
+Source_RPM: attr-2.5.1-3.el9.src.rpm
+Build_Date: Mon Aug  9 19:30:34 2021
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Dynamic library for extended attribute support
+URL: https://savannah.nongnu.org/projects/attr
+Description: This package contains the libattr.so dynamic library which contains
+
+UUID: 85e2a501-1d9e-4fa6-b2ff-dc6de4c18c55
+Name: libtasn1
+Version: 4.16.0
+Release: 8.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 183348
+License: GPLv3+ and LGPLv2+
+Signature: RSA/SHA256, Fri Dec  2 17:41:12 2022, Key ID 05b555b38483c65d
+Source_RPM: libtasn1-4.16.0-8.el9.src.rpm
+Build_Date: Thu Dec  1 16:08:47 2022
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The ASN.1 library used in GNUTLS
+URL: http://www.gnu.org/software/libtasn1/
+Description: A library that provides Abstract Syntax Notation One (ASN.1, as specified
+
+UUID: 5200019c-4e2d-4008-a065-4729f16128ee
+Name: pcre
+Version: 8.44
+Release: 3.el9.3
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 539272
+License: BSD
+Signature: RSA/SHA256, Sat Aug 14 00:20:20 2021, Key ID 05b555b38483c65d
+Source_RPM: pcre-8.44-3.el9.3.src.rpm
+Build_Date: Tue Aug 10 02:16:19 2021
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Perl-compatible regular expression library
+URL: https://www.pcre.org/
+Description: PCRE, Perl-compatible regular expression, library has its own native API, but
+
+UUID: 370fbe93-bd1a-4c2e-8740-d0884c1984c9
+Name: libsigsegv
+Version: 2.13
+Release: 4.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 50338
+License: GPLv2+
+Signature: RSA/SHA256, Fri Aug 13 15:55:58 2021, Key ID 05b555b38483c65d
+Source_RPM: libsigsegv-2.13-4.el9.src.rpm
+Build_Date: Mon Aug  9 23:47:00 2021
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Library for handling page faults in user mode
+URL: https://www.gnu.org/software/libsigsegv/
+Description: This is a library for handling page faults in user mode. A page fault
+
+UUID: 83c2d536-c770-4749-b670-158ead0089a1
+Name: ncurses-base
+Version: 6.2
+Release: 10.20210508.el9
+Architecture: noarch
+Install_Date: Mon Mar 25 04:10:44 2024
+Group: Unspecified
+Size: 307293
+License: MIT
+Signature: RSA/SHA256, Mon Aug 21 22:01:56 2023, Key ID 05b555b38483c65d
+Source_RPM: ncurses-6.2-10.20210508.el9.src.rpm
+Build_Date: Mon Aug 21 14:05:09 2023
+Build_Host: aarch64-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Descriptions of common terminals
+URL: https://invisible-island.net/ncurses/ncurses.html
+Description: This package contains descriptions of common terminals. Other terminal
+
+UUID: b7beef24-6415-4663-9b8f-81b5b1be8699
+Name: crypto-policies
+Version: 20240202
+Release: 1.git283706d.el9
+Architecture: noarch
+Install_Date: Mon Mar 25 04:10:43 2024
+Group: Unspecified
+Size: 86194
+License: LGPL-2.1-or-later
+Signature: RSA/SHA256, Wed Feb  7 20:10:23 2024, Key ID 05b555b38483c65d
+Source_RPM: crypto-policies-20240202-1.git283706d.el9.src.rpm
+Build_Date: Mon Feb  5 12:32:32 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: System-wide crypto policies
+URL: https://gitlab.com/redhat-crypto/fedora-crypto-policies
+Description: This package provides pre-built configuration files with
+
+UUID: deba2bfd-5185-4de1-b2db-c96f2c1ca35d
+Name: gnutls
+Version: 3.8.3
+Release: 1.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 3448563
+License: GPLv3+ and LGPLv2+
+Signature: RSA/SHA256, Thu Jan 25 14:57:43 2024, Key ID 05b555b38483c65d
+Source_RPM: gnutls-3.8.3-1.el9.src.rpm
+Build_Date: Tue Jan 23 07:33:47 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A TLS protocol implementation
+URL: http://www.gnutls.org/
+Description: GnuTLS is a secure communications library implementing the SSL, TLS and DTLS
+
+UUID: 13eb832f-6909-46cb-bd3f-fbc3181608fd
+Name: libmount
+Version: 2.37.4
+Release: 18.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:49 2024
+Group: Unspecified
+Size: 318453
+License: LGPLv2+
+Signature: RSA/SHA256, Wed Feb 21 11:49:41 2024, Key ID 05b555b38483c65d
+Source_RPM: util-linux-2.37.4-18.el9.src.rpm
+Build_Date: Thu Feb  8 17:52:27 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Device mounting library
+URL: http://en.wikipedia.org/wiki/Util-linux
+Description: This is the device mounting library, part of util-linux.
+
+UUID: e81019e6-a5aa-4437-b0c0-2cf27fb57ca3
+Name: libblkid
+Version: 2.37.4
+Release: 18.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:49 2024
+Group: Unspecified
+Size: 229849
+License: LGPLv2+
+Signature: RSA/SHA256, Wed Feb 21 11:49:44 2024, Key ID 05b555b38483c65d
+Source_RPM: util-linux-2.37.4-18.el9.src.rpm
+Build_Date: Thu Feb  8 17:52:27 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Block device ID library
+URL: http://en.wikipedia.org/wiki/Util-linux
+Description: This is block device identification library, part of util-linux.
+
+UUID: e0279e04-66fc-456a-996a-c156bd1fc223
+Name: nettle
+Version: 3.9.1
+Release: 1.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 1157687
+License: LGPLv3+ or GPLv2+
+Signature: RSA/SHA256, Mon Nov 27 23:52:59 2023, Key ID 05b555b38483c65d
+Source_RPM: nettle-3.9.1-1.el9.src.rpm
+Build_Date: Mon Nov 20 11:48:08 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A low-level cryptographic library
+URL: http://www.lysator.liu.se/~nisse/nettle/
+Description: Nettle is a cryptographic library that is designed to fit easily in more
+
+UUID: 2cf970a8-12e5-40c8-8fe9-f04938c97743
+Name: libidn2
+Version: 2.3.0
+Release: 7.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 253460
+License: (GPLv2+ or LGPLv3+) and GPLv3+
+Signature: RSA/SHA256, Fri Aug 13 07:27:52 2021, Key ID 05b555b38483c65d
+Source_RPM: libidn2-2.3.0-7.el9.src.rpm
+Build_Date: Mon Aug  9 23:08:57 2021
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Library to support IDNA2008 internationalized domain names
+URL: https://www.gnu.org/software/libidn/#libidn2
+Description: Libidn2 is an implementation of the IDNA2008 specifications in RFC
+
+UUID: 75a7d5eb-859e-4d54-875b-9c03fb872a23
+Name: libunistring
+Version: 0.9.10
+Release: 15.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 1643051
+License: GPLv2+ or LGPLv3+
+Signature: RSA/SHA256, Thu Aug 12 03:46:46 2021, Key ID 05b555b38483c65d
+Source_RPM: libunistring-0.9.10-15.el9.src.rpm
+Build_Date: Mon Aug  9 23:58:36 2021
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: GNU Unicode string library
+URL: https://www.gnu.org/software/libunistring/
+Description: This portable C library implements Unicode string types in three flavours:
+
+UUID: ee63fe44-35a5-4a3c-acdc-26e618ce85c0
+Name: systemd-libs
+Version: 252
+Release: 32.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:25:39 2024
+Group: Unspecified
+Size: 1802816
+License: LGPLv2+ and MIT
+Signature: RSA/SHA256, Sun Mar 24 01:59:45 2024, Key ID 05b555b38483c65d
+Source_RPM: systemd-252-32.el9.src.rpm
+Build_Date: Tue Mar 19 14:23:08 2024
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: systemd libraries
+URL: https://systemd.io
+Description: Libraries for systemd and udev.
+
+UUID: 464303a4-d83d-4ee5-a15a-adbbebf613ad
+Name: systemd
+Version: 252
+Release: 32.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:21 2024
+Group: Unspecified
+Size: 12808684
+License: LGPLv2+ and MIT and GPLv2+
+Signature: RSA/SHA256, Sun Mar 24 01:59:44 2024, Key ID 05b555b38483c65d
+Source_RPM: systemd-252-32.el9.src.rpm
+Build_Date: Tue Mar 19 14:23:08 2024
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: System and Service Manager
+URL: https://systemd.io
+Description: systemd is a system and service manager that runs as PID 1 and starts
+
+UUID: 5e4f08c4-234e-4599-8fee-52ae302ff1ae
+Name: acl
+Version: 2.3.1
+Release: 4.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:21 2024
+Group: Unspecified
+Size: 212167
+License: GPLv2+
+Signature: RSA/SHA256, Mon Nov 27 19:15:50 2023, Key ID 05b555b38483c65d
+Source_RPM: acl-2.3.1-4.el9.src.rpm
+Build_Date: Fri Oct  6 12:16:52 2023
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Access control list utilities
+URL: https://savannah.nongnu.org/projects/acl
+Description: This package contains the getfacl and setfacl utilities needed for
+
+UUID: d87b6842-810c-4a4d-9b55-e0e94e31d083
+Name: dbus
+Version: 1.12.20
+Release: 8.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:21 2024
+Group: Unspecified
+Size: 0
+License: (GPLv2+ or AFL) and GPLv2+
+Signature: RSA/SHA256, Wed Jul 26 15:33:25 2023, Key ID 05b555b38483c65d
+Source_RPM: dbus-1.12.20-8.el9.src.rpm
+Build_Date: Mon Jun 12 09:24:52 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: D-BUS message bus
+URL: http://www.freedesktop.org/Software/dbus/
+Description: D-BUS is a system for sending messages between applications. It is
+
+UUID: a3421b9b-0f4e-49ea-ac39-2be9ffb70209
+Name: audit-libs
+Version: 3.1.2
+Release: 2.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 314049
+License: LGPLv2+
+Signature: RSA/SHA256, Mon Nov 13 03:39:04 2023, Key ID 05b555b38483c65d
+Source_RPM: audit-3.1.2-2.el9.src.rpm
+Build_Date: Wed Nov  8 10:11:29 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Dynamic library for libaudit
+URL: http://people.redhat.com/sgrubb/audit/
+Description: The audit-libs package contains the dynamic libraries needed for
+
+UUID: 0a22950d-557f-408c-8016-193ec444a4fb
+Name: libcap
+Version: 2.48
+Release: 9.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 177447
+License: BSD or GPLv2
+Signature: RSA/SHA256, Wed Jul 19 18:41:15 2023, Key ID 05b555b38483c65d
+Source_RPM: libcap-2.48-9.el9.src.rpm
+Build_Date: Wed Jul 12 13:19:27 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Library for getting and setting POSIX.1e capabilities
+URL: https://sites.google.com/site/fullycapable/
+Description: libcap is a library for getting and setting POSIX.1e (formerly POSIX 6)
+
+UUID: b27a4894-ccbb-40c0-8342-3c85d254dab2
+Name: libfdisk
+Version: 2.37.4
+Release: 18.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:08 2024
+Group: Unspecified
+Size: 367883
+License: LGPLv2+
+Signature: RSA/SHA256, Wed Feb 21 11:49:44 2024, Key ID 05b555b38483c65d
+Source_RPM: util-linux-2.37.4-18.el9.src.rpm
+Build_Date: Thu Feb  8 17:52:27 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Partitioning library for fdisk-like programs.
+URL: http://en.wikipedia.org/wiki/Util-linux
+Description: This is library for fdisk-like programs, part of util-linux.
+
+UUID: 86fa61f5-5875-4dea-919c-f2c7f3e0b5de
+Name: libgcrypt
+Version: 1.10.0
+Release: 10.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 1382042
+License: LGPLv2+
+Signature: RSA/SHA256, Mon Mar 27 07:39:29 2023, Key ID 05b555b38483c65d
+Source_RPM: libgcrypt-1.10.0-10.el9.src.rpm
+Build_Date: Fri Mar 24 08:39:33 2023
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A general-purpose cryptography library
+URL: https://www.gnupg.org/
+Description: Libgcrypt is a general purpose crypto library based on the code used
+
+UUID: fb204445-2dc1-4819-8b59-72fcb00e608b
+Name: kmod-libs
+Version: 28
+Release: 9.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:20 2024
+Group: Unspecified
+Size: 133910
+License: LGPLv2+
+Signature: RSA/SHA256, Fri May 19 19:40:43 2023, Key ID 05b555b38483c65d
+Source_RPM: kmod-28-9.el9.src.rpm
+Build_Date: Fri May 19 15:27:41 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Libraries to handle kernel module loading and unloading
+URL: https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git
+Description: The kmod-libs package provides runtime libraries for any application that
+
+UUID: d40106ec-d721-47ab-ba88-28d06d4bec34
+Name: lz4-libs
+Version: 1.9.3
+Release: 5.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 145483
+License: GPLv2+ and BSD
+Signature: RSA/SHA256, Thu Aug 12 13:12:13 2021, Key ID 05b555b38483c65d
+Source_RPM: lz4-1.9.3-5.el9.src.rpm
+Build_Date: Tue Aug 10 00:36:49 2021
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Libaries for lz4
+URL: https://lz4.github.io/lz4/
+Description: This package contains the libaries for lz4.
+
+UUID: 9839cb5e-9544-4655-b6b5-a6e499706418
+Name: pam
+Version: 1.5.1
+Release: 19.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 1901178
+License: BSD and GPLv2+
+Signature: RSA/SHA256, Sat Feb 17 23:15:27 2024, Key ID 05b555b38483c65d
+Source_RPM: pam-1.5.1-19.el9.src.rpm
+Build_Date: Mon Feb 12 12:56:59 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: An extensible library which provides authentication for applications
+URL: http://www.linux-pam.org/
+Description: PAM (Pluggable Authentication Modules) is a system security tool that
+
+UUID: 37d2f437-dc41-4f96-a547-7473207c9b24
+Name: libseccomp
+Version: 2.5.2
+Release: 2.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 175293
+License: LGPLv2
+Signature: RSA/SHA256, Wed Nov 10 07:55:34 2021, Key ID 05b555b38483c65d
+Source_RPM: libseccomp-2.5.2-2.el9.src.rpm
+Build_Date: Tue Nov  9 16:10:41 2021
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Enhanced seccomp library
+URL: https://github.com/seccomp/libseccomp
+Description: The libseccomp library provides an easy to use interface to the Linux Kernel's
+
+UUID: 98fc7cf2-a5f1-4b0f-bca4-b94152dc9fa5
+Name: libzstd
+Version: 1.5.1
+Release: 2.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 902051
+License: BSD and GPLv2
+Signature: RSA/SHA256, Thu Feb 10 11:15:43 2022, Key ID 05b555b38483c65d
+Source_RPM: zstd-1.5.1-2.el9.src.rpm
+Build_Date: Tue Feb  8 14:11:35 2022
+Build_Host: x86-05.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Zstd shared library
+URL: https://github.com/facebook/zstd
+Description: Zstandard compression shared library.
+
+UUID: a5f48f75-6c3c-4cc3-a173-3681f3635323
+Name: systemd-pam
+Version: 252
+Release: 32.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:21 2024
+Group: Unspecified
+Size: 518427
+License: LGPLv2+ and MIT and GPLv2+
+Signature: RSA/SHA256, Sun Mar 24 01:59:41 2024, Key ID 05b555b38483c65d
+Source_RPM: systemd-252-32.el9.src.rpm
+Build_Date: Tue Mar 19 14:23:08 2024
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: systemd PAM module
+URL: https://systemd.io
+Description: Systemd PAM module registers the session with systemd-logind.
+
+UUID: 2b3abc33-c168-4f2e-aefd-86553dfb3224
+Name: systemd-rpm-macros
+Version: 252
+Release: 32.el9
+Architecture: noarch
+Install_Date: Wed Mar 27 16:27:09 2024
+Group: Unspecified
+Size: 9516
+License: LGPLv2+ and MIT and GPLv2+
+Signature: RSA/SHA256, Sun Mar 24 02:00:05 2024, Key ID 05b555b38483c65d
+Source_RPM: systemd-252-32.el9.src.rpm
+Build_Date: Tue Mar 19 14:21:33 2024
+Build_Host: aarch64-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Macros that define paths and scriptlets related to systemd
+URL: https://systemd.io
+Description: Just the definitions of rpm macros.
+
+UUID: 9dcef374-af04-4fbd-ad79-8bc8e610d92b
+Name: util-linux
+Version: 2.37.4
+Release: 18.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 11161169
+License: GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
+Signature: RSA/SHA256, Wed Feb 21 11:49:41 2024, Key ID 05b555b38483c65d
+Source_RPM: util-linux-2.37.4-18.el9.src.rpm
+Build_Date: Thu Feb  8 17:52:27 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A collection of basic system utilities
+URL: http://en.wikipedia.org/wiki/Util-linux
+Description: The util-linux package contains a large variety of low-level system
+
+UUID: 8c0c05db-d052-45d1-8b98-71a4b47e12fd
+Name: libcap-ng
+Version: 0.8.2
+Release: 7.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:46 2024
+Group: Unspecified
+Size: 75196
+License: LGPLv2+
+Signature: RSA/SHA256, Thu Feb 24 15:56:49 2022, Key ID 05b555b38483c65d
+Source_RPM: libcap-ng-0.8.2-7.el9.src.rpm
+Build_Date: Tue Feb 15 13:12:30 2022
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Alternate posix capabilities library
+URL: https://people.redhat.com/sgrubb/libcap-ng/
+Description: Libcap-ng is a library that makes using posix capabilities easier
+
+UUID: cf7b155a-2eb2-4978-a5c5-082d1122562d
+Name: libsmartcols
+Version: 2.37.4
+Release: 18.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 134899
+License: LGPLv2+
+Signature: RSA/SHA256, Wed Feb 21 11:49:43 2024, Key ID 05b555b38483c65d
+Source_RPM: util-linux-2.37.4-18.el9.src.rpm
+Build_Date: Thu Feb  8 17:52:27 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Formatting library for ls-like programs.
+URL: http://en.wikipedia.org/wiki/Util-linux
+Description: This is library for ls-like terminal programs, part of util-linux.
+
+UUID: 0485bc82-420e-49d6-a3e0-37fc6074fbfc
+Name: libutempter
+Version: 1.2.1
+Release: 6.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 59409
+License: LGPLv2+
+Signature: RSA/SHA256, Fri Aug 13 16:06:22 2021, Key ID 05b555b38483c65d
+Source_RPM: libutempter-1.2.1-6.el9.src.rpm
+Build_Date: Tue Aug 10 00:08:05 2021
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A privileged helper for utmp/wtmp updates
+URL: ftp://ftp.altlinux.org/pub/people/ldv/utempter
+Description: This library provides interface for terminal emulators such as
+
+UUID: f1460186-f2b8-46a9-b5db-a4e6776fa207
+Name: util-linux-core
+Version: 2.37.4
+Release: 18.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:09 2024
+Group: Unspecified
+Size: 1268263
+License: GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
+Signature: RSA/SHA256, Wed Feb 21 11:49:45 2024, Key ID 05b555b38483c65d
+Source_RPM: util-linux-2.37.4-18.el9.src.rpm
+Build_Date: Thu Feb  8 17:52:27 2024
+Build_Host: x86-01.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The most essential utilities from the util-linux suite.
+URL: http://en.wikipedia.org/wiki/Util-linux
+Description: This is a very basic set of Linux utilities that is necessary on
+
+UUID: 8f91741c-666b-4e87-beb9-568ce432b82a
+Name: libgpg-error
+Version: 1.42
+Release: 5.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 837088
+License: LGPLv2+
+Signature: RSA/SHA256, Tue Dec 14 16:42:48 2021, Key ID 05b555b38483c65d
+Source_RPM: libgpg-error-1.42-5.el9.src.rpm
+Build_Date: Tue Dec  7 15:06:27 2021
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Library for error values used by GnuPG components
+URL: https://www.gnupg.org/related_software/libgpg-error/
+Description: This is a library that defines common error values for all GnuPG
+
+UUID: e5530859-7a97-44e7-87fa-8bc8040ef4d4
+Name: libdb
+Version: 5.3.28
+Release: 53.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 1898038
+License: BSD and LGPLv2 and Sleepycat
+Signature: RSA/SHA256, Fri Nov 26 12:17:47 2021, Key ID 05b555b38483c65d
+Source_RPM: libdb-5.3.28-53.el9.src.rpm
+Build_Date: Wed Nov 24 17:38:08 2021
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The Berkeley DB database library for C
+URL: http://www.oracle.com/database/berkeley-db/
+Description: The Berkeley Database (Berkeley DB) is a programmatic toolkit that
+
+UUID: 44d3380f-e627-4244-8b29-cbdc993bbeb1
+Name: libeconf
+Version: 0.4.1
+Release: 3.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 45715
+License: MIT
+Signature: RSA/SHA256, Wed Jun 14 07:40:56 2023, Key ID 05b555b38483c65d
+Source_RPM: libeconf-0.4.1-3.el9.src.rpm
+Build_Date: Wed Jun  7 10:17:07 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Enhanced config file parser library
+URL: https://github.com/openSUSE/libeconf
+Description: libeconf is a highly flexible and configurable library to parse and manage
+
+UUID: 56430593-27c7-4c84-9b07-b2a83fb48317
+Name: libpwquality
+Version: 1.4.4
+Release: 8.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 416376
+License: BSD or GPLv2+
+Signature: RSA/SHA256, Fri Aug 13 20:45:57 2021, Key ID 05b555b38483c65d
+Source_RPM: libpwquality-1.4.4-8.el9.src.rpm
+Build_Date: Mon Aug  9 23:40:27 2021
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A library for password generation and password quality checking
+URL: https://github.com/libpwquality/libpwquality/
+Description: This is a library for password quality checks and generation
+
+UUID: f5218a44-f20b-4d12-a873-6498b9b266b8
+Name: openssl
+Version: 3.0.7
+Release: 27.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:09 2024
+Group: Unspecified
+Size: 1895189
+License: ASL 2.0
+Signature: RSA/SHA256, Thu Feb 22 14:27:35 2024, Key ID 05b555b38483c65d
+Source_RPM: openssl-3.0.7-27.el9.src.rpm
+Build_Date: Wed Feb 21 10:55:18 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Utilities from the general purpose cryptography library with TLS implementation
+URL: http://www.openssl.org/
+Description: The OpenSSL toolkit provides support for secure communications between
+
+UUID: 0341ccfd-8ade-4313-8786-b698b741a253
+Name: cracklib
+Version: 2.9.6
+Release: 27.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:08 2024
+Group: Unspecified
+Size: 251850
+License: LGPLv2+
+Signature: RSA/SHA256, Thu Aug 12 01:11:07 2021, Key ID 05b555b38483c65d
+Source_RPM: cracklib-2.9.6-27.el9.src.rpm
+Build_Date: Mon Aug  9 20:03:01 2021
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A password-checking library
+URL: http://sourceforge.net/projects/cracklib/
+Description: CrackLib tests passwords to determine whether they match certain
+
+UUID: 750deba8-3f9a-4198-bed7-d6104be77941
+Name: cracklib-dicts
+Version: 2.9.6
+Release: 27.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:08 2024
+Group: Unspecified
+Size: 9815154
+License: LGPLv2+
+Signature: RSA/SHA256, Thu Aug 12 01:11:08 2021, Key ID 05b555b38483c65d
+Source_RPM: cracklib-2.9.6-27.el9.src.rpm
+Build_Date: Mon Aug  9 20:03:01 2021
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The standard CrackLib dictionaries
+URL: http://sourceforge.net/projects/cracklib/
+Description: The cracklib-dicts package includes the CrackLib dictionaries.
+
+UUID: 6ddfff62-0a5b-4771-a701-67c6b6dd9861
+Name: gzip
+Version: 1.12
+Release: 1.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:50 2024
+Group: Unspecified
+Size: 377013
+License: GPLv3+ and GFDL
+Signature: RSA/SHA256, Fri Apr 22 10:58:01 2022, Key ID 05b555b38483c65d
+Source_RPM: gzip-1.12-1.el9.src.rpm
+Build_Date: Thu Apr 21 19:38:07 2022
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The GNU data compression program
+URL: http://www.gzip.org/
+Description: The gzip package contains the popular GNU gzip data compression
+
+UUID: 604d02c1-72ee-4068-af2f-514cd5045cc6
+Name: shadow-utils
+Version: 4.9
+Release: 8.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:49 2024
+Group: Unspecified
+Size: 3812549
+License: BSD and GPLv2+
+Signature: RSA/SHA256, Tue Jul 18 19:24:17 2023, Key ID 05b555b38483c65d
+Source_RPM: shadow-utils-4.9-8.el9.src.rpm
+Build_Date: Wed Jul 12 12:56:15 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Utilities for managing accounts and shadow password files
+URL: https://github.com/shadow-maint/shadow
+Description: The shadow-utils package includes the necessary programs for
+
+UUID: 6fff1fe2-904c-4d71-95a8-ef75eea7cac4
+Name: libsemanage
+Version: 3.6
+Release: 1.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:49 2024
+Group: Unspecified
+Size: 307190
+License: LGPLv2+
+Signature: RSA/SHA256, Tue Dec 19 05:40:00 2023, Key ID 05b555b38483c65d
+Source_RPM: libsemanage-3.6-1.el9.src.rpm
+Build_Date: Thu Dec 14 08:15:48 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: SELinux binary policy manipulation library
+URL: https://github.com/SELinuxProject/selinux/wiki
+Description: Security-enhanced Linux is a feature of the Linux® kernel and a number
+
+UUID: 48ba1125-8bfa-45d8-8373-323a49ff004d
+Name: dbus-broker
+Version: 28
+Release: 7.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:21 2024
+Group: Unspecified
+Size: 393994
+License: ASL 2.0
+Signature: RSA/SHA256, Tue Aug 23 11:10:48 2022, Key ID 05b555b38483c65d
+Source_RPM: dbus-broker-28-7.el9.src.rpm
+Build_Date: Tue Aug 23 09:10:45 2022
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Linux D-Bus Message Broker
+URL: https://github.com/bus1/dbus-broker
+Description: dbus-broker is an implementation of a message bus as defined by the D-Bus
+
+UUID: 5c5e50c7-fe85-4cb9-a5ac-a68e59eb04f5
+Name: dbus-common
+Version: 1.12.20
+Release: 8.el9
+Architecture: noarch
+Install_Date: Wed Mar 27 16:27:21 2024
+Group: Unspecified
+Size: 11394
+License: (GPLv2+ or AFL) and GPLv2+
+Signature: RSA/SHA256, Wed Jul 26 15:33:34 2023, Key ID 05b555b38483c65d
+Source_RPM: dbus-1.12.20-8.el9.src.rpm
+Build_Date: Mon Jun 12 09:25:15 2023
+Build_Host: aarch64-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: D-BUS message bus configuration
+URL: http://www.freedesktop.org/Software/dbus/
+Description: The dbus-common package provides the configuration and setup files for D-Bus
+
+UUID: 364658d6-d110-4459-96a9-b789da4a5de6
+Name: policycoreutils
+Version: 3.6
+Release: 2.1.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 724447
+License: GPL-2.0-or-later
+Signature: RSA/SHA256, Wed Feb 21 07:10:20 2024, Key ID 05b555b38483c65d
+Source_RPM: policycoreutils-3.6-2.1.el9.src.rpm
+Build_Date: Mon Feb 19 22:30:39 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: SELinux policy core utilities
+URL: https://github.com/SELinuxProject/selinux
+Description: Security-enhanced Linux is a feature of the Linux® kernel and a number
+
+UUID: 610cddd7-0b48-4f34-a20b-b330aecb46c8
+Name: selinux-policy
+Version: 38.1.35
+Release: 2.el9
+Architecture: noarch
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 25744
+License: GPLv2+
+Signature: RSA/SHA256, Thu Mar 14 19:18:03 2024, Key ID 05b555b38483c65d
+Source_RPM: selinux-policy-38.1.35-2.el9.src.rpm
+Build_Date: Thu Mar 14 16:31:10 2024
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: SELinux policy configuration
+URL: https://github.com/fedora-selinux/selinux-policy
+Description: SELinux core policy package.
+
+UUID: 49c703cc-3f87-411a-94d3-69699729bda3
+Name: rpm-plugin-selinux
+Version: 4.16.1.3
+Release: 29.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:21 2024
+Group: Unspecified
+Size: 15988
+License: GPLv2+
+Signature: RSA/SHA256, Tue Dec 19 05:13:47 2023, Key ID 05b555b38483c65d
+Source_RPM: rpm-4.16.1.3-29.el9.src.rpm
+Build_Date: Wed Dec 13 11:39:23 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Rpm plugin for SELinux functionality
+URL: http://www.rpm.org/
+Description: Rpm plugin for SELinux functionality.
+
+UUID: 9a9db819-e2f0-4e80-b21c-cf9c42ded714
+Name: 
+Version: 
+Release: 
+Architecture: 
+Install_Date: 
+Group: 
+Size: 
+License: 
+Signature: 
+Source_RPM: 
+Build_Date: 
+Build_Host: 
+Packager: 
+Vendor: 
+Summary: 
+URL: 
+Description: 
+
+UUID: c141f356-4c8e-41f4-aed6-8585e96ed38a
+Name: lua-libs
+Version: 5.4.4
+Release: 4.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 287331
+License: MIT
+Signature: RSA/SHA256, Tue Apr 18 09:27:09 2023, Key ID 05b555b38483c65d
+Source_RPM: lua-5.4.4-4.el9.src.rpm
+Build_Date: Mon Apr 17 11:55:44 2023
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Libraries for lua
+URL: http://www.lua.org/
+Description: This package contains the shared libraries for lua.
+
+UUID: b980c4e0-70fc-4778-9b71-06afb9c5f31f
+Name: popt
+Version: 1.18
+Release: 8.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 130360
+License: MIT
+Signature: RSA/SHA256, Fri Aug 13 10:12:14 2021, Key ID 05b555b38483c65d
+Source_RPM: popt-1.18-8.el9.src.rpm
+Build_Date: Tue Aug 10 03:32:46 2021
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: C library for parsing command line parameters
+URL: https://github.com/rpm-software-management/popt/
+Description: Popt is a C library for parsing command line parameters. Popt was
+
+UUID: ad1e021a-7d7c-40ac-8bff-f25adc51bc9b
+Name: rpm-libs
+Version: 4.16.1.3
+Release: 29.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:47 2024
+Group: Unspecified
+Size: 769228
+License: GPLv2+ and LGPLv2+ with exceptions
+Signature: RSA/SHA256, Tue Dec 19 05:13:45 2023, Key ID 05b555b38483c65d
+Source_RPM: rpm-4.16.1.3-29.el9.src.rpm
+Build_Date: Wed Dec 13 11:39:23 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Libraries for manipulating RPM packages
+URL: http://www.rpm.org/
+Description: This package contains the RPM shared libraries.
+
+UUID: e265e84d-157a-49f0-af87-7b07a61bc989
+Name: rpm
+Version: 4.16.1.3
+Release: 29.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:47 2024
+Group: Unspecified
+Size: 2750680
+License: GPLv2+
+Signature: RSA/SHA256, Tue Dec 19 05:13:45 2023, Key ID 05b555b38483c65d
+Source_RPM: rpm-4.16.1.3-29.el9.src.rpm
+Build_Date: Wed Dec 13 11:39:23 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The RPM package management system
+URL: http://www.rpm.org/
+Description: The RPM Package Manager (RPM) is a powerful command line driven
+
+UUID: 174c764b-7fcb-42ad-87c1-891e6b6d2832
+Name: 
+Version: 
+Release: 
+Architecture: 
+Install_Date: 
+Group: 
+Size: 
+License: 
+Signature: 
+Source_RPM: 
+Build_Date: 
+Build_Host: 
+Packager: 
+Vendor: 
+Summary: 
+URL: 
+Description: 
+
+UUID: 43570e7d-4265-4b61-93ed-71a5a63532e1
+Name: libarchive
+Version: 3.5.3
+Release: 4.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:47 2024
+Group: Unspecified
+Size: 906150
+License: BSD
+Signature: RSA/SHA256, Wed Dec  7 09:43:17 2022, Key ID 05b555b38483c65d
+Source_RPM: libarchive-3.5.3-4.el9.src.rpm
+Build_Date: Tue Dec  6 13:44:35 2022
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A library for handling streaming archive formats
+URL: https://www.libarchive.org/
+Description: Libarchive is a programming library that can create and read several different
+
+UUID: e0e04a2c-8144-4c6c-96aa-ab16e89a09f0
+Name: libxml2
+Version: 2.9.13
+Release: 5.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 1955244
+License: MIT
+Signature: RSA/SHA256, Mon Nov 13 02:16:28 2023, Key ID 05b555b38483c65d
+Source_RPM: libxml2-2.9.13-5.el9.src.rpm
+Build_Date: Wed Sep 20 18:08:27 2023
+Build_Host: x86-04.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: Library providing XML and HTML support
+URL: http://xmlsoft.org/
+Description: This library allows to manipulate XML files. It includes support
+
+UUID: 97860de1-ed3c-42a4-9a9c-85f93db2ae81
+Name: diffutils
+Version: 3.7
+Release: 12.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:08 2024
+Group: Unspecified
+Size: 1467825
+License: GPLv3+
+Signature: RSA/SHA256, Tue Aug 10 23:12:52 2021, Key ID 05b555b38483c65d
+Source_RPM: diffutils-3.7-12.el9.src.rpm
+Build_Date: Mon Aug  9 20:12:40 2021
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: GNU collection of diff utilities
+URL: https://www.gnu.org/software/diffutils/diffutils.html
+Description: Diffutils includes four utilities: diff, cmp, diff3 and sdiff. Diff
+
+UUID: 7cb6cae0-e5ef-4a8c-9d0c-a5dc0fe51707
+Name: gawk
+Version: 5.1.0
+Release: 6.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 1685726
+License: GPLv3+ and GPLv2+ and LGPLv2+ and BSD
+Signature: RSA/SHA256, Thu Feb 17 01:15:43 2022, Key ID 05b555b38483c65d
+Source_RPM: gawk-5.1.0-6.el9.src.rpm
+Build_Date: Wed Feb 16 18:35:30 2022
+Build_Host: x86-03.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: The GNU version of the AWK text processing utility
+URL: https://www.gnu.org/software/gawk/
+Description: The gawk package contains the GNU version of AWK text processing utility. AWK is
+
+UUID: a1cfcac6-f4d6-4c4c-93be-d00df7a0e32e
+Name: libselinux-utils
+Version: 3.6
+Release: 1.el9
+Architecture: x86_64
+Install_Date: Wed Mar 27 16:27:10 2024
+Group: Unspecified
+Size: 422915
+License: Public Domain
+Signature: RSA/SHA256, Tue Dec 19 05:41:46 2023, Key ID 05b555b38483c65d
+Source_RPM: libselinux-3.6-1.el9.src.rpm
+Build_Date: Thu Dec 14 07:14:35 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: SELinux libselinux utilities
+URL: https://github.com/SELinuxProject/selinux/wiki
+Description: The libselinux-utils package contains the utilities
+
+UUID: 0d1b4681-c862-43a8-90c5-647fee2b4717
+Name: gmp
+Version: 6.2.0
+Release: 13.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 816844
+License: LGPLv3+ or GPLv2+
+Signature: RSA/SHA256, Thu Aug 24 12:11:14 2023, Key ID 05b555b38483c65d
+Source_RPM: gmp-6.2.0-13.el9.src.rpm
+Build_Date: Thu Aug  3 10:22:18 2023
+Build_Host: x86-02.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: A GNU arbitrary precision library
+URL: http://gmplib.org/
+Description: The gmp package contains GNU MP, a library for arbitrary precision
+
+UUID: 2d265ac6-e2f2-41b6-ada2-ac79f0f6f46f
+Name: mpfr
+Version: 4.1.0
+Release: 7.el9
+Architecture: x86_64
+Install_Date: Mon Mar 25 04:10:45 2024
+Group: Unspecified
+Size: 802539
+License: LGPLv3+
+Signature: RSA/SHA256, Fri Aug 13 17:32:58 2021, Key ID 05b555b38483c65d
+Source_RPM: mpfr-4.1.0-7.el9.src.rpm
+Build_Date: Tue Aug 10 01:05:31 2021
+Build_Host: x86-06.stream.rdu2.redhat.com
+Packager: builder@centos.org
+Vendor: CentOS
+Summary: C library for multiple-precision floating-point computations
+URL: https://www.mpfr.org/
+Description: The MPFR library is a C library for multiple-precision floating-point
+
+UUID: 11a7bb87-5fa0-49fe-a381-255d52781fb8
+Name: 
+Version: 
+Release: 
+Architecture: 
+Install_Date: 
+Group: 
+Size: 
+License: 
+Signature: 
+Source_RPM: 
+Build_Date: 
+Build_Host: 
+Packager: 
+Vendor: 
+Summary: 
+URL: 
+Description: 
+
