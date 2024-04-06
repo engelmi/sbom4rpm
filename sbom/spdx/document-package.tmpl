@@ -1,11 +1,19 @@
 PackageName: {{ package.name }}
 SPDXID: SPDXRef-{{ package.uuid }}
-PackageComment: <text>PURL is pkg:supplier/%20Eclipse%20BlueChi/bluechi-agent@0.7.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/%20Eclipse%20BlueChi/bluechi-agent@0.7.0
+PackageComment: <text>PURL is pkg:supplier/{{ package.vendor }}/{{ package.name }}@{{ package.version }}  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/{{ package.vendor }}/{{ package.name }}@{{ package.version }}
 PackageVersion: {{ package.version }}
-PackageSupplier: Organization:  Eclipse BlueChi
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-c391e672-0652-f9a1-ceb8-2411d8e3d2c8
-Relationship: SPDXRef-c391e672-0652-f9a1-ceb8-2411d8e3d2c8 CONTAINS NONE
+PackageSupplier: NOASSERTION
+{% if package.is_root -%}
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-{{ package.uuid }}
+{% endif -%}
+{% if package.contains|length == 0 -%}
+Relationship: SPDXRef-{{ package.uuid }} CONTAINS NOASSERTION
+{% else -%}
+{%- for pkg in package.contains -%}
+Relationship: SPDXRef-{{ package.uuid }} CONTAINS {{ pkg }}
+{% endfor -%}
+{% endif -%}
 PackageDownloadLocation: NOASSERTION
 FilesAnalyzed: false
 PackageLicenseConcluded: {{ package.licenses }}
