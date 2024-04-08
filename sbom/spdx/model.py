@@ -6,15 +6,15 @@ from urllib.parse import quote
 from model import RPMPackage
 
 
-def rpms_to_template_data(
-    root_rpms: List[RPMPackage],
+def to_template_data(
+    root_rpm: RPMPackage,
     all_rpms: Dict[str, RPMPackage],
     required_rpms: Dict[str, List[str]],
 ) -> Dict[str, Any]:
 
     seen = set()
     packages = []
-    to_explore = [rpm for rpm in root_rpms]
+    to_explore = [root_rpm]
     while to_explore:
         elem = to_explore.pop()
         if elem.Name in seen:
@@ -43,7 +43,7 @@ def rpms_to_template_data(
             "licenses": elem.License,
             "homepage": elem.URL,
             "purl": purl,
-            "is_root": elem.UUID in [rpm.UUID for rpm in root_rpms],
+            "is_root": elem.UUID == root_rpm.UUID,
             "contains": contains,
         }
         packages.append(pkg)

@@ -5,58 +5,8 @@ SPDXID: SPDXRef-DOCUMENT
 DocumentName: Eclipse%20BlueChi-0.8.0-SBOM
 DocumentNamespace: https://github.com/eclipse-bluechi/bluechi
 Creator: Person:  SBOMs for RPMs
-Created: 2024-04-08T10:05:14
-CreatorComment: <text>SwiftBOM generated at 2024-04-08T10:05:14 </text>
-
-PackageName: python3-bluechi
-SPDXID: SPDXRef-bcb2d66c-4c54-4fc8-8be6-0f883cedb6e0
-PackageComment: <text>PURL is pkg:supplier/python3-bluechi@0.8.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/python3-bluechi@0.8.0
-PackageVersion: 0.8.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-bcb2d66c-4c54-4fc8-8be6-0f883cedb6e0
-Relationship: SPDXRef-bcb2d66c-4c54-4fc8-8be6-0f883cedb6e0 CONTAINS 226088f0-cc1b-4240-b031-da680092ee85
-Relationship: SPDXRef-bcb2d66c-4c54-4fc8-8be6-0f883cedb6e0 CONTAINS 785ece77-9bf0-46f9-a58b-e3cdb5d1cbfb
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPL-2.1-or-later AND CC0-1.0
-PackageLicenseDeclared: LGPL-2.1-or-later AND CC0-1.0
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/containers/bluechi
-
-PackageName: bluechi-controller
-SPDXID: SPDXRef-9dcf43ce-d721-47cd-acc0-85dd8954f61d
-PackageComment: <text>PURL is pkg:supplier/bluechi-controller@0.8.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/bluechi-controller@0.8.0
-PackageVersion: 0.8.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-9dcf43ce-d721-47cd-acc0-85dd8954f61d
-Relationship: SPDXRef-9dcf43ce-d721-47cd-acc0-85dd8954f61d CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-9dcf43ce-d721-47cd-acc0-85dd8954f61d CONTAINS 770e4951-a191-4760-8086-6936abd0128c
-Relationship: SPDXRef-9dcf43ce-d721-47cd-acc0-85dd8954f61d CONTAINS ee63fe44-35a5-4a3c-acdc-26e618ce85c0
-Relationship: SPDXRef-9dcf43ce-d721-47cd-acc0-85dd8954f61d CONTAINS 464303a4-d83d-4ee5-a15a-adbbebf613ad
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPL-2.1-or-later AND CC0-1.0
-PackageLicenseDeclared: LGPL-2.1-or-later AND CC0-1.0
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/containers/bluechi
-
-PackageName: bluechi-selinux
-SPDXID: SPDXRef-11cf46ea-cb82-4388-b608-727bd5de0616
-PackageComment: <text>PURL is pkg:supplier/bluechi-selinux@0.8.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/bluechi-selinux@0.8.0
-PackageVersion: 0.8.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-11cf46ea-cb82-4388-b608-727bd5de0616
-Relationship: SPDXRef-11cf46ea-cb82-4388-b608-727bd5de0616 CONTAINS 364658d6-d110-4459-96a9-b789da4a5de6
-Relationship: SPDXRef-11cf46ea-cb82-4388-b608-727bd5de0616 CONTAINS 610cddd7-0b48-4f34-a20b-b330aecb46c8
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPL-2.1-or-later AND CC0-1.0
-PackageLicenseDeclared: LGPL-2.1-or-later AND CC0-1.0
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/containers/bluechi
+Created: 2024-04-08T10:28:26
+CreatorComment: <text>SwiftBOM generated at 2024-04-08T10:28:26 </text>
 
 PackageName: bluechi-agent
 SPDXID: SPDXRef-4b03c3ff-8df8-49e9-b137-fca4a378bd49
@@ -75,53 +25,6 @@ PackageLicenseConcluded: LGPL-2.1-or-later AND CC0-1.0
 PackageLicenseDeclared: LGPL-2.1-or-later AND CC0-1.0
 PackageCopyrightText: NOASSERTION
 PackageHomePage: https://github.com/containers/bluechi
-
-PackageName: bluechi-ctl
-SPDXID: SPDXRef-bade03f1-7e54-4efd-a455-1c9a210a9489
-PackageComment: <text>PURL is pkg:supplier/bluechi-ctl@0.8.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/bluechi-ctl@0.8.0
-PackageVersion: 0.8.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-bade03f1-7e54-4efd-a455-1c9a210a9489
-Relationship: SPDXRef-bade03f1-7e54-4efd-a455-1c9a210a9489 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-bade03f1-7e54-4efd-a455-1c9a210a9489 CONTAINS 770e4951-a191-4760-8086-6936abd0128c
-Relationship: SPDXRef-bade03f1-7e54-4efd-a455-1c9a210a9489 CONTAINS ee63fe44-35a5-4a3c-acdc-26e618ce85c0
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPL-2.1-or-later AND CC0-1.0
-PackageLicenseDeclared: LGPL-2.1-or-later AND CC0-1.0
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/containers/bluechi
-
-PackageName: python3
-SPDXID: SPDXRef-226088f0-cc1b-4240-b031-da680092ee85
-PackageComment: <text>PURL is pkg:supplier/centos/python3@3.9.18  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/python3@3.9.18
-PackageVersion: 3.9.18
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-226088f0-cc1b-4240-b031-da680092ee85 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-226088f0-cc1b-4240-b031-da680092ee85 CONTAINS 983e71cb-8f69-49b1-9fdc-0c86b32a6b25
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: Python
-PackageLicenseDeclared: Python
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://www.python.org/
-
-PackageName: python3-dasbus
-SPDXID: SPDXRef-785ece77-9bf0-46f9-a58b-e3cdb5d1cbfb
-PackageComment: <text>PURL is pkg:supplier/centos/python3-dasbus@1.4  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/python3-dasbus@1.4
-PackageVersion: 1.4
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-785ece77-9bf0-46f9-a58b-e3cdb5d1cbfb CONTAINS 226088f0-cc1b-4240-b031-da680092ee85
-Relationship: SPDXRef-785ece77-9bf0-46f9-a58b-e3cdb5d1cbfb CONTAINS a80ad346-fb0f-48de-9aa3-4137f340943b
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPLv2+
-PackageLicenseDeclared: LGPLv2+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://pypi.python.org/pypi/dasbus
 
 PackageName: glibc
 SPDXID: SPDXRef-b8d01c8d-34f9-486a-b925-3121118ed2e7
@@ -224,97 +127,6 @@ PackageLicenseConcluded: LGPLv2+ and MIT and GPLv2+
 PackageLicenseDeclared: LGPLv2+ and MIT and GPLv2+
 PackageCopyrightText: NOASSERTION
 PackageHomePage: https://systemd.io
-
-PackageName: policycoreutils
-SPDXID: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6
-PackageComment: <text>PURL is pkg:supplier/centos/policycoreutils@3.6  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/policycoreutils@3.6
-PackageVersion: 3.6
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS 364658d6-d110-4459-96a9-b789da4a5de6
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS 97860de1-ed3c-42a4-9a9c-85f93db2ae81
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS 7cb6cae0-e5ef-4a8c-9d0c-a5dc0fe51707
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS 9775aab9-612f-4167-9829-c6dad344383f
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS a3421b9b-0f4e-49ea-ac39-2be9ffb70209
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS a1cfcac6-f4d6-4c4c-93be-d00df7a0e32e
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS b880524c-82d4-4686-849a-a0e9268db88c
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS 6fff1fe2-904c-4d71-95a8-ef75eea7cac4
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS fd6e6e61-0f5b-4e49-8ce9-2a867234ab71
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS e265e84d-157a-49f0-af87-7b07a61bc989
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS 7c586c9c-2122-48bd-9458-cdd8637c1101
-Relationship: SPDXRef-364658d6-d110-4459-96a9-b789da4a5de6 CONTAINS 9dcef374-af04-4fbd-ad79-8bc8e610d92b
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPL-2.0-or-later
-PackageLicenseDeclared: GPL-2.0-or-later
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/SELinuxProject/selinux
-
-PackageName: selinux-policy
-SPDXID: SPDXRef-610cddd7-0b48-4f34-a20b-b330aecb46c8
-PackageComment: <text>PURL is pkg:supplier/centos/selinux-policy@38.1.35  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/selinux-policy@38.1.35
-PackageVersion: 38.1.35
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-610cddd7-0b48-4f34-a20b-b330aecb46c8 CONTAINS 610cddd7-0b48-4f34-a20b-b330aecb46c8
-Relationship: SPDXRef-610cddd7-0b48-4f34-a20b-b330aecb46c8 CONTAINS 364658d6-d110-4459-96a9-b789da4a5de6
-Relationship: SPDXRef-610cddd7-0b48-4f34-a20b-b330aecb46c8 CONTAINS 49c703cc-3f87-411a-94d3-69699729bda3
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv2+
-PackageLicenseDeclared: GPLv2+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/fedora-selinux/selinux-policy
-
-PackageName: python3-libs
-SPDXID: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25
-PackageComment: <text>PURL is pkg:supplier/centos/python3-libs@3.9.18  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/python3-libs@3.9.18
-PackageVersion: 3.9.18
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS a0d0783e-8c8b-40da-a413-39321d05f70e
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 0c62285a-543c-41a5-9e0c-452f42eec215
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 5ce96e33-b817-482d-9587-902562ee445c
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 94ec4eed-0b1f-4356-ae9b-56862aab8dba
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS dd822dd6-f042-461e-af63-1c89ca862f14
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 33f11676-0223-49b4-825c-3eb5e2ceafb5
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 88faa466-0e9d-4a40-a635-27098687ac77
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 983e71cb-8f69-49b1-9fdc-0c86b32a6b25
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 1f6aaa3b-3788-420a-84fa-6ef9bc7f6a05
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 7a26dce1-df5b-4f83-b3a1-dd74d06dcede
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 37239448-9f49-4f30-b6cb-65ee09809c3f
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 108af79a-825a-4976-abc4-761ed8f8894f
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS a26a3842-8eda-4251-893c-3612889c035d
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 299ffd21-c8f1-4ee0-9e6f-562d57b47d64
-Relationship: SPDXRef-983e71cb-8f69-49b1-9fdc-0c86b32a6b25 CONTAINS 12e1bc9c-da58-4719-9cbd-58205f2ef501
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: Python
-PackageLicenseDeclared: Python
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://www.python.org/
-
-PackageName: python3-gobject-base
-SPDXID: SPDXRef-a80ad346-fb0f-48de-9aa3-4137f340943b
-PackageComment: <text>PURL is pkg:supplier/centos/python3-gobject-base@3.40.1  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/python3-gobject-base@3.40.1
-PackageVersion: 3.40.1
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-a80ad346-fb0f-48de-9aa3-4137f340943b CONTAINS d9ac40cd-3a1e-4586-9777-daa4ee270327
-Relationship: SPDXRef-a80ad346-fb0f-48de-9aa3-4137f340943b CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-a80ad346-fb0f-48de-9aa3-4137f340943b CONTAINS dd822dd6-f042-461e-af63-1c89ca862f14
-Relationship: SPDXRef-a80ad346-fb0f-48de-9aa3-4137f340943b CONTAINS 120b59af-09c5-469a-8fbb-3e4956607eb5
-Relationship: SPDXRef-a80ad346-fb0f-48de-9aa3-4137f340943b CONTAINS 226088f0-cc1b-4240-b031-da680092ee85
-Relationship: SPDXRef-a80ad346-fb0f-48de-9aa3-4137f340943b CONTAINS e51c9263-7841-4f56-b3cb-b43d5b9b81ce
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPLv2+ and MIT
-PackageLicenseDeclared: LGPLv2+ and MIT
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://wiki.gnome.org/Projects/PyGObject
 
 PackageName: glibc-gconv-extra
 SPDXID: SPDXRef-e86b5446-3a7c-462f-a540-9e0ae97a5b91
@@ -808,333 +620,6 @@ PackageLicenseDeclared: GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising an
 PackageCopyrightText: NOASSERTION
 PackageHomePage: http://en.wikipedia.org/wiki/Util-linux
 
-PackageName: diffutils
-SPDXID: SPDXRef-97860de1-ed3c-42a4-9a9c-85f93db2ae81
-PackageComment: <text>PURL is pkg:supplier/centos/diffutils@3.7  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/diffutils@3.7
-PackageVersion: 3.7
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-97860de1-ed3c-42a4-9a9c-85f93db2ae81 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv3+
-PackageLicenseDeclared: GPLv3+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://www.gnu.org/software/diffutils/diffutils.html
-
-PackageName: gawk
-SPDXID: SPDXRef-7cb6cae0-e5ef-4a8c-9d0c-a5dc0fe51707
-PackageComment: <text>PURL is pkg:supplier/centos/gawk@5.1.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/gawk@5.1.0
-PackageVersion: 5.1.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-7cb6cae0-e5ef-4a8c-9d0c-a5dc0fe51707 CONTAINS 971bff3a-2d57-43f9-ba4e-2785254ab628
-Relationship: SPDXRef-7cb6cae0-e5ef-4a8c-9d0c-a5dc0fe51707 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-7cb6cae0-e5ef-4a8c-9d0c-a5dc0fe51707 CONTAINS 0d1b4681-c862-43a8-90c5-647fee2b4717
-Relationship: SPDXRef-7cb6cae0-e5ef-4a8c-9d0c-a5dc0fe51707 CONTAINS 2d265ac6-e2f2-41b6-ada2-ac79f0f6f46f
-Relationship: SPDXRef-7cb6cae0-e5ef-4a8c-9d0c-a5dc0fe51707 CONTAINS 1f6aaa3b-3788-420a-84fa-6ef9bc7f6a05
-Relationship: SPDXRef-7cb6cae0-e5ef-4a8c-9d0c-a5dc0fe51707 CONTAINS 370fbe93-bd1a-4c2e-8740-d0884c1984c9
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv3+ and GPLv2+ and LGPLv2+ and BSD
-PackageLicenseDeclared: GPLv3+ and GPLv2+ and LGPLv2+ and BSD
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://www.gnu.org/software/gawk/
-
-PackageName: libselinux-utils
-SPDXID: SPDXRef-a1cfcac6-f4d6-4c4c-93be-d00df7a0e32e
-PackageComment: <text>PURL is pkg:supplier/centos/libselinux-utils@3.6  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libselinux-utils@3.6
-PackageVersion: 3.6
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-a1cfcac6-f4d6-4c4c-93be-d00df7a0e32e CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-a1cfcac6-f4d6-4c4c-93be-d00df7a0e32e CONTAINS 987dbe20-b7cb-46a2-9d0a-4b10bbb3085d
-Relationship: SPDXRef-a1cfcac6-f4d6-4c4c-93be-d00df7a0e32e CONTAINS b880524c-82d4-4686-849a-a0e9268db88c
-Relationship: SPDXRef-a1cfcac6-f4d6-4c4c-93be-d00df7a0e32e CONTAINS fd6e6e61-0f5b-4e49-8ce9-2a867234ab71
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: Public Domain
-PackageLicenseDeclared: Public Domain
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/SELinuxProject/selinux/wiki
-
-PackageName: libsemanage
-SPDXID: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4
-PackageComment: <text>PURL is pkg:supplier/centos/libsemanage@3.6  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libsemanage@3.6
-PackageVersion: 3.6
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS a3421b9b-0f4e-49ea-ac39-2be9ffb70209
-Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS a0d0783e-8c8b-40da-a413-39321d05f70e
-Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS 6fff1fe2-904c-4d71-95a8-ef75eea7cac4
-Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS b880524c-82d4-4686-849a-a0e9268db88c
-Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS fd6e6e61-0f5b-4e49-8ce9-2a867234ab71
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPLv2+
-PackageLicenseDeclared: LGPLv2+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/SELinuxProject/selinux/wiki
-
-PackageName: libsepol
-SPDXID: SPDXRef-fd6e6e61-0f5b-4e49-8ce9-2a867234ab71
-PackageComment: <text>PURL is pkg:supplier/centos/libsepol@3.6  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libsepol@3.6
-PackageVersion: 3.6
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-fd6e6e61-0f5b-4e49-8ce9-2a867234ab71 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPLv2+
-PackageLicenseDeclared: LGPLv2+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/SELinuxProject/selinux/wiki
-
-PackageName: rpm
-SPDXID: SPDXRef-e265e84d-157a-49f0-af87-7b07a61bc989
-PackageComment: <text>PURL is pkg:supplier/centos/rpm@4.16.1.3  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/rpm@4.16.1.3
-PackageVersion: 4.16.1.3
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-e265e84d-157a-49f0-af87-7b07a61bc989 CONTAINS e265e84d-157a-49f0-af87-7b07a61bc989
-Relationship: SPDXRef-e265e84d-157a-49f0-af87-7b07a61bc989 CONTAINS 43570e7d-4265-4b61-93ed-71a5a63532e1
-Relationship: SPDXRef-e265e84d-157a-49f0-af87-7b07a61bc989 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-e265e84d-157a-49f0-af87-7b07a61bc989 CONTAINS b980c4e0-70fc-4778-9b71-06afb9c5f31f
-Relationship: SPDXRef-e265e84d-157a-49f0-af87-7b07a61bc989 CONTAINS ad1e021a-7d7c-40ac-8bff-f25adc51bc9b
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv2+
-PackageLicenseDeclared: GPLv2+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://www.rpm.org/
-
-PackageName: rpm-plugin-selinux
-SPDXID: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3
-PackageComment: <text>PURL is pkg:supplier/centos/rpm-plugin-selinux@4.16.1.3  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/rpm-plugin-selinux@4.16.1.3
-PackageVersion: 4.16.1.3
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS 12c1d504-c348-45e6-9357-923b17858ff3
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS a3421b9b-0f4e-49ea-ac39-2be9ffb70209
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS a0d0783e-8c8b-40da-a413-39321d05f70e
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS 0a22950d-557f-408c-8016-193ec444a4fb
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS 5ce96e33-b817-482d-9587-902562ee445c
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS c141f356-4c8e-41f4-aed6-8585e96ed38a
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS 88faa466-0e9d-4a40-a635-27098687ac77
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS b980c4e0-70fc-4778-9b71-06afb9c5f31f
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS ad1e021a-7d7c-40ac-8bff-f25adc51bc9b
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS b880524c-82d4-4686-849a-a0e9268db88c
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS 7a26dce1-df5b-4f83-b3a1-dd74d06dcede
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS 108af79a-825a-4976-abc4-761ed8f8894f
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS 98fc7cf2-a5f1-4b0f-bca4-b94152dc9fa5
-Relationship: SPDXRef-49c703cc-3f87-411a-94d3-69699729bda3 CONTAINS 610cddd7-0b48-4f34-a20b-b330aecb46c8
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv2+
-PackageLicenseDeclared: GPLv2+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://www.rpm.org/
-
-PackageName: expat
-SPDXID: SPDXRef-94ec4eed-0b1f-4356-ae9b-56862aab8dba
-PackageComment: <text>PURL is pkg:supplier/centos/expat@2.5.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/expat@2.5.0
-PackageVersion: 2.5.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-94ec4eed-0b1f-4356-ae9b-56862aab8dba CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-94ec4eed-0b1f-4356-ae9b-56862aab8dba CONTAINS 94ec4eed-0b1f-4356-ae9b-56862aab8dba
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: MIT
-PackageLicenseDeclared: MIT
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://libexpat.github.io/
-
-PackageName: libffi
-SPDXID: SPDXRef-dd822dd6-f042-461e-af63-1c89ca862f14
-PackageComment: <text>PURL is pkg:supplier/centos/libffi@3.4.2  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libffi@3.4.2
-PackageVersion: 3.4.2
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-dd822dd6-f042-461e-af63-1c89ca862f14 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: MIT
-PackageLicenseDeclared: MIT
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://sourceware.org/libffi
-
-PackageName: gdbm-libs
-SPDXID: SPDXRef-33f11676-0223-49b4-825c-3eb5e2ceafb5
-PackageComment: <text>PURL is pkg:supplier/centos/gdbm-libs@1.19  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/gdbm-libs@1.19
-PackageVersion: 1.19
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-33f11676-0223-49b4-825c-3eb5e2ceafb5 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-33f11676-0223-49b4-825c-3eb5e2ceafb5 CONTAINS 33f11676-0223-49b4-825c-3eb5e2ceafb5
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv3+
-PackageLicenseDeclared: GPLv3+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://www.gnu.org/software/gdbm/
-
-PackageName: ncurses-libs
-SPDXID: SPDXRef-6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6
-PackageComment: <text>PURL is pkg:supplier/centos/ncurses-libs@6.2  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/ncurses-libs@6.2
-PackageVersion: 6.2
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6 CONTAINS 6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6
-Relationship: SPDXRef-6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6 CONTAINS 83c2d536-c770-4749-b670-158ead0089a1
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: MIT
-PackageLicenseDeclared: MIT
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://invisible-island.net/ncurses/ncurses.html
-
-PackageName: readline
-SPDXID: SPDXRef-1f6aaa3b-3788-420a-84fa-6ef9bc7f6a05
-PackageComment: <text>PURL is pkg:supplier/centos/readline@8.1  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/readline@8.1
-PackageVersion: 8.1
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-1f6aaa3b-3788-420a-84fa-6ef9bc7f6a05 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-1f6aaa3b-3788-420a-84fa-6ef9bc7f6a05 CONTAINS 6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv3+
-PackageLicenseDeclared: GPLv3+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://tiswww.case.edu/php/chet/readline/rltop.html
-
-PackageName: sqlite-libs
-SPDXID: SPDXRef-7a26dce1-df5b-4f83-b3a1-dd74d06dcede
-PackageComment: <text>PURL is pkg:supplier/centos/sqlite-libs@3.34.1  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/sqlite-libs@3.34.1
-PackageVersion: 3.34.1
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-7a26dce1-df5b-4f83-b3a1-dd74d06dcede CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-7a26dce1-df5b-4f83-b3a1-dd74d06dcede CONTAINS 108af79a-825a-4976-abc4-761ed8f8894f
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: Public Domain
-PackageLicenseDeclared: Public Domain
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://www.sqlite.org/
-
-PackageName: libuuid
-SPDXID: SPDXRef-37239448-9f49-4f30-b6cb-65ee09809c3f
-PackageComment: <text>PURL is pkg:supplier/centos/libuuid@2.37.4  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libuuid@2.37.4
-PackageVersion: 2.37.4
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-37239448-9f49-4f30-b6cb-65ee09809c3f CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: BSD
-PackageLicenseDeclared: BSD
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://en.wikipedia.org/wiki/Util-linux
-
-PackageName: python3-pip-wheel
-SPDXID: SPDXRef-a26a3842-8eda-4251-893c-3612889c035d
-PackageComment: <text>PURL is pkg:supplier/centos/python3-pip-wheel@21.2.3  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/python3-pip-wheel@21.2.3
-PackageVersion: 21.2.3
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-a26a3842-8eda-4251-893c-3612889c035d CONTAINS c7b987ae-8f2a-4849-a70a-f7290a8639af
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
-PackageLicenseDeclared: MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://pip.pypa.io/
-
-PackageName: python3-setuptools-wheel
-SPDXID: SPDXRef-299ffd21-c8f1-4ee0-9e6f-562d57b47d64
-PackageComment: <text>PURL is pkg:supplier/centos/python3-setuptools-wheel@53.0.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/python3-setuptools-wheel@53.0.0
-PackageVersion: 53.0.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-299ffd21-c8f1-4ee0-9e6f-562d57b47d64 CONTAINS NOASSERTION
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: MIT and (BSD or ASL 2.0)
-PackageLicenseDeclared: MIT and (BSD or ASL 2.0)
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://pypi.python.org/pypi/setuptools
-
-PackageName: tzdata
-SPDXID: SPDXRef-12e1bc9c-da58-4719-9cbd-58205f2ef501
-PackageComment: <text>PURL is pkg:supplier/centos/tzdata@2024a  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/tzdata@2024a
-PackageVersion: 2024a
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-12e1bc9c-da58-4719-9cbd-58205f2ef501 CONTAINS NOASSERTION
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: Public Domain
-PackageLicenseDeclared: Public Domain
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://www.iana.org/time-zones
-
-PackageName: gobject-introspection
-SPDXID: SPDXRef-d9ac40cd-3a1e-4586-9777-daa4ee270327
-PackageComment: <text>PURL is pkg:supplier/centos/gobject-introspection@1.68.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/gobject-introspection@1.68.0
-PackageVersion: 1.68.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-d9ac40cd-3a1e-4586-9777-daa4ee270327 CONTAINS 120b59af-09c5-469a-8fbb-3e4956607eb5
-Relationship: SPDXRef-d9ac40cd-3a1e-4586-9777-daa4ee270327 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-d9ac40cd-3a1e-4586-9777-daa4ee270327 CONTAINS dd822dd6-f042-461e-af63-1c89ca862f14
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv2+ and LGPLv2+ and MIT
-PackageLicenseDeclared: GPLv2+ and LGPLv2+ and MIT
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://wiki.gnome.org/Projects/GObjectIntrospection
-
-PackageName: glib2
-SPDXID: SPDXRef-120b59af-09c5-469a-8fbb-3e4956607eb5
-PackageComment: <text>PURL is pkg:supplier/centos/glib2@2.68.4  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/glib2@2.68.4
-PackageVersion: 2.68.4
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-120b59af-09c5-469a-8fbb-3e4956607eb5 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-120b59af-09c5-469a-8fbb-3e4956607eb5 CONTAINS dd822dd6-f042-461e-af63-1c89ca862f14
-Relationship: SPDXRef-120b59af-09c5-469a-8fbb-3e4956607eb5 CONTAINS 120b59af-09c5-469a-8fbb-3e4956607eb5
-Relationship: SPDXRef-120b59af-09c5-469a-8fbb-3e4956607eb5 CONTAINS deba2bfd-5185-4de1-b2db-c96f2c1ca35d
-Relationship: SPDXRef-120b59af-09c5-469a-8fbb-3e4956607eb5 CONTAINS 13eb832f-6909-46cb-bd3f-fbc3181608fd
-Relationship: SPDXRef-120b59af-09c5-469a-8fbb-3e4956607eb5 CONTAINS 5200019c-4e2d-4008-a065-4729f16128ee
-Relationship: SPDXRef-120b59af-09c5-469a-8fbb-3e4956607eb5 CONTAINS b880524c-82d4-4686-849a-a0e9268db88c
-Relationship: SPDXRef-120b59af-09c5-469a-8fbb-3e4956607eb5 CONTAINS 108af79a-825a-4976-abc4-761ed8f8894f
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPLv2+
-PackageLicenseDeclared: LGPLv2+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://www.gtk.org
-
-PackageName: python3-gobject-base-noarch
-SPDXID: SPDXRef-e51c9263-7841-4f56-b3cb-b43d5b9b81ce
-PackageComment: <text>PURL is pkg:supplier/centos/python3-gobject-base-noarch@3.40.1  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/python3-gobject-base-noarch@3.40.1
-PackageVersion: 3.40.1
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-e51c9263-7841-4f56-b3cb-b43d5b9b81ce CONTAINS 226088f0-cc1b-4240-b031-da680092ee85
-Relationship: SPDXRef-e51c9263-7841-4f56-b3cb-b43d5b9b81ce CONTAINS a80ad346-fb0f-48de-9aa3-4137f340943b
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPLv2+ and MIT
-PackageLicenseDeclared: LGPLv2+ and MIT
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://wiki.gnome.org/Projects/PyGObject
-
 PackageName: filesystem
 SPDXID: SPDXRef-971bff3a-2d57-43f9-ba4e-2785254ab628
 PackageComment: <text>PURL is pkg:supplier/centos/filesystem@3.16  </text>
@@ -1162,6 +647,20 @@ PackageLicenseConcluded: Public Domain
 PackageLicenseDeclared: Public Domain
 PackageCopyrightText: NOASSERTION
 PackageHomePage: https://pagure.io/setup/
+
+PackageName: tzdata
+SPDXID: SPDXRef-12e1bc9c-da58-4719-9cbd-58205f2ef501
+PackageComment: <text>PURL is pkg:supplier/centos/tzdata@2024a  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/tzdata@2024a
+PackageVersion: 2024a
+PackageSupplier: NOASSERTION
+Relationship: SPDXRef-12e1bc9c-da58-4719-9cbd-58205f2ef501 CONTAINS NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: Public Domain
+PackageLicenseDeclared: Public Domain
+PackageCopyrightText: NOASSERTION
+PackageHomePage: https://www.iana.org/time-zones
 
 PackageName: pcre
 SPDXID: SPDXRef-5200019c-4e2d-4008-a065-4729f16128ee
@@ -1240,6 +739,20 @@ PackageLicenseDeclared: LGPLv2+
 PackageCopyrightText: NOASSERTION
 PackageHomePage: https://www.gnupg.org/related_software/libgpg-error/
 
+PackageName: libffi
+SPDXID: SPDXRef-dd822dd6-f042-461e-af63-1c89ca862f14
+PackageComment: <text>PURL is pkg:supplier/centos/libffi@3.4.2  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libffi@3.4.2
+PackageVersion: 3.4.2
+PackageSupplier: NOASSERTION
+Relationship: SPDXRef-dd822dd6-f042-461e-af63-1c89ca862f14 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+PackageHomePage: http://sourceware.org/libffi
+
 PackageName: libtasn1
 SPDXID: SPDXRef-85e2a501-1d9e-4fa6-b2ff-dc6de4c18c55
 PackageComment: <text>PURL is pkg:supplier/centos/libtasn1@4.16.0  </text>
@@ -1253,6 +766,20 @@ PackageLicenseConcluded: GPLv3+ and LGPLv2+
 PackageLicenseDeclared: GPLv3+ and LGPLv2+
 PackageCopyrightText: NOASSERTION
 PackageHomePage: http://www.gnu.org/software/libtasn1/
+
+PackageName: libsepol
+SPDXID: SPDXRef-fd6e6e61-0f5b-4e49-8ce9-2a867234ab71
+PackageComment: <text>PURL is pkg:supplier/centos/libsepol@3.6  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libsepol@3.6
+PackageVersion: 3.6
+PackageSupplier: NOASSERTION
+Relationship: SPDXRef-fd6e6e61-0f5b-4e49-8ce9-2a867234ab71 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
+PackageCopyrightText: NOASSERTION
+PackageHomePage: https://github.com/SELinuxProject/selinux/wiki
 
 PackageName: dbus-broker
 SPDXID: SPDXRef-48ba1125-8bfa-45d8-8373-323a49ff004d
@@ -1305,6 +832,20 @@ PackageLicenseConcluded: LGPLv2+
 PackageLicenseDeclared: LGPLv2+
 PackageCopyrightText: NOASSERTION
 PackageHomePage: https://people.redhat.com/sgrubb/libcap-ng/
+
+PackageName: libuuid
+SPDXID: SPDXRef-37239448-9f49-4f30-b6cb-65ee09809c3f
+PackageComment: <text>PURL is pkg:supplier/centos/libuuid@2.37.4  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libuuid@2.37.4
+PackageVersion: 2.37.4
+PackageSupplier: NOASSERTION
+Relationship: SPDXRef-37239448-9f49-4f30-b6cb-65ee09809c3f CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD
+PackageLicenseDeclared: BSD
+PackageCopyrightText: NOASSERTION
+PackageHomePage: http://en.wikipedia.org/wiki/Util-linux
 
 PackageName: libdb
 SPDXID: SPDXRef-e5530859-7a97-44e7-87fa-8bc8040ef4d4
@@ -1381,6 +922,37 @@ PackageLicenseDeclared: BSD
 PackageCopyrightText: NOASSERTION
 PackageHomePage: https://www.pcre.org/
 
+PackageName: ncurses-libs
+SPDXID: SPDXRef-6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6
+PackageComment: <text>PURL is pkg:supplier/centos/ncurses-libs@6.2  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/ncurses-libs@6.2
+PackageVersion: 6.2
+PackageSupplier: NOASSERTION
+Relationship: SPDXRef-6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
+Relationship: SPDXRef-6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6 CONTAINS 6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6
+Relationship: SPDXRef-6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6 CONTAINS 83c2d536-c770-4749-b670-158ead0089a1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+PackageHomePage: https://invisible-island.net/ncurses/ncurses.html
+
+PackageName: readline
+SPDXID: SPDXRef-1f6aaa3b-3788-420a-84fa-6ef9bc7f6a05
+PackageComment: <text>PURL is pkg:supplier/centos/readline@8.1  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/readline@8.1
+PackageVersion: 8.1
+PackageSupplier: NOASSERTION
+Relationship: SPDXRef-1f6aaa3b-3788-420a-84fa-6ef9bc7f6a05 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
+Relationship: SPDXRef-1f6aaa3b-3788-420a-84fa-6ef9bc7f6a05 CONTAINS 6629f6e2-6b7b-4b6f-b339-9ff4a184a0c6
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: GPLv3+
+PackageLicenseDeclared: GPLv3+
+PackageCopyrightText: NOASSERTION
+PackageHomePage: https://tiswww.case.edu/php/chet/readline/rltop.html
+
 PackageName: libsmartcols
 SPDXID: SPDXRef-cf7b155a-2eb2-4978-a5c5-082d1122562d
 PackageComment: <text>PURL is pkg:supplier/centos/libsmartcols@2.37.4  </text>
@@ -1432,147 +1004,6 @@ PackageLicenseDeclared: GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising an
 PackageCopyrightText: NOASSERTION
 PackageHomePage: http://en.wikipedia.org/wiki/Util-linux
 
-PackageName: gmp
-SPDXID: SPDXRef-0d1b4681-c862-43a8-90c5-647fee2b4717
-PackageComment: <text>PURL is pkg:supplier/centos/gmp@6.2.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/gmp@6.2.0
-PackageVersion: 6.2.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-0d1b4681-c862-43a8-90c5-647fee2b4717 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPLv3+ or GPLv2+
-PackageLicenseDeclared: LGPLv3+ or GPLv2+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://gmplib.org/
-
-PackageName: mpfr
-SPDXID: SPDXRef-2d265ac6-e2f2-41b6-ada2-ac79f0f6f46f
-PackageComment: <text>PURL is pkg:supplier/centos/mpfr@4.1.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/mpfr@4.1.0
-PackageVersion: 4.1.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-2d265ac6-e2f2-41b6-ada2-ac79f0f6f46f CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-2d265ac6-e2f2-41b6-ada2-ac79f0f6f46f CONTAINS 0d1b4681-c862-43a8-90c5-647fee2b4717
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: LGPLv3+
-PackageLicenseDeclared: LGPLv3+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://www.mpfr.org/
-
-PackageName: libarchive
-SPDXID: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1
-PackageComment: <text>PURL is pkg:supplier/centos/libarchive@3.5.3  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libarchive@3.5.3
-PackageVersion: 3.5.3
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1 CONTAINS 12c1d504-c348-45e6-9357-923b17858ff3
-Relationship: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1 CONTAINS a0d0783e-8c8b-40da-a413-39321d05f70e
-Relationship: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1 CONTAINS 5ce96e33-b817-482d-9587-902562ee445c
-Relationship: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1 CONTAINS d40106ec-d721-47ab-ba88-28d06d4bec34
-Relationship: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1 CONTAINS 88faa466-0e9d-4a40-a635-27098687ac77
-Relationship: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1 CONTAINS e0e04a2c-8144-4c6c-96aa-ab16e89a09f0
-Relationship: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1 CONTAINS 108af79a-825a-4976-abc4-761ed8f8894f
-Relationship: SPDXRef-43570e7d-4265-4b61-93ed-71a5a63532e1 CONTAINS 98fc7cf2-a5f1-4b0f-bca4-b94152dc9fa5
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: BSD
-PackageLicenseDeclared: BSD
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://www.libarchive.org/
-
-PackageName: popt
-SPDXID: SPDXRef-b980c4e0-70fc-4778-9b71-06afb9c5f31f
-PackageComment: <text>PURL is pkg:supplier/centos/popt@1.18  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/popt@1.18
-PackageVersion: 1.18
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-b980c4e0-70fc-4778-9b71-06afb9c5f31f CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: MIT
-PackageLicenseDeclared: MIT
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://github.com/rpm-software-management/popt/
-
-PackageName: rpm-libs
-SPDXID: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b
-PackageComment: <text>PURL is pkg:supplier/centos/rpm-libs@4.16.1.3  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/rpm-libs@4.16.1.3
-PackageVersion: 4.16.1.3
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS 12c1d504-c348-45e6-9357-923b17858ff3
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS a3421b9b-0f4e-49ea-ac39-2be9ffb70209
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS a0d0783e-8c8b-40da-a413-39321d05f70e
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS 0a22950d-557f-408c-8016-193ec444a4fb
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS 5ce96e33-b817-482d-9587-902562ee445c
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS c141f356-4c8e-41f4-aed6-8585e96ed38a
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS 88faa466-0e9d-4a40-a635-27098687ac77
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS b980c4e0-70fc-4778-9b71-06afb9c5f31f
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS ad1e021a-7d7c-40ac-8bff-f25adc51bc9b
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS 7a26dce1-df5b-4f83-b3a1-dd74d06dcede
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS 108af79a-825a-4976-abc4-761ed8f8894f
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS 98fc7cf2-a5f1-4b0f-bca4-b94152dc9fa5
-Relationship: SPDXRef-ad1e021a-7d7c-40ac-8bff-f25adc51bc9b CONTAINS e265e84d-157a-49f0-af87-7b07a61bc989
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv2+ and LGPLv2+ with exceptions
-PackageLicenseDeclared: GPLv2+ and LGPLv2+ with exceptions
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://www.rpm.org/
-
-PackageName: lua-libs
-SPDXID: SPDXRef-c141f356-4c8e-41f4-aed6-8585e96ed38a
-PackageComment: <text>PURL is pkg:supplier/centos/lua-libs@5.4.4  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/lua-libs@5.4.4
-PackageVersion: 5.4.4
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-c141f356-4c8e-41f4-aed6-8585e96ed38a CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: MIT
-PackageLicenseDeclared: MIT
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://www.lua.org/
-
-PackageName: ncurses-base
-SPDXID: SPDXRef-83c2d536-c770-4749-b670-158ead0089a1
-PackageComment: <text>PURL is pkg:supplier/centos/ncurses-base@6.2  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/ncurses-base@6.2
-PackageVersion: 6.2
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-83c2d536-c770-4749-b670-158ead0089a1 CONTAINS NOASSERTION
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: MIT
-PackageLicenseDeclared: MIT
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://invisible-island.net/ncurses/ncurses.html
-
-PackageName: gnutls
-SPDXID: SPDXRef-deba2bfd-5185-4de1-b2db-c96f2c1ca35d
-PackageComment: <text>PURL is pkg:supplier/centos/gnutls@3.8.3  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/gnutls@3.8.3
-PackageVersion: 3.8.3
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-deba2bfd-5185-4de1-b2db-c96f2c1ca35d CONTAINS b7beef24-6415-4663-9b8f-81b5b1be8699
-Relationship: SPDXRef-deba2bfd-5185-4de1-b2db-c96f2c1ca35d CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-deba2bfd-5185-4de1-b2db-c96f2c1ca35d CONTAINS e0279e04-66fc-456a-996a-c156bd1fc223
-Relationship: SPDXRef-deba2bfd-5185-4de1-b2db-c96f2c1ca35d CONTAINS 2cf970a8-12e5-40c8-8fe9-f04938c97743
-Relationship: SPDXRef-deba2bfd-5185-4de1-b2db-c96f2c1ca35d CONTAINS 9dae989a-522c-401b-bff0-c6ce5def092b
-Relationship: SPDXRef-deba2bfd-5185-4de1-b2db-c96f2c1ca35d CONTAINS 85e2a501-1d9e-4fa6-b2ff-dc6de4c18c55
-Relationship: SPDXRef-deba2bfd-5185-4de1-b2db-c96f2c1ca35d CONTAINS 75a7d5eb-859e-4d54-875b-9c03fb872a23
-Relationship: SPDXRef-deba2bfd-5185-4de1-b2db-c96f2c1ca35d CONTAINS 795d771c-6cdb-4c7c-a003-20ce2dc6f1d5
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv3+ and LGPLv2+
-PackageLicenseDeclared: GPLv3+ and LGPLv2+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: http://www.gnutls.org/
-
 PackageName: bash
 SPDXID: SPDXRef-30319830-8a6b-42e7-ad7a-2711206fff3a
 PackageComment: <text>PURL is pkg:supplier/centos/bash@5.1.8  </text>
@@ -1620,6 +1051,21 @@ PackageLicenseConcluded: (GPLv2+ or AFL) and GPLv2+
 PackageLicenseDeclared: (GPLv2+ or AFL) and GPLv2+
 PackageCopyrightText: NOASSERTION
 PackageHomePage: http://www.freedesktop.org/Software/dbus/
+
+PackageName: expat
+SPDXID: SPDXRef-94ec4eed-0b1f-4356-ae9b-56862aab8dba
+PackageComment: <text>PURL is pkg:supplier/centos/expat@2.5.0  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/expat@2.5.0
+PackageVersion: 2.5.0
+PackageSupplier: NOASSERTION
+Relationship: SPDXRef-94ec4eed-0b1f-4356-ae9b-56862aab8dba CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
+Relationship: SPDXRef-94ec4eed-0b1f-4356-ae9b-56862aab8dba CONTAINS 94ec4eed-0b1f-4356-ae9b-56862aab8dba
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+PackageHomePage: https://libexpat.github.io/
 
 PackageName: shadow-utils
 SPDXID: SPDXRef-604d02c1-72ee-4068-af2f-514cd5045cc6
@@ -1674,66 +1120,38 @@ PackageLicenseDeclared: LGPLv2+
 PackageCopyrightText: NOASSERTION
 PackageHomePage: http://sourceforge.net/projects/cracklib/
 
-PackageName: libxml2
-SPDXID: SPDXRef-e0e04a2c-8144-4c6c-96aa-ab16e89a09f0
-PackageComment: <text>PURL is pkg:supplier/centos/libxml2@2.9.13  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libxml2@2.9.13
-PackageVersion: 2.9.13
+PackageName: ncurses-base
+SPDXID: SPDXRef-83c2d536-c770-4749-b670-158ead0089a1
+PackageComment: <text>PURL is pkg:supplier/centos/ncurses-base@6.2  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/ncurses-base@6.2
+PackageVersion: 6.2
 PackageSupplier: NOASSERTION
-Relationship: SPDXRef-e0e04a2c-8144-4c6c-96aa-ab16e89a09f0 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-e0e04a2c-8144-4c6c-96aa-ab16e89a09f0 CONTAINS 88faa466-0e9d-4a40-a635-27098687ac77
-Relationship: SPDXRef-e0e04a2c-8144-4c6c-96aa-ab16e89a09f0 CONTAINS e0e04a2c-8144-4c6c-96aa-ab16e89a09f0
-Relationship: SPDXRef-e0e04a2c-8144-4c6c-96aa-ab16e89a09f0 CONTAINS 108af79a-825a-4976-abc4-761ed8f8894f
+Relationship: SPDXRef-83c2d536-c770-4749-b670-158ead0089a1 CONTAINS NOASSERTION
 PackageDownloadLocation: NOASSERTION
 FilesAnalyzed: false
 PackageLicenseConcluded: MIT
 PackageLicenseDeclared: MIT
 PackageCopyrightText: NOASSERTION
-PackageHomePage: http://xmlsoft.org/
+PackageHomePage: https://invisible-island.net/ncurses/ncurses.html
 
-PackageName: nettle
-SPDXID: SPDXRef-e0279e04-66fc-456a-996a-c156bd1fc223
-PackageComment: <text>PURL is pkg:supplier/centos/nettle@3.9.1  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/nettle@3.9.1
-PackageVersion: 3.9.1
+PackageName: libsemanage
+SPDXID: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4
+PackageComment: <text>PURL is pkg:supplier/centos/libsemanage@3.6  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libsemanage@3.6
+PackageVersion: 3.6
 PackageSupplier: NOASSERTION
-Relationship: SPDXRef-e0279e04-66fc-456a-996a-c156bd1fc223 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-e0279e04-66fc-456a-996a-c156bd1fc223 CONTAINS e0279e04-66fc-456a-996a-c156bd1fc223
+Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS a3421b9b-0f4e-49ea-ac39-2be9ffb70209
+Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS a0d0783e-8c8b-40da-a413-39321d05f70e
+Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS 6fff1fe2-904c-4d71-95a8-ef75eea7cac4
+Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
+Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS b880524c-82d4-4686-849a-a0e9268db88c
+Relationship: SPDXRef-6fff1fe2-904c-4d71-95a8-ef75eea7cac4 CONTAINS fd6e6e61-0f5b-4e49-8ce9-2a867234ab71
 PackageDownloadLocation: NOASSERTION
 FilesAnalyzed: false
-PackageLicenseConcluded: LGPLv3+ or GPLv2+
-PackageLicenseDeclared: LGPLv3+ or GPLv2+
+PackageLicenseConcluded: LGPLv2+
+PackageLicenseDeclared: LGPLv2+
 PackageCopyrightText: NOASSERTION
-PackageHomePage: http://www.lysator.liu.se/~nisse/nettle/
-
-PackageName: libidn2
-SPDXID: SPDXRef-2cf970a8-12e5-40c8-8fe9-f04938c97743
-PackageComment: <text>PURL is pkg:supplier/centos/libidn2@2.3.0  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libidn2@2.3.0
-PackageVersion: 2.3.0
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-2cf970a8-12e5-40c8-8fe9-f04938c97743 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-Relationship: SPDXRef-2cf970a8-12e5-40c8-8fe9-f04938c97743 CONTAINS 75a7d5eb-859e-4d54-875b-9c03fb872a23
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: (GPLv2+ or LGPLv3+) and GPLv3+
-PackageLicenseDeclared: (GPLv2+ or LGPLv3+) and GPLv3+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://www.gnu.org/software/libidn/#libidn2
-
-PackageName: libunistring
-SPDXID: SPDXRef-75a7d5eb-859e-4d54-875b-9c03fb872a23
-PackageComment: <text>PURL is pkg:supplier/centos/libunistring@0.9.10  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/centos/libunistring@0.9.10
-PackageVersion: 0.9.10
-PackageSupplier: NOASSERTION
-Relationship: SPDXRef-75a7d5eb-859e-4d54-875b-9c03fb872a23 CONTAINS b8d01c8d-34f9-486a-b925-3121118ed2e7
-PackageDownloadLocation: NOASSERTION
-FilesAnalyzed: false
-PackageLicenseConcluded: GPLv2+ or LGPLv3+
-PackageLicenseDeclared: GPLv2+ or LGPLv3+
-PackageCopyrightText: NOASSERTION
-PackageHomePage: https://www.gnu.org/software/libunistring/
+PackageHomePage: https://github.com/SELinuxProject/selinux/wiki
 
 PackageName: gzip
 SPDXID: SPDXRef-6ddfff62-0a5b-4771-a701-67c6b6dd9861

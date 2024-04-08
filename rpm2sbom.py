@@ -5,11 +5,9 @@ import argparse
 import os
 from typing import List
 
-from jinja2 import Environment, FileSystemLoader
-
 from consts import DIRECTORY_NAME_SBOM_SPDX, DIRECTORY_NAME_SBOM_CYCLONEDX
 from rpminspect import collect_rpm_data, read_rpm_data
-from sbom.spdx.model import rpms_to_template_data
+from sbomgen import generate_sboms
 
 SUPPORTED_SBOM_FORMATS = [DIRECTORY_NAME_SBOM_SPDX, DIRECTORY_NAME_SBOM_CYCLONEDX]
 
@@ -28,24 +26,20 @@ def collect_rpm_dependencies(rpm_dir: str, output_dir: str) -> None:
     collect_rpm_data(root_rpm_names=root_rpm_names, out_dir=output_dir)
 
 
-def generate_sboms(sbom_dir: str, sbom_format: str) -> None:
+def generate_sboms_of_rpms(sbom_dir: str, sbom_format: str) -> None:
     """
     Read all RPMs raw data and transform to SBOM
     """
     root_rpms, required_rpms, all_rpms = read_rpm_data(sbom_dir)
-    data = rpms_to_template_data(root_rpms, all_rpms, required_rpms)
-
-    tmpl = Environment(loader=FileSystemLoader(f"sbom/{sbom_format}/")).get_template(
-        "document.tmpl"
-    )
-    with open("example", "w") as f:
-        f.write(tmpl.render(data))
+    generate_sboms(sbom_dir, sbom_format, root_rpms, required_rpms, all_rpms)
 
 
-def run(rpm_dir: str, sbom_dir: str, sbom_format: str, collect_dependencies: bool) -> None:
+def run(
+    rpm_dir: str, sbom_dir: str, sbom_format: str, collect_dependencies: bool
+) -> None:
     if collect_dependencies:
         collect_rpm_dependencies(rpm_dir, sbom_dir)
-    generate_sboms(sbom_dir, sbom_format)
+    generate_sboms_of_rpms(sbom_dir, sbom_format)
 
 
 if __name__ == "__main__":
