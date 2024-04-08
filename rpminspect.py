@@ -3,10 +3,15 @@
 import json
 import os
 import re
-from typing import List, Tuple, Union, Set
+from typing import List, Set, Tuple, Union
 
-from consts import FILE_PATH_REQUIRED_RPMS, FILE_PATH_REQUIRED_BY_RPMS, FILE_PATH_ROOT_RPMS, FILE_PATH_ALL_RPMS
 from command import Command
+from consts import (
+    FILE_PATH_ALL_RPMS,
+    FILE_PATH_REQUIRED_BY_RPMS,
+    FILE_PATH_REQUIRED_RPMS,
+    FILE_PATH_ROOT_RPMS,
+)
 from model import RPMPackage, get_init_data_structures
 
 
@@ -19,7 +24,8 @@ def collect_rpm_data(root_rpm_names: List[str], out_dir: str):
         # We need the package to be already installed in order to query
         # package information later on
         pattern_already_installed = re.compile(
-            "(Package )(.+)( is already installed.)", re.MULTILINE | re.UNICODE)
+            "(Package )(.+)( is already installed.)", re.MULTILINE | re.UNICODE
+        )
 
         pattern_get_released = re.compile("(\-[0-9\.\-]+\..+\.)", re.UNICODE)
 
@@ -34,10 +40,8 @@ def collect_rpm_data(root_rpm_names: List[str], out_dir: str):
             packages = []
             match = pattern_already_installed.search(input)
             while match is not None:
-                packages.append(extract_name_and_arch(
-                    match.groups()[1].strip()))
-                match = pattern_already_installed.search(
-                    input, pos=match.span()[1])
+                packages.append(extract_name_and_arch(match.groups()[1].strip()))
+                match = pattern_already_installed.search(input, pos=match.span()[1])
             return packages
 
         return extract_already_installed(output)
@@ -90,8 +94,7 @@ def collect_rpm_data(root_rpm_names: List[str], out_dir: str):
             f.write(json.dumps(required_rpms, indent=2))
             f.flush()
 
-        required_by_rpms_path = os.path.join(
-            output_dir, FILE_PATH_REQUIRED_BY_RPMS)
+        required_by_rpms_path = os.path.join(output_dir, FILE_PATH_REQUIRED_BY_RPMS)
         with open(required_by_rpms_path, "w") as f:
             f.write(json.dumps(required_by_rpms, indent=2))
             f.flush()

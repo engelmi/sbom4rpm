@@ -1,16 +1,20 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 
-from jinja2 import Environment, FileSystemLoader
 import json
 import os
+from typing import Dict, List
 
-from typing import List, Dict
+from jinja2 import Environment, FileSystemLoader
 
-from consts import FILE_PATH_REQUIRED_RPMS, FILE_PATH_REQUIRED_BY_RPMS, FILE_PATH_ROOT_RPMS, FILE_PATH_ALL_RPMS
-from sbom.spdx.model import rpms_to_template_data
-from rpminspect import collect_rpm_data
+from consts import (
+    FILE_PATH_ALL_RPMS,
+    FILE_PATH_REQUIRED_BY_RPMS,
+    FILE_PATH_REQUIRED_RPMS,
+    FILE_PATH_ROOT_RPMS,
+)
 from model import RPMPackage, get_init_data_structures
-
+from rpminspect import collect_rpm_data
+from sbom.spdx.model import rpms_to_template_data
 
 rpm_path = "artifacts/rpms-202404041102/"
 base_out_dir = "./sboms"
@@ -67,7 +71,6 @@ with open(root_rpms_file, "r") as f:
 
 data = rpms_to_template_data(root_rpms, all_rpms, required_rpms)
 
-tmpl = Environment(loader=FileSystemLoader("sbom/spdx/")
-                   ).get_template("document.tmpl")
+tmpl = Environment(loader=FileSystemLoader("sbom/spdx/")).get_template("document.tmpl")
 with open("example", "w") as f:
     f.write(tmpl.render(data))

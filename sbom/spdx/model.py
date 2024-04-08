@@ -1,12 +1,16 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
-from urllib.parse import quote
 from datetime import datetime
-from typing import Dict, Any, List
+from typing import Any, Dict, List
+from urllib.parse import quote
 
 from model import RPMPackage
 
 
-def rpms_to_template_data(root_rpms: List[RPMPackage], all_rpms: Dict[str, RPMPackage], required_rpms: Dict[str, List[str]]) -> Dict[str, Any]:
+def rpms_to_template_data(
+    root_rpms: List[RPMPackage],
+    all_rpms: Dict[str, RPMPackage],
+    required_rpms: Dict[str, List[str]],
+) -> Dict[str, Any]:
 
     seen = set()
     packages = []
@@ -47,11 +51,11 @@ def rpms_to_template_data(root_rpms: List[RPMPackage], all_rpms: Dict[str, RPMPa
 
     data = {
         "sbom_author": "Eclipse Committer",
-        "timestamp": datetime.now().strftime('%Y-%m-%dT%H:%M:%S'),
+        "timestamp": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
         "project": {
             "name": quote("Eclipse BlueChi"),
             "version": "0.8.0",
-            "homepage": "https://github.com/eclipse-bluechi/bluechi"
+            "homepage": "https://github.com/eclipse-bluechi/bluechi",
         },
         "packages": packages,
     }

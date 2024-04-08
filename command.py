@@ -1,8 +1,7 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 
 import subprocess
-
-from typing import Union, List, Tuple
+from typing import List, Tuple, Union
 
 
 class Command:

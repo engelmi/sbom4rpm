@@ -2,8 +2,7 @@
 
 import re
 import uuid
-
-from typing import List, Tuple, Dict
+from typing import Dict, List, Tuple
 
 
 class RPMPackage:
@@ -72,13 +71,18 @@ Description: {self.Description}"""
         return p
 
 
-def get_init_data_structures() -> Tuple[List[RPMPackage], Dict[str, List[str]], Dict[str, List[str]], Dict[str, RPMPackage]]:
+def get_init_data_structures() -> Tuple[
+    List[RPMPackage],
+    Dict[str, List[str]],
+    Dict[str, List[str]],
+    Dict[str, RPMPackage],
+]:
     """
     returns:
     Empty data structures for:
-    - root_rpms, 
-    - required_rpms, 
-    - required_by_rpms, 
+    - root_rpms,
+    - required_rpms,
+    - required_by_rpms,
     - all_rpms
     """
     # List of RPMs in artifact directory triggering the inspection process
