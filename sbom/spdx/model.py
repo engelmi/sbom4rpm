@@ -50,7 +50,7 @@ def rpms_to_template_data(
         seen.add(elem.Name)
 
     data = {
-        "sbom_author": "Eclipse Committer",
+        "sbom_author": "SBOMs for RPMs",
         "timestamp": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
         "project": {
             "name": quote("Eclipse BlueChi"),

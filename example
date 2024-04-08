@@ -4,9 +4,9 @@ DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: Eclipse%20BlueChi-0.8.0-SBOM
 DocumentNamespace: https://github.com/eclipse-bluechi/bluechi
-Creator: Person:  Eclipse Committer
-Created: 2024-04-08T08:23:59
-CreatorComment: <text>SwiftBOM generated at 2024-04-08T08:23:59 </text>
+Creator: Person:  SBOMs for RPMs
+Created: 2024-04-08T10:05:14
+CreatorComment: <text>SwiftBOM generated at 2024-04-08T10:05:14 </text>
 
 PackageName: python3-bluechi
 SPDXID: SPDXRef-bcb2d66c-4c54-4fc8-8be6-0f883cedb6e0

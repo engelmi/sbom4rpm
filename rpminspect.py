@@ -3,7 +3,7 @@
 import json
 import os
 import re
-from typing import List, Set, Tuple, Union
+from typing import Dict, List, Set, Tuple, Union
 
 from command import Command
 from consts import (
@@ -15,7 +15,7 @@ from consts import (
 from model import RPMPackage, get_init_data_structures
 
 
-def collect_rpm_data(root_rpm_names: List[str], out_dir: str):
+def collect_rpm_data(root_rpm_names: List[str], out_dir: str) -> None:
     root_rpms, required_rpms, required_by_rpms, all_rpms = get_init_data_structures()
 
     def get_builddep_of_srpm(srpm_path: str) -> List[Tuple[str, str]]:
@@ -131,3 +131,52 @@ def collect_rpm_data(root_rpm_names: List[str], out_dir: str):
             to_explore.append(pkg)
 
     output(out_dir)
+
+
+def read_rpm_data(sbom_dir: str) -> Tuple[
+    List[RPMPackage],
+    Dict[str, List[str]],
+    Dict[str, RPMPackage],
+]:
+    """
+    returns:
+    Empty data structures for:
+    - root_rpms,
+    - required_rpms,
+    - all_rpms
+    """
+    root_rpms, required_rpms, _, all_rpms = get_init_data_structures()
+
+    all_rpms_file = os.path.join(sbom_dir, FILE_PATH_ALL_RPMS)
+    with open(all_rpms_file, "r") as f:
+        content = f.read()
+
+        # split rpm blocks, skip last (empty) block
+        rpms = content.split("\n\n")[:-1]
+
+        for rpm in rpms:
+            pkg: RPMPackage = RPMPackage.from_string(rpm)
+            if pkg.Name == "":
+                print(f"Package without name found {pkg.UUID}, skipping...")
+                continue
+            all_rpms[pkg.UUID] = pkg
+
+        required_rpms_file = os.path.join(sbom_dir, FILE_PATH_REQUIRED_RPMS)
+        with open(required_rpms_file, "r") as f:
+            content = f.read()
+            required_rpms: Dict[str, List[str]] = json.loads(content)
+
+        # required_by_rpms currently not used
+        # required_by_rpms_file = os.path.join(sbom_dir, FILE_PATH_REQUIRED_BY_RPMS)
+        # with open(required_by_rpms_file, "r") as f:
+        #     content = f.read()
+        #     required_by_rpms: Dict[str, List[str]] = json.loads(content)
+
+        root_rpms_file = os.path.join(sbom_dir, FILE_PATH_ROOT_RPMS)
+        with open(root_rpms_file, "r") as f:
+            content = f.read()
+            rpms = content.split(", ")
+            for rpm in rpms:
+                root_rpms.append(all_rpms[rpm.strip()])
+
+    return root_rpms, required_rpms, all_rpms
