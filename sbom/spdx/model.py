@@ -26,12 +26,19 @@ def rpms_to_template_data(root_rpms: List[RPMPackage], all_rpms: Dict[str, RPMPa
                         to_explore = [all_rpms[uuid]] + to_explore
                         contains.append(uuid)
 
+        # purl based on: https://github.com/hexpm/specifications/blob/main/package-url.md
+        purl = "pkg:supplier"
+        if elem.Vendor != "":
+            purl = f"{purl}/{elem.Vendor}"
+        purl = f"{purl}/{elem.Name}@{elem.Version}"
+
         pkg = {
             "name": elem.Name,
             "uuid": elem.UUID,
             "version": elem.Version,
             "licenses": elem.License,
             "homepage": elem.URL,
+            "purl": quote(purl),
             "is_root": elem.UUID in [rpm.UUID for rpm in root_rpms],
             "contains": contains,
         }

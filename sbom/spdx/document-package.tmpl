@@ -1,7 +1,7 @@
 PackageName: {{ package.name }}
 SPDXID: SPDXRef-{{ package.uuid }}
-PackageComment: <text>PURL is pkg:supplier/{{ package.vendor }}/{{ package.name }}@{{ package.version }}  </text>
-ExternalRef: PACKAGE-MANAGER purl pkg:supplier/{{ package.vendor }}/{{ package.name }}@{{ package.version }}
+PackageComment: <text>PURL is {{ package.purl }}  </text>
+ExternalRef: PACKAGE-MANAGER purl {{ package.purl }}
 PackageVersion: {{ package.version }}
 PackageSupplier: NOASSERTION
 {% if package.is_root -%}
