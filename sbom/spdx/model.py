@@ -53,9 +53,9 @@ def to_template_data(
         "sbom_author": "SBOMs for RPMs",
         "timestamp": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
         "project": {
-            "name": quote("Eclipse BlueChi"),
-            "version": "0.8.0",
-            "homepage": "https://github.com/eclipse-bluechi/bluechi",
+            "name": root_rpm.Name,
+            "version": root_rpm.Version,
+            "homepage": root_rpm.URL,
         },
         "packages": packages,
     }

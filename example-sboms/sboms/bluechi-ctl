@@ -2,11 +2,11 @@
 SPDXVersion: SPDX-2.1
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
-DocumentName: Eclipse%20BlueChi-0.8.0-SBOM
-DocumentNamespace: https://github.com/eclipse-bluechi/bluechi
+DocumentName: bluechi-ctl-0.8.0-SBOM
+DocumentNamespace: https://github.com/containers/bluechi
 Creator: Person:  SBOMs for RPMs
-Created: 2024-04-08T10:28:26
-CreatorComment: <text>SwiftBOM generated at 2024-04-08T10:28:26 </text>
+Created: 2024-04-08T10:46:51
+CreatorComment: <text>SwiftBOM generated at 2024-04-08T10:46:51 </text>
 
 PackageName: bluechi-ctl
 SPDXID: SPDXRef-bade03f1-7e54-4efd-a455-1c9a210a9489
