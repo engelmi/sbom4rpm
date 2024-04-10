@@ -20,3 +20,7 @@ Then run `SBOM4RPM`:
 ```bash
 python rpm2sbom.py --rpm-dir=/tmp/custom-artifacts/ --collect-dependencies --sbom-format=spdx --sbom-dir=sboms
 ```
+
+## Example: BlueChi
+
+The [example directory](./example/) provides collected data and generated SBOMs for [BlueChi](https://github.com/eclipse-bluechi/bluechi/). 
