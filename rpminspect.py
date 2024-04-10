@@ -11,6 +11,7 @@ from consts import (
     FILE_PATH_REQUIRED_BY_RPMS,
     FILE_PATH_REQUIRED_RPMS,
     FILE_PATH_ROOT_RPMS,
+    DIRECTORY_RAW_DATA,
 )
 from model import RPMPackage, get_init_data_structures
 
@@ -87,7 +88,7 @@ def collect_rpm_data(root_rpm_names: List[str], out_dir: str) -> None:
         return required_packages
 
     def output(output_dir: str):
-        Command(f"mkdir -p {output_dir}").run()
+        Command(f"mkdir -p {os.path.join(output_dir, DIRECTORY_RAW_DATA)}").run()
 
         required_rpms_path = os.path.join(output_dir, FILE_PATH_REQUIRED_RPMS)
         with open(required_rpms_path, "w") as f:
