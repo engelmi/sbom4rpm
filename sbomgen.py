@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 from os.path import join
 from typing import List, Dict
 from urllib.parse import quote
@@ -15,7 +17,7 @@ def generate_sboms(
     sbom_format: str,
     root_rpms: List[RPMPackage],
     required_rpms: Dict[str, List[str]],
-    recommended_rpms: Dict[str, List[str]],
+    recommended_by_rpms: Dict[str, List[str]],
     all_rpms: Dict[str, RPMPackage],
 ) -> None:
     tmpl = Environment(
@@ -26,6 +28,6 @@ def generate_sboms(
     Command(f"mkdir -p {output_dir}").run()
 
     for root_rpm in root_rpms:
-        data = to_template_data(root_rpm, all_rpms, required_rpms, recommended_rpms)
+        data = to_template_data(root_rpm, all_rpms, required_rpms, recommended_by_rpms)
         with open(join(output_dir, quote(root_rpm.Name)), "w") as f:
             f.write(tmpl.render(data))
