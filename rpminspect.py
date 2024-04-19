@@ -16,8 +16,18 @@ from consts import (
 from model import RPMPackage, get_init_data_structures
 
 
-def collect_rpm_data(root_rpm_names: List[str], out_dir: str) -> None:
+def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
     root_rpms, required_rpms, required_by_rpms, all_rpms = get_init_data_structures()
+
+    def list_rpms(rpm_dir: str) -> List[str]:
+        root_rpm_names: List[str] = []
+        for entry in os.listdir(rpm_dir):
+            if entry.endswith(".src.rpm"):
+                # get build dependencies
+                pass
+            elif entry.endswith(".rpm") and "debug" not in entry:
+                root_rpm_names.append(os.path.join(rpm_dir, entry))
+        return root_rpm_names
 
     def get_builddep_of_srpm(srpm_path: str) -> List[Tuple[str, str]]:
         output, _ = Command(f"dnf builddep --assumeno {srpm_path}").run()
@@ -58,6 +68,16 @@ def collect_rpm_data(root_rpm_names: List[str], out_dir: str) -> None:
             lines = output.split("\n")
             if len(lines) <= 0:
                 return None
+
+            if lines[0] == "":
+                # fallback to local repo and check if it is a dependency between
+                # the inspected root rpms
+                output, _ = Command(
+                    f'dnf repoquery --whatprovides "{pkg}" --repo local-rpms --repofrompath local-rpms,file://{rpm_dir}').run()
+                lines = output.split("\n")
+                if len(lines) <= 0:
+                    return None
+
             pkg_name = "-".join(lines[0].split(":")[0].split("-")[:-1])
 
             if pkg_name not in all_rpms:
@@ -111,6 +131,8 @@ def collect_rpm_data(root_rpm_names: List[str], out_dir: str) -> None:
                 f.write(rpm.serialize())
                 f.write("\n\n")
             f.flush()
+
+    root_rpm_names = list_rpms(rpm_dir)
 
     for root_rpm_name in root_rpm_names:
         p = get_package_info(root_rpm_name)

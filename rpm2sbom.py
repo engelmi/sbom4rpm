@@ -2,8 +2,6 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 
 import argparse
-import os
-from typing import List
 
 from consts import DIRECTORY_NAME_SBOM_SPDX, DIRECTORY_NAME_SBOM_CYCLONEDX
 from rpminspect import collect_rpm_data, read_rpm_data
@@ -16,14 +14,7 @@ def collect_rpm_dependencies(rpm_dir: str, output_dir: str) -> None:
     """
     Collect all RPMs required by the RPMs in root_path (direct and indirect).
     """
-    root_rpm_names: List[str] = []
-    for entry in os.listdir(rpm_dir):
-        if entry.endswith(".src.rpm"):
-            # get build dependencies
-            pass
-        elif entry.endswith(".rpm") and "debug" not in entry:
-            root_rpm_names.append(os.path.join(rpm_dir, entry))
-    collect_rpm_data(root_rpm_names=root_rpm_names, out_dir=output_dir)
+    collect_rpm_data(rpm_dir=rpm_dir, out_dir=output_dir)
 
 
 def generate_sboms_of_rpms(sbom_dir: str, sbom_format: str) -> None:
