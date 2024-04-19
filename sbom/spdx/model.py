@@ -10,6 +10,7 @@ def to_template_data(
     root_rpm: RPMPackage,
     all_rpms: Dict[str, RPMPackage],
     required_rpms: Dict[str, List[str]],
+    recommended_by_rpms: Dict[str, List[str]],
 ) -> Dict[str, Any]:
 
     seen = set()
@@ -30,6 +31,16 @@ def to_template_data(
                         to_explore = [all_rpms[uuid]] + to_explore
                         requires.append(uuid)
 
+        recommends = []
+        if elem.Name in recommended_by_rpms:
+            for rpm in recommended_by_rpms[elem.Name]:
+                # workaround:
+                # current data has package name instead of uuid in required files
+                for uuid, pkg in all_rpms.items():
+                    if rpm == pkg.Name:
+                        to_explore = [all_rpms[uuid]] + to_explore
+                        recommends.append(uuid)
+
         # purl based on: https://github.com/hexpm/specifications/blob/main/package-url.md
         purl = "pkg:supplier"
         if elem.Vendor != "":
@@ -45,6 +56,7 @@ def to_template_data(
             "purl": purl,
             "is_root": elem.UUID == root_rpm.UUID,
             "requires": requires,
+            "recommended_by": recommends,
         }
         packages.append(pkg)
         seen.add(elem.Name)

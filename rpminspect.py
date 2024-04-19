@@ -10,6 +10,7 @@ from consts import (
     FILE_PATH_ALL_RPMS,
     FILE_PATH_REQUIRED_BY_RPMS,
     FILE_PATH_REQUIRED_RPMS,
+    FILE_PATH_RECOMMENDED_BY_RPMS,
     FILE_PATH_ROOT_RPMS,
     DIRECTORY_RAW_DATA,
 )
@@ -17,7 +18,7 @@ from model import RPMPackage, get_init_data_structures
 
 
 def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
-    root_rpms, required_rpms, required_by_rpms, all_rpms = get_init_data_structures()
+    root_rpms, required_rpms, required_by_rpms, recommended_by_rpms, all_rpms = get_init_data_structures()
 
     def list_rpms(rpm_dir: str) -> List[str]:
         root_rpm_names: List[str] = []
@@ -61,40 +62,29 @@ def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
         output, _ = Command(f"rpm -qi {package}").run()
         return RPMPackage.from_string(output)
 
-    def get_required_packages(dependent_package: str) -> List[RPMPackage]:
+    def whatprovides_package(required_package: str) -> Union[RPMPackage, None]:
+        output, _ = Command(f'dnf repoquery --whatprovides "{required_package}"').run()
+        lines = output.split("\n")
+        if len(lines) <= 0:
+            return None
 
-        def resolve_required_package(pkg: str) -> Union[RPMPackage, None]:
-            output, _ = Command(f'dnf repoquery --whatprovides "{pkg}"').run()
+        if lines[0] == "":
+            # fallback to local repo and check if it is a dependency between
+            # the inspected root rpms
+            output, _ = Command(
+                f'dnf repoquery --whatprovides "{required_package}" --repo local-rpms --repofrompath local-rpms,file://{rpm_dir}').run()
             lines = output.split("\n")
             if len(lines) <= 0:
                 return None
 
-            if lines[0] == "":
-                # fallback to local repo and check if it is a dependency between
-                # the inspected root rpms
-                output, _ = Command(
-                    f'dnf repoquery --whatprovides "{pkg}" --repo local-rpms --repofrompath local-rpms,file://{rpm_dir}').run()
-                lines = output.split("\n")
-                if len(lines) <= 0:
-                    return None
+        pkg_name = "-".join(lines[0].split(":")[0].split("-")[:-1])
 
-            pkg_name = "-".join(lines[0].split(":")[0].split("-")[:-1])
+        if pkg_name not in all_rpms:
+            all_rpms[pkg_name] = get_package_info(pkg_name)
 
-            if pkg_name not in all_rpms:
-                all_rpms[pkg_name] = get_package_info(pkg_name)
+        return all_rpms[pkg_name]
 
-            if dependent_package not in required_rpms:
-                required_rpms[dependent_package] = []
-            if pkg_name not in required_rpms[dependent_package]:
-                required_rpms[dependent_package].append(pkg_name)
-
-            if pkg_name not in required_by_rpms:
-                required_by_rpms[pkg_name] = []
-            if dependent_package not in required_by_rpms[pkg_name]:
-                required_by_rpms[pkg_name].append(dependent_package)
-
-            return all_rpms[pkg_name]
-
+    def get_required_packages(dependent_package: str) -> List[RPMPackage]:
         output, _ = Command(f"rpm -qR {dependent_package}").run()
 
         required_packages: List[RPMPackage] = []
@@ -102,10 +92,42 @@ def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
             if line == "" or line.startswith("/") or line.startswith("rpmlib"):
                 continue
 
-            pkg = resolve_required_package(line)
+            pkg = whatprovides_package(line)
+
+            if pkg is not None and isinstance(pkg, RPMPackage):
+                if dependent_package not in required_rpms:
+                    required_rpms[dependent_package] = []
+                if pkg.Name not in required_rpms[dependent_package]:
+                    required_rpms[dependent_package].append(pkg.Name)
+
+                if pkg.Name not in required_by_rpms:
+                    required_by_rpms[pkg.Name] = []
+                if dependent_package not in required_by_rpms[pkg.Name]:
+                    required_by_rpms[pkg.Name].append(dependent_package)
+
             required_packages.append(pkg)
 
         return required_packages
+
+    def get_recommended_packages(dependent_package: str) -> List[RPMPackage]:
+        output, _ = Command(f"rpm -q --recommends {dependent_package}").run()
+
+        recommended_packages: List[RPMPackage] = []
+        for line in output.split("\n"):
+            if line == "" or line.startswith("/") or line.startswith("rpmlib"):
+                continue
+
+            pkg = whatprovides_package(line)
+
+            if pkg is not None and isinstance(pkg, RPMPackage):
+                if pkg.Name not in recommended_by_rpms:
+                    recommended_by_rpms[pkg.Name] = []
+                if dependent_package not in recommended_by_rpms[pkg.Name]:
+                    recommended_by_rpms[pkg.Name].append(dependent_package)
+
+            recommended_packages.append(pkg)
+
+        return recommended_packages
 
     def output(output_dir: str):
         Command(f"mkdir -p {os.path.join(output_dir, DIRECTORY_RAW_DATA)}").run()
@@ -118,6 +140,11 @@ def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
         required_by_rpms_path = os.path.join(output_dir, FILE_PATH_REQUIRED_BY_RPMS)
         with open(required_by_rpms_path, "w") as f:
             f.write(json.dumps(required_by_rpms, indent=2))
+            f.flush()
+
+        recommended_by_rpms_path = os.path.join(output_dir, FILE_PATH_RECOMMENDED_BY_RPMS)
+        with open(recommended_by_rpms_path, "w") as f:
+            f.write(json.dumps(recommended_by_rpms, indent=2))
             f.flush()
 
         root_rpms_path = os.path.join(output_dir, FILE_PATH_ROOT_RPMS)
@@ -152,12 +179,15 @@ def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
 
         for pkg in get_required_packages(elem.Name):
             to_explore.append(pkg)
+        for pkg in get_recommended_packages(elem.Name):
+            to_explore.append(pkg)
 
     output(out_dir)
 
 
 def read_rpm_data(sbom_dir: str) -> Tuple[
     List[RPMPackage],
+    Dict[str, List[str]],
     Dict[str, List[str]],
     Dict[str, RPMPackage],
 ]:
@@ -166,9 +196,10 @@ def read_rpm_data(sbom_dir: str) -> Tuple[
     Empty data structures for:
     - root_rpms,
     - required_rpms,
+    - recommended_by_rpms,
     - all_rpms
     """
-    root_rpms, required_rpms, _, all_rpms = get_init_data_structures()
+    root_rpms, required_rpms, _, recommended_by_rpms, all_rpms = get_init_data_structures()
 
     all_rpms_file = os.path.join(sbom_dir, FILE_PATH_ALL_RPMS)
     with open(all_rpms_file, "r") as f:
@@ -189,6 +220,11 @@ def read_rpm_data(sbom_dir: str) -> Tuple[
             content = f.read()
             required_rpms: Dict[str, List[str]] = json.loads(content)
 
+        recommended_by_rpms_file = os.path.join(sbom_dir, FILE_PATH_RECOMMENDED_BY_RPMS)
+        with open(recommended_by_rpms_file, "r") as f:
+            content = f.read()
+            recommended_by_rpms: Dict[str, List[str]] = json.loads(content)
+
         # required_by_rpms currently not used
         # required_by_rpms_file = os.path.join(sbom_dir, FILE_PATH_REQUIRED_BY_RPMS)
         # with open(required_by_rpms_file, "r") as f:
@@ -202,4 +238,4 @@ def read_rpm_data(sbom_dir: str) -> Tuple[
             for rpm in rpms:
                 root_rpms.append(all_rpms[rpm.strip()])
 
-    return root_rpms, required_rpms, all_rpms
+    return root_rpms, required_rpms, recommended_by_rpms, all_rpms

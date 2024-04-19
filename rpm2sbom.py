@@ -21,8 +21,8 @@ def generate_sboms_of_rpms(sbom_dir: str, sbom_format: str) -> None:
     """
     Read all RPMs raw data and transform to SBOM
     """
-    root_rpms, required_rpms, all_rpms = read_rpm_data(sbom_dir)
-    generate_sboms(sbom_dir, sbom_format, root_rpms, required_rpms, all_rpms)
+    root_rpms, required_rpms, recommended_by_rpms, all_rpms = read_rpm_data(sbom_dir)
+    generate_sboms(sbom_dir, sbom_format, root_rpms, required_rpms, recommended_by_rpms, all_rpms)
 
 
 def run(

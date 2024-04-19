@@ -75,6 +75,7 @@ def get_init_data_structures() -> Tuple[
     List[RPMPackage],
     Dict[str, List[str]],
     Dict[str, List[str]],
+    Dict[str, List[str]],
     Dict[str, RPMPackage],
 ]:
     """
@@ -83,6 +84,7 @@ def get_init_data_structures() -> Tuple[
     - root_rpms,
     - required_rpms,
     - required_by_rpms,
+    - recommended_by_rpms,
     - all_rpms
     """
     # List of RPMs in artifact directory triggering the inspection process
@@ -91,7 +93,9 @@ def get_init_data_structures() -> Tuple[
     required_rpms: Dict[str, List[str]] = dict()
     # Key: Name of RPM Package, Value: List of package names directly requiring key package
     required_by_rpms: Dict[str, List[str]] = dict()
+    # Key: Name of RPM Package, Value: List of package names directly recommending key package
+    recommended_by_rpms: Dict[str, List[str]] = dict()
     # Key: Name of RPM Package, Value: RPMPackage instance
     all_rpms: Dict[str, RPMPackage] = dict()
 
-    return root_rpms, required_rpms, required_by_rpms, all_rpms
+    return root_rpms, required_rpms, required_by_rpms, recommended_by_rpms, all_rpms

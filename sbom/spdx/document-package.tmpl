@@ -14,6 +14,9 @@ Relationship: SPDXRef-{{ package.uuid }} DEPENDS_ON NOASSERTION
 Relationship: SPDXRef-{{ package.uuid }} DEPENDS_ON {{ pkg }}
 {% endfor -%}
 {% endif -%}
+{%- for pkg in package.recommended_by -%}
+Relationship: SPDXRef-{{ package.uuid }} OPTIONAL_DEPENDENCY_OF {{ pkg }}
+{% endfor -%}
 PackageDownloadLocation: NOASSERTION
 FilesAnalyzed: false
 PackageLicenseConcluded: {{ package.licenses }}
