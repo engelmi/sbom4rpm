@@ -20,7 +20,7 @@ def to_template_data(
         if elem.Name in seen:
             continue
 
-        contains = []
+        requires = []
         if elem.Name in required_rpms:
             for rpm in required_rpms[elem.Name]:
                 # workaround:
@@ -28,7 +28,7 @@ def to_template_data(
                 for uuid, pkg in all_rpms.items():
                     if rpm == pkg.Name:
                         to_explore = [all_rpms[uuid]] + to_explore
-                        contains.append(uuid)
+                        requires.append(uuid)
 
         # purl based on: https://github.com/hexpm/specifications/blob/main/package-url.md
         purl = "pkg:supplier"
@@ -44,7 +44,7 @@ def to_template_data(
             "homepage": elem.URL,
             "purl": purl,
             "is_root": elem.UUID == root_rpm.UUID,
-            "contains": contains,
+            "requires": requires,
         }
         packages.append(pkg)
         seen.add(elem.Name)

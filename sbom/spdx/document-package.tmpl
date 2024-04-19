@@ -7,11 +7,11 @@ PackageSupplier: NOASSERTION
 {% if package.is_root -%}
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-{{ package.uuid }}
 {% endif -%}
-{% if package.contains|length == 0 -%}
-Relationship: SPDXRef-{{ package.uuid }} CONTAINS NOASSERTION
+{% if package.requires|length == 0 -%}
+Relationship: SPDXRef-{{ package.uuid }} DEPENDS_ON NOASSERTION
 {% else -%}
-{%- for pkg in package.contains -%}
-Relationship: SPDXRef-{{ package.uuid }} CONTAINS {{ pkg }}
+{%- for pkg in package.requires -%}
+Relationship: SPDXRef-{{ package.uuid }} DEPENDS_ON {{ pkg }}
 {% endfor -%}
 {% endif -%}
 PackageDownloadLocation: NOASSERTION
