@@ -3,11 +3,9 @@
 
 import argparse
 
-from consts import DIRECTORY_NAME_SBOM_SPDX, DIRECTORY_NAME_SBOM_CYCLONEDX
+from consts import SUPPORTED_SBOM_FORMATS
 from rpminspect import collect_rpm_data, read_rpm_data
-from sbomgen import generate_sboms
-
-SUPPORTED_SBOM_FORMATS = [DIRECTORY_NAME_SBOM_SPDX, DIRECTORY_NAME_SBOM_CYCLONEDX]
+from sbom.generator import create_sbom_generator
 
 
 def collect_rpm_dependencies(rpm_dir: str, output_dir: str) -> None:
@@ -22,7 +20,8 @@ def generate_sboms_of_rpms(sbom_dir: str, sbom_format: str) -> None:
     Read all RPMs raw data and transform to SBOM
     """
     root_rpms, required_rpms, recommended_by_rpms, all_rpms = read_rpm_data(sbom_dir)
-    generate_sboms(sbom_dir, sbom_format, root_rpms, required_rpms, recommended_by_rpms, all_rpms)
+    generator = create_sbom_generator(sbom_format, root_rpms, required_rpms, recommended_by_rpms, all_rpms)
+    generator.generate(sbom_dir)
 
 
 def run(
