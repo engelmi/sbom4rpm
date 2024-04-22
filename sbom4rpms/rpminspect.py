@@ -5,8 +5,8 @@ import os
 import re
 from typing import Dict, List, Set, Tuple, Union
 
-from command import Command
-from consts import (
+from sbom4rpms.command import Command
+from sbom4rpms.consts import (
     DIRECTORY_RAW_DATA,
     FILE_PATH_ALL_RPMS,
     FILE_PATH_RECOMMENDED_BY_RPMS,
@@ -14,7 +14,7 @@ from consts import (
     FILE_PATH_REQUIRED_RPMS,
     FILE_PATH_ROOT_RPMS,
 )
-from model import RPMPackage, get_init_data_structures
+from sbom4rpms.model import RPMPackage, get_init_data_structures
 
 
 def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:

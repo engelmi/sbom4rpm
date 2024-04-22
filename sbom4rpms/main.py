@@ -3,10 +3,10 @@
 
 import argparse
 
-from consts import SUPPORTED_SBOM_FORMATS
-from gitinspect import collect_git_submodules, read_submodule_data
-from rpminspect import collect_rpm_data, read_rpm_data
-from sbom.generator import create_sbom_generator
+from sbom4rpms.consts import SUPPORTED_SBOM_FORMATS
+from sbom4rpms.gitinspect import collect_git_submodules, read_submodule_data
+from sbom4rpms.rpminspect import collect_rpm_data, read_rpm_data
+from sbom4rpms.sbom.generator import create_sbom_generator
 
 
 def collect_rpm_dependencies(rpm_dir: str, output_dir: str) -> None:
@@ -48,7 +48,7 @@ def run(
     generate_sboms_of_rpms(sbom_dir, sbom_format)
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="RPM to SBOM Generator")
     parser.add_argument(
         "--rpm-dir",
@@ -85,3 +85,7 @@ if __name__ == "__main__":
         args.sbom_format,
         args.collect_dependencies,
     )
+
+
+if __name__ == "__main__":
+    main()

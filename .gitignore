@@ -1,2 +1,5 @@
 artifacts/
 __pycache__
+dist/
+build/
+sbom4rpms.egg-info/

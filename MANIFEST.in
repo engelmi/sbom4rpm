@@ -1,0 +1,1 @@
+recursive-include sbom4rpms/sbom/spdx *.tmpl

@@ -3,8 +3,8 @@
 from datetime import datetime
 from typing import Any, Dict, List
 
-from model import GitSubmodule, RPMPackage
-from sbom.lib.purl import build_git_purl, build_rpm_purl
+from sbom4rpms.model import GitSubmodule, RPMPackage
+from sbom4rpms.sbom.lib.purl import build_git_purl, build_rpm_purl
 
 
 def to_template_data(

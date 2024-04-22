@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 
+import os
 import json
 from os.path import join
 from typing import Dict, List
@@ -7,16 +8,15 @@ from urllib.parse import quote
 
 from jinja2 import Environment, FileSystemLoader
 
-from command import Command
-from consts import (
+from sbom4rpms.command import Command
+from sbom4rpms.consts import (
     DIRECTORY_SBOM_DATA,
-    DIRECTORY_SBOM_TEMPLATE_DIR,
     FILE_SBOM_TEMPLATE_ROOT,
     SUPPORTED_SBOM_FORMATS,
 )
-from model import GitSubmodule, RPMPackage
-from sbom.cyclonedx.model import to_template_data as cyclonedx_data
-from sbom.spdx.model import to_template_data as spdx_data
+from sbom4rpms.model import GitSubmodule, RPMPackage
+from sbom4rpms.sbom.cyclonedx.model import to_template_data as cyclonedx_data
+from sbom4rpms.sbom.spdx.model import to_template_data as spdx_data
 
 
 class SBOMGenerator:
@@ -58,7 +58,7 @@ class SPDXGenerator(SBOMGenerator):
         super().generate(output_dir)
 
         tmpl = Environment(
-            loader=FileSystemLoader(f"{DIRECTORY_SBOM_TEMPLATE_DIR}/spdx/")
+            loader=FileSystemLoader(f"{os.path.dirname(__file__)}/spdx/")
         ).get_template(FILE_SBOM_TEMPLATE_ROOT)
 
         for root_rpm in self.root_rpms:

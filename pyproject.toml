@@ -1,0 +1,37 @@
+[project]
+name = "sbom4rpms"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["SBOM", "RPM", "Generation"]
+classifiers=[
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "Jinja2>=3.1.2",
+]
+requires-python = ">=3.9"
+authors=[
+    {name = "Michael Engel", email = "mengel@redhat.com"},
+]
+maintainers=[
+    {name = "Michael Engel", email = "mengel@redhat.com"},
+]
+
+[project.urls]
+Homepage = "https://github.com/engelmi/sbom-for-rpms"
+Documentation = "https://github.com/engelmi/sbom-for-https://github.com/engelmi/sbom4rpm/issues"
+Repository = "https://github.com/engelmi/sbom4rpm.git"
+Issues = "https://github.com/engelmi/sbom4rpm/issues"
+
+[project.scripts]
+sbom4rpms = "sbom4rpms.main:main"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {}

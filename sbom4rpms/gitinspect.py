@@ -4,9 +4,9 @@ import os
 import re
 from typing import List
 
-from command import Command
-from consts import DIRECTORY_RAW_DATA, FILE_PATH_GIT_SUBMODULES
-from model import GitSubmodule
+from sbom4rpms.command import Command
+from sbom4rpms.consts import DIRECTORY_RAW_DATA, FILE_PATH_GIT_SUBMODULES
+from sbom4rpms.model import GitSubmodule
 
 MESON_FILE_NAME = "meson.build"
 

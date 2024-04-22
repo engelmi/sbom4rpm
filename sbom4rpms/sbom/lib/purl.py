@@ -2,7 +2,7 @@
 
 from urllib.parse import quote_plus
 
-from model import GitSubmodule, RPMPackage
+from sbom4rpms.model import GitSubmodule, RPMPackage
 
 
 def build_rpm_purl(rpm: RPMPackage, mask_name=True):
