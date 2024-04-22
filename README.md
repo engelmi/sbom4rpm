@@ -15,12 +15,13 @@ Proceed by building the custom RPM project and create a repomd (xml-based rpm me
 createrepo_c /tmp/custom-artifacts
 ```
 
-Then run `SBOM4RPM`:
+Then install and run `SBOM4RPMs`:
 
 ```bash
-python rpm2sbom.py --rpm-dir=/tmp/custom-artifacts/ --collect-dependencies --sbom-format=spdx --sbom-dir=sboms
+pip install sbom4rpms
+sbom4rpms --rpm-dir=/tmp/custom-artifacts/ --collect-dependencies --sbom-format=spdx --sbom-dir=sboms
 ```
 
 ## Example: BlueChi
 
-The [example directory](./example/) provides collected data and generated SBOMs for [BlueChi](https://github.com/eclipse-bluechi/bluechi/). 
+The [example directory](https://github.com/engelmi/sbom4rpm/tree/main/example) provides collected data and generated SBOMs for [BlueChi](https://github.com/eclipse-bluechi/bluechi/). 
