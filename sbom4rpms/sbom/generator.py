@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 
-import os
 import json
+import os
 from os.path import join
 from typing import Dict, List
 from urllib.parse import quote

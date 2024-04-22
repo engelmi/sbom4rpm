@@ -52,12 +52,12 @@ def main():
     parser = argparse.ArgumentParser(description="RPM to SBOM Generator")
     parser.add_argument(
         "--rpm-dir",
-        default="artifacts",
+        required=True,
         help="Root directory containing RPMs to inspect.",
     )
     parser.add_argument(
         "--sbom-dir",
-        default="sboms",
+        required=True,
         help="Base directory for all SBOM file outputs. Collected RPM dependencies are saved here.",
     )
     parser.add_argument(
