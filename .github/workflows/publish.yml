@@ -4,7 +4,6 @@ on:
   push:
     tags:
       - 'v*.*.*'
-  workflow_dispatch:
 
 jobs:
   pypipublish:
@@ -17,7 +16,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python3 -m ensurepip --default-pip
+          sudo apt-get install python3-pip
           python3 -m pip install --upgrade pip setuptools wheel build
 
       - name: Build python package
