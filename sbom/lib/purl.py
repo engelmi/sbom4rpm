@@ -2,10 +2,10 @@
 
 from urllib.parse import quote_plus
 
-from model import RPMPackage
+from model import GitSubmodule, RPMPackage
 
 
-def build_purl(rpm: RPMPackage, mask_name=True):
+def build_rpm_purl(rpm: RPMPackage, mask_name=True):
     # purl based on: https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst#rpm
     purl = "pkg:rpm"
 
@@ -21,3 +21,14 @@ def build_purl(rpm: RPMPackage, mask_name=True):
     return (
         f"{purl}/{vendor_and_name}@{rpm.Version}-{rpm.Release}?arch={rpm.Architecture}"
     )
+
+
+def build_git_purl(git_repo: GitSubmodule, mask_name=True):
+    # purl based on: https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst#rpm
+    purl = "pkg:" + git_repo.Remote_URL.replace("https://", "").replace(
+        "git@", ""
+    ).replace(":", "/").replace(".git", "")
+    if mask_name:
+        purl = quote_plus(purl)
+
+    return f"{purl}@{git_repo.Git_Hash}"

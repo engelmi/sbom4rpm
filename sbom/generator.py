@@ -14,7 +14,7 @@ from consts import (
     FILE_SBOM_TEMPLATE_ROOT,
     SUPPORTED_SBOM_FORMATS,
 )
-from model import RPMPackage
+from model import GitSubmodule, RPMPackage
 from sbom.cyclonedx.model import to_template_data as cyclonedx_data
 from sbom.spdx.model import to_template_data as spdx_data
 
@@ -27,11 +27,13 @@ class SBOMGenerator:
         required_rpms: Dict[str, List[str]],
         recommended_by_rpms: Dict[str, List[str]],
         all_rpms: Dict[str, RPMPackage],
+        git_submodules: List[GitSubmodule],
     ) -> None:
         self.root_rpms = root_rpms
         self.required_rpms = required_rpms
         self.recommended_by_rpms = recommended_by_rpms
         self.all_rpms = all_rpms
+        self.git_submodules = git_submodules
 
     def generate(self, output_dir: str) -> None:
         Command(f"mkdir -p {output_dir}").run()
@@ -45,8 +47,11 @@ class SPDXGenerator(SBOMGenerator):
         required_rpms: Dict[str, List[str]],
         recommended_by_rpms: Dict[str, List[str]],
         all_rpms: Dict[str, RPMPackage],
+        git_submodules: List[GitSubmodule],
     ) -> None:
-        super().__init__(root_rpms, required_rpms, recommended_by_rpms, all_rpms)
+        super().__init__(
+            root_rpms, required_rpms, recommended_by_rpms, all_rpms, git_submodules
+        )
 
     def generate(self, output_dir: str) -> None:
         output_dir = join(output_dir, DIRECTORY_SBOM_DATA)
@@ -58,7 +63,11 @@ class SPDXGenerator(SBOMGenerator):
 
         for root_rpm in self.root_rpms:
             data = spdx_data(
-                root_rpm, self.all_rpms, self.required_rpms, self.recommended_by_rpms
+                root_rpm,
+                self.all_rpms,
+                self.required_rpms,
+                self.recommended_by_rpms,
+                self.git_submodules,
             )
             with open(join(output_dir, quote(root_rpm.Name) + ".spdx"), "w") as f:
                 f.write(tmpl.render(data))
@@ -72,8 +81,11 @@ class CycloneDXGenerator(SBOMGenerator):
         required_rpms: Dict[str, List[str]],
         recommended_by_rpms: Dict[str, List[str]],
         all_rpms: Dict[str, RPMPackage],
+        git_submodules: List[GitSubmodule],
     ) -> None:
-        super().__init__(root_rpms, required_rpms, recommended_by_rpms, all_rpms)
+        super().__init__(
+            root_rpms, required_rpms, recommended_by_rpms, all_rpms, git_submodules
+        )
 
     def generate(self, output_dir: str) -> None:
         output_dir = join(output_dir, DIRECTORY_SBOM_DATA)
@@ -81,7 +93,11 @@ class CycloneDXGenerator(SBOMGenerator):
 
         for root_rpm in self.root_rpms:
             data = cyclonedx_data(
-                root_rpm, self.all_rpms, self.required_rpms, self.recommended_by_rpms
+                root_rpm,
+                self.all_rpms,
+                self.required_rpms,
+                self.recommended_by_rpms,
+                self.git_submodules,
             )
             with open(
                 join(output_dir, quote(root_rpm.Name) + ".cyclonedx.json"), "w"
@@ -95,12 +111,19 @@ def create_sbom_generator(
     required_rpms: Dict[str, List[str]],
     recommended_by_rpms: Dict[str, List[str]],
     all_rpms: Dict[str, RPMPackage],
+    git_submodules: List[GitSubmodule],
 ) -> SBOMGenerator:
     if sbom_format == SUPPORTED_SBOM_FORMATS[0]:
-        return SPDXGenerator(root_rpms, required_rpms, recommended_by_rpms, all_rpms)
+        return SPDXGenerator(
+            root_rpms, required_rpms, recommended_by_rpms, all_rpms, git_submodules
+        )
     elif sbom_format == SUPPORTED_SBOM_FORMATS[1]:
         return CycloneDXGenerator(
-            root_rpms, required_rpms, recommended_by_rpms, all_rpms
+            root_rpms,
+            required_rpms,
+            recommended_by_rpms,
+            all_rpms,
+            git_submodules,
         )
 
     raise Exception(f"Unknown SBOM format: {sbom_format}")

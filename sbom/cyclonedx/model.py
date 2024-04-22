@@ -4,17 +4,30 @@ import uuid
 from datetime import datetime
 from typing import Any, Dict, List, Tuple
 
-from model import RPMPackage
-from sbom.lib.purl import build_purl
+from model import GitSubmodule, RPMPackage
+from sbom.lib.purl import build_git_purl, build_rpm_purl
 
 
-def build_component(rpm: RPMPackage) -> Dict:
+def build_submodule_component(submodule: GitSubmodule) -> Dict:
+    return {
+        "group": "",
+        "name": submodule.Name,
+        "version": submodule.Git_Hash,
+        "purl": build_git_purl(submodule),
+        "bom-ref": build_git_purl(submodule, mask_name=False),
+        "properties": [],
+        "type": "library",
+        "scope": "required",
+    }
+
+
+def build_rpm_component(rpm: RPMPackage) -> Dict:
     return {
         "group": "",
         "name": rpm.Name,
         "version": rpm.Version,
-        "purl": build_purl(rpm),
-        "bom-ref": build_purl(rpm, mask_name=False),
+        "purl": build_rpm_purl(rpm),
+        "bom-ref": build_rpm_purl(rpm, mask_name=False),
         "properties": [],
         "type": "library",
         "scope": "required",
@@ -27,7 +40,7 @@ def build_dependency(
     required_rpms: Dict[str, List[str]],
 ) -> Tuple[Dict, List[RPMPackage]]:
     dependency = {
-        "ref": build_purl(rpm, mask_name=False),
+        "ref": build_rpm_purl(rpm, mask_name=False),
         "dependsOn": [],
     }
 
@@ -38,7 +51,7 @@ def build_dependency(
             # current data has package name instead of uuid in required files
             for rpm_uuid, pkg in all_rpms.items():
                 if required_rpm_name == pkg.Name:
-                    dependency["dependsOn"].append(build_purl(rpm, mask_name=False))
+                    dependency["dependsOn"].append(build_rpm_purl(rpm, mask_name=False))
                     rpms.append(all_rpms[rpm_uuid])
     return dependency, rpms
 
@@ -48,6 +61,7 @@ def to_template_data(
     all_rpms: Dict[str, RPMPackage],
     required_rpms: Dict[str, List[str]],
     recommended_by_rpms: Dict[str, List[str]],
+    git_submodules: List[GitSubmodule],
 ) -> Dict[str, Any]:
     # Format based on:
     # https://cyclonedx.org/docs/1.5/json/
@@ -86,8 +100,8 @@ def to_template_data(
             "group": "",
             "name": root_rpm.Name,
             "version": root_rpm.Version,
-            "purl": build_purl(root_rpm),
-            "bom-ref": build_purl(root_rpm, mask_name=False),
+            "purl": build_rpm_purl(root_rpm),
+            "bom-ref": build_rpm_purl(root_rpm, mask_name=False),
             "properties": [],
             "type": "application",
         },
@@ -102,12 +116,20 @@ def to_template_data(
         if elem.Name in seen:
             continue
 
-        result["components"].append(build_component(elem))
+        result["components"].append(build_rpm_component(elem))
 
         dependency, req_rpms = build_dependency(elem, all_rpms, required_rpms)
+        if elem.UUID == root_rpm.UUID:
+            for submodule in git_submodules:
+                dependency["dependsOn"].append(
+                    build_git_purl(submodule, mask_name=False)
+                )
         result["dependencies"].append(dependency)
 
         to_explore = to_explore + req_rpms
         seen.add(elem.Name)
+
+    for submodule in git_submodules:
+        result["components"].append(build_submodule_component(submodule))
 
     return result

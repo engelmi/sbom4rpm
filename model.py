@@ -5,10 +5,19 @@ import uuid
 from typing import Dict, List, Tuple
 
 
-class RPMPackage:
+class UniqueModule:
 
     def __init__(self) -> None:
         self.UUID = uuid.uuid4()
+
+    def serialize(self) -> str:
+        raise Exception("Not implemented!")
+
+
+class RPMPackage(UniqueModule):
+
+    def __init__(self) -> None:
+        super().__init__()
 
         self.Name = ""
         self.Version = ""
@@ -30,12 +39,6 @@ class RPMPackage:
 
     def get_field_names(self) -> List[str]:
         return [k for k in self.__dict__.keys()]
-
-    def get_uuid(self) -> str:
-        return self.UUID
-
-    def __str__(self) -> str:
-        return f"{self.Name}-{self.Version}-{self.Release}.{self.Architecture}"
 
     def serialize(self) -> str:
         return f"""UUID: {self.UUID}
@@ -99,3 +102,42 @@ def get_init_data_structures() -> Tuple[
     all_rpms: Dict[str, RPMPackage] = dict()
 
     return root_rpms, required_rpms, required_by_rpms, recommended_by_rpms, all_rpms
+
+
+class GitSubmodule(UniqueModule):
+
+    def __init__(self) -> None:
+        super().__init__()
+
+        self.Name = ""
+        self.Directory = ""
+        self.Remote_URL = ""
+        self.Git_Hash = ""
+        self.Git_Branch = ""
+        self.License = ""
+
+    def get_field_names(self) -> List[str]:
+        return [k for k in self.__dict__.keys()]
+
+    def serialize(self) -> str:
+        return f"""UUID: {self.UUID}
+Name: {self.Name}
+Directory: {self.Directory}
+Remote URL: {self.Remote_URL}
+Git Hash: {self.Git_Hash}
+Git Branch: {self.Git_Branch}
+License: {self.License}
+"""
+
+    def from_string(input: str) -> "GitSubmodule":
+        p = GitSubmodule()
+        for name in p.get_field_names():
+            output_name = name.replace("_", " ")
+
+            # TODO: regex doesn't work for multiline values, e.g. for Description
+            pattern = re.compile(f"({output_name}\s*:\s)(.+)")
+            match = pattern.search(input)
+            if match is not None:
+                p.__setattr__(name, match.groups()[1])
+
+        return p

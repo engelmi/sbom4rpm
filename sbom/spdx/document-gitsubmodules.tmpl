@@ -1,0 +1,15 @@
+{% for submodule in submodules -%}
+PackageName: {{ submodule.name }}
+SPDXID: SPDXRef-{{ submodule.uuid }}
+PackageComment: <text>PURL is {{ submodule.purl }}  </text>
+ExternalRef: PACKAGE-MANAGER purl {{ submodule.purl }}
+PackageVersion: {{ submodule.version }}
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: {{ submodule.licenses }}
+PackageLicenseDeclared: {{ submodule.licenses }}
+PackageCopyrightText: NOASSERTION
+PackageHomePage: {{ submodule.homepage }}
+
+{% endfor -%}

@@ -6,6 +6,9 @@ PackageVersion: {{ package.version }}
 PackageSupplier: NOASSERTION
 {% if package.is_root -%}
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-{{ package.uuid }}
+{% for submodule in submodules -%}
+Relationship: SPDXRef-{{ package.uuid }} CONTAINS {{ submodule.uuid }}
+{% endfor -%}
 {% endif -%}
 {% if package.requires|length == 0 -%}
 Relationship: SPDXRef-{{ package.uuid }} DEPENDS_ON NOASSERTION

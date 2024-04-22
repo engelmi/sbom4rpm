@@ -3,4 +3,5 @@
 {% for package in packages -%}
 {% include "document-package.tmpl" %}
 
-{% endfor %}
+{% endfor -%}
+{% include "document-gitsubmodules.tmpl" %}

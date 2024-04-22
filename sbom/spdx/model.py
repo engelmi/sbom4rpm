@@ -3,8 +3,8 @@
 from datetime import datetime
 from typing import Any, Dict, List
 
-from model import RPMPackage
-from sbom.lib.purl import build_purl
+from model import GitSubmodule, RPMPackage
+from sbom.lib.purl import build_git_purl, build_rpm_purl
 
 
 def to_template_data(
@@ -12,6 +12,7 @@ def to_template_data(
     all_rpms: Dict[str, RPMPackage],
     required_rpms: Dict[str, List[str]],
     recommended_by_rpms: Dict[str, List[str]],
+    git_submodules: List[GitSubmodule],
 ) -> Dict[str, Any]:
 
     seen = set()
@@ -48,13 +49,26 @@ def to_template_data(
             "version": elem.Version,
             "licenses": elem.License,
             "homepage": elem.URL,
-            "purl": build_purl(elem),
+            "purl": build_rpm_purl(elem),
             "is_root": elem.UUID == root_rpm.UUID,
             "requires": requires,
             "recommended_by": recommends,
         }
         packages.append(pkg)
         seen.add(elem.Name)
+
+    submodules = []
+    for submodule in git_submodules:
+        submodules.append(
+            {
+                "name": submodule.Name,
+                "uuid": submodule.UUID,
+                "version": submodule.Git_Hash,
+                "licenses": submodule.License,
+                "homepage": submodule.Remote_URL,
+                "purl": build_git_purl(submodule),
+            }
+        )
 
     data = {
         "sbom_author": "SBOMs for RPMs",
@@ -65,6 +79,7 @@ def to_template_data(
             "homepage": root_rpm.URL,
         },
         "packages": packages,
+        "submodules": submodules,
     }
 
     return data
