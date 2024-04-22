@@ -1,0 +1,18 @@
+{
+  "glibc-gconv-extra": [
+    "glibc"
+  ],
+  "bluechi-selinux": [
+    "bluechi-controller",
+    "bluechi-agent"
+  ],
+  "": [
+    "python3-libs"
+  ],
+  "python3": [
+    "python3-libs"
+  ],
+  "libxcrypt-compat": [
+    "python3-pip-wheel"
+  ]
+}

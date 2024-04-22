@@ -1,71 +1,56 @@
 {
-  "python3": [
-    "python3-bluechi",
-    "python3-dasbus",
-    "python3-gobject-base",
-    "python3-gobject-base-noarch"
-  ],
-  "python3-dasbus": [
-    "python3-bluechi"
-  ],
-  "python3-gobject-base": [
-    "python3-dasbus",
-    "python3-gobject-base-noarch"
-  ],
-  "gobject-introspection": [
-    "python3-gobject-base"
+  "bluechi-controller": [
+    "bluechi-ctl"
   ],
   "glibc": [
-    "python3-gobject-base",
+    "bluechi-ctl",
     "glibc",
-    "glibc-common",
     "glibc-gconv-extra",
-    "python3",
-    "python3-libs",
+    "glibc-common",
+    "systemd-libs",
     "sed",
     "libselinux",
     "pcre2",
     "libsepol",
     "libacl",
     "libattr",
-    "p11-kit-trust",
+    "libzstd",
     "p11-kit",
     "libtasn1",
     "libffi",
+    "xz-libs",
+    "lz4-libs",
+    "libgcrypt",
+    "libgpg-error",
+    "openssl-libs",
+    "zlib",
+    "p11-kit-trust",
     "grep",
     "libsigsegv",
     "pcre",
     "bash",
     "ncurses-libs",
-    "zlib",
-    "libuuid",
-    "openssl-libs",
-    "sqlite-libs",
-    "readline",
-    "xz-libs",
-    "gdbm-libs",
-    "expat",
     "libxcrypt",
-    "bzip2-libs",
-    "glib2",
-    "libmount",
-    "libblkid",
-    "gnutls",
-    "nettle",
-    "libunistring",
-    "libidn2",
-    "gobject-introspection",
+    "libcap",
     "bluechi-controller",
-    "systemd",
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "rpm",
+    "popt",
+    "libarchive",
+    "libxml2",
+    "bzip2-libs",
+    "sqlite-libs",
+    "lua-libs",
+    "audit-libs",
+    "libcap-ng",
+    "policycoreutils",
     "util-linux",
     "util-linux-core",
-    "systemd-libs",
-    "libzstd",
-    "lz4-libs",
-    "libgcrypt",
-    "libgpg-error",
-    "libcap",
+    "libuuid",
     "libsmartcols",
+    "libmount",
+    "libblkid",
     "pam",
     "openssl",
     "libpwquality",
@@ -73,47 +58,56 @@
     "gzip",
     "libeconf",
     "libdb",
-    "audit-libs",
-    "libcap-ng",
     "libutempter",
     "shadow-utils",
     "libsemanage",
+    "readline",
     "libfdisk",
-    "systemd-pam",
-    "libseccomp",
-    "kmod-libs",
-    "dbus-broker",
-    "acl",
-    "rpm-plugin-selinux",
-    "rpm-libs",
-    "rpm",
-    "popt",
-    "libarchive",
-    "libxml2",
-    "lua-libs",
-    "policycoreutils",
     "libselinux-utils",
     "gawk",
     "mpfr",
     "gmp",
     "diffutils",
-    "bluechi-agent",
-    "bluechi-ctl"
-  ],
-  "libffi": [
+    "systemd",
+    "systemd-pam",
+    "libseccomp",
+    "kmod-libs",
+    "dbus-broker",
+    "expat",
+    "acl",
     "python3-gobject-base",
+    "python3",
     "python3-libs",
-    "p11-kit",
+    "libxcrypt-compat",
+    "gdbm-libs",
     "glib2",
-    "gobject-introspection"
+    "gnutls",
+    "nettle",
+    "libunistring",
+    "libidn2",
+    "gobject-introspection",
+    "bluechi-agent"
   ],
-  "glib2": [
-    "python3-gobject-base",
-    "glib2",
-    "gobject-introspection"
+  "libgcc": [
+    "bluechi-ctl",
+    "glibc",
+    "systemd-libs",
+    "libcap",
+    "bluechi-controller",
+    "systemd",
+    "systemd-pam",
+    "kmod-libs",
+    "dbus-broker",
+    "bluechi-agent"
   ],
-  "python3-gobject-base-noarch": [
-    "python3-gobject-base"
+  "systemd-libs": [
+    "bluechi-ctl",
+    "bluechi-controller",
+    "util-linux",
+    "util-linux-core",
+    "systemd",
+    "dbus-broker",
+    "bluechi-agent"
   ],
   "glibc-gconv-extra": [
     "glibc",
@@ -126,20 +120,19 @@
     "glibc",
     "glibc-gconv-extra"
   ],
-  "glibc-all-langpacks": [
-    "glibc"
-  ],
-  "libgcc": [
+  "": [
     "glibc",
-    "bluechi-controller",
-    "systemd",
+    "setup",
     "systemd-libs",
-    "libcap",
-    "systemd-pam",
-    "kmod-libs",
-    "dbus-broker",
-    "bluechi-agent",
-    "bluechi-ctl"
+    "ca-certificates",
+    "selinux-policy",
+    "rpm",
+    "policycoreutils",
+    "util-linux",
+    "libblkid",
+    "openssl",
+    "gzip",
+    "systemd"
   ],
   "tzdata": [
     "glibc-common",
@@ -156,190 +149,122 @@
     "filesystem",
     "shadow-utils"
   ],
-  "centos-release-automotive": [
-    "setup"
-  ],
-  "python3-libs": [
-    "python3",
-    "python3-libs"
-  ],
-  "bzip2-libs": [
-    "python3-libs",
-    "systemd",
-    "libsemanage",
-    "rpm-plugin-selinux",
-    "rpm-libs",
-    "libarchive"
-  ],
-  "libxcrypt": [
-    "python3-libs",
-    "systemd",
-    "util-linux",
-    "systemd-libs",
-    "pam",
-    "shadow-utils",
-    "systemd-pam"
-  ],
-  "openssl-libs": [
-    "python3-libs",
-    "openssl-libs",
-    "systemd",
-    "systemd-libs",
-    "pam",
-    "openssl",
-    "systemd-pam",
-    "kmod-libs",
-    "rpm-plugin-selinux",
-    "rpm-libs",
-    "libarchive"
-  ],
-  "expat": [
-    "python3-libs",
-    "expat",
-    "dbus-broker"
-  ],
-  "gdbm-libs": [
-    "python3-libs",
-    "gdbm-libs"
-  ],
-  "xz-libs": [
-    "python3-libs",
-    "systemd",
-    "systemd-libs",
-    "kmod-libs",
-    "rpm-plugin-selinux",
-    "rpm-libs",
-    "libarchive",
-    "libxml2"
-  ],
-  "ncurses-libs": [
-    "python3-libs",
-    "bash",
-    "ncurses-libs",
-    "readline",
-    "util-linux",
-    "util-linux-core"
-  ],
-  "readline": [
-    "python3-libs",
-    "util-linux",
-    "gawk"
-  ],
-  "sqlite-libs": [
-    "python3-libs",
-    "rpm-plugin-selinux",
-    "rpm-libs"
-  ],
-  "libuuid": [
-    "python3-libs",
-    "libmount",
-    "libblkid",
-    "util-linux",
-    "util-linux-core",
-    "libfdisk"
-  ],
-  "zlib": [
-    "python3-libs",
-    "openssl-libs",
-    "sqlite-libs",
-    "glib2",
-    "systemd",
-    "util-linux",
-    "cracklib",
-    "kmod-libs",
-    "rpm-plugin-selinux",
-    "rpm-libs",
-    "libarchive",
-    "libxml2"
-  ],
-  "python3-pip-wheel": [
-    "python3-libs"
-  ],
-  "python3-setuptools-wheel": [
-    "python3-libs"
-  ],
-  "ca-certificates": [
-    "python3-pip-wheel",
-    "ca-certificates",
-    "openssl-libs"
-  ],
-  "bash": [
-    "ca-certificates",
-    "bash"
-  ],
-  "coreutils": [
-    "ca-certificates",
-    "libblkid",
-    "systemd",
-    "util-linux",
-    "systemd-libs",
-    "openssl",
-    "gzip",
-    "rpm",
-    "policycoreutils"
-  ],
   "grep": [
+    "systemd-libs",
     "ca-certificates",
     "grep",
-    "systemd",
-    "systemd-libs",
-    "policycoreutils"
+    "policycoreutils",
+    "systemd"
   ],
-  "p11-kit": [
-    "ca-certificates",
-    "p11-kit-trust",
-    "p11-kit",
-    "gnutls",
-    "systemd",
+  "libcap": [
     "systemd-libs",
+    "libcap",
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "systemd",
     "systemd-pam"
   ],
-  "p11-kit-trust": [
+  "libxcrypt": [
+    "systemd-libs",
+    "util-linux",
+    "pam",
+    "shadow-utils",
+    "systemd",
+    "systemd-pam",
+    "python3-libs",
+    "libxcrypt-compat"
+  ],
+  "openssl-libs": [
+    "systemd-libs",
+    "openssl-libs",
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "libarchive",
+    "pam",
+    "openssl",
+    "systemd",
+    "systemd-pam",
+    "kmod-libs",
+    "python3-libs"
+  ],
+  "libgcrypt": [
+    "systemd-libs",
+    "systemd"
+  ],
+  "lz4-libs": [
+    "systemd-libs",
+    "libarchive",
+    "systemd"
+  ],
+  "xz-libs": [
+    "systemd-libs",
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "libarchive",
+    "libxml2",
+    "systemd",
+    "kmod-libs",
+    "python3-libs"
+  ],
+  "p11-kit": [
+    "systemd-libs",
+    "p11-kit",
     "ca-certificates",
+    "p11-kit-trust",
+    "systemd",
+    "systemd-pam",
     "gnutls"
   ],
-  "sed": [
-    "ca-certificates",
-    "systemd",
+  "libselinux": [
     "systemd-libs",
-    "policycoreutils"
+    "sed",
+    "rpm-plugin-selinux",
+    "policycoreutils",
+    "util-linux",
+    "util-linux-core",
+    "libmount",
+    "pam",
+    "shadow-utils",
+    "libsemanage",
+    "libselinux-utils",
+    "systemd",
+    "systemd-pam",
+    "dbus-broker",
+    "glib2"
+  ],
+  "libzstd": [
+    "systemd-libs",
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "libarchive",
+    "systemd",
+    "kmod-libs"
+  ],
+  "sed": [
+    "systemd-libs",
+    "ca-certificates",
+    "policycoreutils",
+    "systemd"
   ],
   "libacl": [
     "sed",
-    "systemd",
-    "shadow-utils",
-    "acl",
     "rpm-plugin-selinux",
     "rpm-libs",
-    "libarchive"
-  ],
-  "libselinux": [
-    "sed",
-    "glib2",
-    "libmount",
-    "systemd",
-    "util-linux",
-    "util-linux-core",
-    "systemd-libs",
-    "pam",
+    "libarchive",
     "shadow-utils",
-    "libsemanage",
-    "systemd-pam",
-    "dbus-broker",
-    "rpm-plugin-selinux",
-    "policycoreutils",
-    "libselinux-utils"
+    "systemd",
+    "acl"
   ],
   "pcre2": [
     "libselinux",
     "pcre2",
-    "systemd",
-    "libselinux-utils"
+    "libselinux-utils",
+    "systemd"
   ],
   "libsepol": [
     "libselinux",
-    "libsemanage",
     "policycoreutils",
+    "libsemanage",
     "libselinux-utils"
   ],
   "pcre2-syntax": [
@@ -350,9 +275,52 @@
     "libattr",
     "shadow-utils"
   ],
-  "libtasn1": [
-    "p11-kit-trust",
+  "libffi": [
     "p11-kit",
+    "python3-gobject-base",
+    "python3-libs",
+    "glib2",
+    "gobject-introspection"
+  ],
+  "libtasn1": [
+    "p11-kit",
+    "p11-kit-trust",
+    "gnutls"
+  ],
+  "libgpg-error": [
+    "libgcrypt",
+    "libgpg-error"
+  ],
+  "ca-certificates": [
+    "openssl-libs",
+    "ca-certificates",
+    "python3-pip-wheel"
+  ],
+  "crypto-policies": [
+    "openssl-libs",
+    "crypto-policies",
+    "gnutls"
+  ],
+  "zlib": [
+    "openssl-libs",
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "libarchive",
+    "libxml2",
+    "sqlite-libs",
+    "util-linux",
+    "cracklib",
+    "systemd",
+    "kmod-libs",
+    "python3-libs",
+    "glib2"
+  ],
+  "bash": [
+    "ca-certificates",
+    "bash"
+  ],
+  "p11-kit-trust": [
+    "ca-certificates",
     "gnutls"
   ],
   "pcre": [
@@ -364,49 +332,16 @@
     "grep",
     "gawk"
   ],
+  "ncurses-libs": [
+    "bash",
+    "ncurses-libs",
+    "util-linux",
+    "util-linux-core",
+    "readline",
+    "python3-libs"
+  ],
   "ncurses-base": [
     "ncurses-libs"
-  ],
-  "crypto-policies": [
-    "openssl-libs",
-    "crypto-policies",
-    "gnutls"
-  ],
-  "gnutls": [
-    "glib2"
-  ],
-  "libmount": [
-    "glib2",
-    "systemd",
-    "util-linux",
-    "util-linux-core"
-  ],
-  "libblkid": [
-    "libmount",
-    "systemd",
-    "util-linux",
-    "util-linux-core",
-    "libfdisk"
-  ],
-  "nettle": [
-    "gnutls",
-    "nettle"
-  ],
-  "libidn2": [
-    "gnutls"
-  ],
-  "libunistring": [
-    "gnutls",
-    "libidn2"
-  ],
-  "systemd-libs": [
-    "bluechi-controller",
-    "systemd",
-    "util-linux",
-    "util-linux-core",
-    "dbus-broker",
-    "bluechi-agent",
-    "bluechi-ctl"
   ],
   "systemd": [
     "bluechi-controller",
@@ -416,81 +351,122 @@
     "dbus-common",
     "bluechi-agent"
   ],
-  "acl": [
-    "systemd"
-  ],
-  "dbus": [
-    "systemd"
-  ],
-  "audit-libs": [
-    "systemd",
-    "util-linux",
-    "pam",
-    "audit-libs",
-    "shadow-utils",
-    "libsemanage",
-    "dbus-broker",
-    "rpm-plugin-selinux",
-    "rpm-libs",
+  "policycoreutils": [
+    "bluechi-selinux",
+    "selinux-policy",
     "policycoreutils"
   ],
-  "libcap": [
+  "selinux-policy": [
+    "bluechi-selinux",
+    "selinux-policy",
+    "rpm-plugin-selinux"
+  ],
+  "rpm-plugin-selinux": [
+    "selinux-policy"
+  ],
+  "audit-libs": [
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "audit-libs",
+    "policycoreutils",
+    "util-linux",
+    "pam",
+    "shadow-utils",
+    "libsemanage",
     "systemd",
-    "systemd-libs",
-    "libcap",
-    "systemd-pam",
+    "dbus-broker"
+  ],
+  "bzip2-libs": [
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "libarchive",
+    "libsemanage",
+    "systemd",
+    "python3-libs"
+  ],
+  "lua-libs": [
     "rpm-plugin-selinux",
     "rpm-libs"
   ],
-  "libfdisk": [
-    "systemd",
-    "util-linux"
+  "popt": [
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "rpm"
   ],
-  "libgcrypt": [
-    "systemd",
-    "systemd-libs"
+  "rpm-libs": [
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "rpm"
   ],
-  "kmod-libs": [
+  "sqlite-libs": [
+    "rpm-plugin-selinux",
+    "rpm-libs",
+    "python3-libs"
+  ],
+  "rpm": [
+    "rpm-libs",
+    "rpm",
+    "policycoreutils"
+  ],
+  "libarchive": [
+    "rpm"
+  ],
+  "libxml2": [
+    "libarchive",
+    "libxml2"
+  ],
+  "libcap-ng": [
+    "audit-libs",
+    "util-linux",
+    "dbus-broker"
+  ],
+  "diffutils": [
+    "policycoreutils"
+  ],
+  "gawk": [
+    "policycoreutils"
+  ],
+  "libselinux-utils": [
+    "policycoreutils"
+  ],
+  "libsemanage": [
+    "policycoreutils",
+    "shadow-utils",
+    "libsemanage"
+  ],
+  "util-linux": [
+    "policycoreutils",
+    "util-linux",
     "systemd"
   ],
-  "lz4-libs": [
+  "libblkid": [
+    "util-linux",
+    "util-linux-core",
+    "libmount",
+    "libfdisk",
+    "systemd"
+  ],
+  "libfdisk": [
+    "util-linux",
+    "systemd"
+  ],
+  "libmount": [
+    "util-linux",
+    "util-linux-core",
     "systemd",
-    "systemd-libs",
-    "libarchive"
+    "glib2"
   ],
   "pam": [
-    "systemd",
     "util-linux",
     "pam",
     "libpwquality",
+    "systemd",
     "systemd-pam"
   ],
-  "libseccomp": [
-    "systemd"
-  ],
-  "libzstd": [
-    "systemd",
-    "systemd-libs",
-    "kmod-libs",
-    "rpm-plugin-selinux",
-    "rpm-libs",
-    "libarchive"
-  ],
-  "systemd-pam": [
-    "systemd"
-  ],
-  "systemd-rpm-macros": [
-    "systemd"
-  ],
-  "util-linux": [
-    "systemd",
+  "readline": [
     "util-linux",
-    "policycoreutils"
-  ],
-  "libcap-ng": [
-    "util-linux",
-    "audit-libs",
-    "dbus-broker"
+    "gawk",
+    "python3-libs"
   ],
   "libsmartcols": [
     "util-linux",
@@ -499,13 +475,17 @@
   "libutempter": [
     "util-linux"
   ],
+  "libuuid": [
+    "util-linux",
+    "util-linux-core",
+    "libmount",
+    "libblkid",
+    "libfdisk",
+    "python3-libs"
+  ],
   "util-linux-core": [
     "util-linux",
     "util-linux-core"
-  ],
-  "libgpg-error": [
-    "libgcrypt",
-    "libgpg-error"
   ],
   "libdb": [
     "pam"
@@ -536,10 +516,30 @@
     "shadow-utils",
     "dbus-broker"
   ],
-  "libsemanage": [
-    "shadow-utils",
-    "libsemanage",
-    "policycoreutils"
+  "gmp": [
+    "gawk",
+    "mpfr"
+  ],
+  "mpfr": [
+    "gawk"
+  ],
+  "acl": [
+    "systemd"
+  ],
+  "dbus": [
+    "systemd"
+  ],
+  "kmod-libs": [
+    "systemd"
+  ],
+  "libseccomp": [
+    "systemd"
+  ],
+  "systemd-pam": [
+    "systemd"
+  ],
+  "systemd-rpm-macros": [
+    "systemd"
   ],
   "dbus-broker": [
     "dbus"
@@ -548,68 +548,61 @@
     "dbus-broker",
     "dbus-common"
   ],
-  "policycoreutils": [
-    "bluechi-selinux",
-    "selinux-policy",
-    "policycoreutils"
+  "expat": [
+    "dbus-broker",
+    "expat",
+    "python3-libs"
   ],
-  "selinux-policy": [
-    "bluechi-selinux",
-    "selinux-policy",
-    "rpm-plugin-selinux"
+  "python3": [
+    "python3-bluechi",
+    "python3-dasbus",
+    "python3-gobject-base",
+    "python3-gobject-base-noarch"
   ],
-  "rpm-plugin-selinux": [
-    "selinux-policy"
+  "python3-dasbus": [
+    "python3-bluechi"
   ],
-  "selinux-policy-mls": [
-    "selinux-policy"
+  "python3-gobject-base": [
+    "python3-dasbus",
+    "python3-gobject-base-noarch"
   ],
-  "lua-libs": [
-    "rpm-plugin-selinux",
-    "rpm-libs"
+  "gobject-introspection": [
+    "python3-gobject-base"
   ],
-  "popt": [
-    "rpm-plugin-selinux",
-    "rpm-libs",
-    "rpm"
+  "glib2": [
+    "python3-gobject-base",
+    "glib2",
+    "gobject-introspection"
   ],
-  "rpm-libs": [
-    "rpm-plugin-selinux",
-    "rpm-libs",
-    "rpm"
+  "python3-gobject-base-noarch": [
+    "python3-gobject-base"
   ],
-  "rpm": [
-    "rpm-libs",
-    "rpm",
-    "policycoreutils"
+  "python3-libs": [
+    "python3",
+    "python3-libs"
   ],
-  "curl": [
-    "rpm"
+  "gdbm-libs": [
+    "python3-libs",
+    "gdbm-libs"
   ],
-  "libarchive": [
-    "rpm"
+  "python3-pip-wheel": [
+    "python3-libs"
   ],
-  "libxml2": [
-    "libarchive",
-    "libxml2"
+  "python3-setuptools-wheel": [
+    "python3-libs"
   ],
-  "diffutils": [
-    "policycoreutils"
+  "gnutls": [
+    "glib2"
   ],
-  "gawk": [
-    "policycoreutils"
+  "nettle": [
+    "gnutls",
+    "nettle"
   ],
-  "libselinux-utils": [
-    "policycoreutils"
+  "libidn2": [
+    "gnutls"
   ],
-  "gmp": [
-    "gawk",
-    "mpfr"
-  ],
-  "mpfr": [
-    "gawk"
-  ],
-  "": [
-    "bluechi-ctl"
+  "libunistring": [
+    "gnutls",
+    "libidn2"
   ]
 }

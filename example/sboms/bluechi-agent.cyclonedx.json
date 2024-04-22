@@ -1,0 +1,1354 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:3a5533b0-48e2-4b48-ad8f-4f7de25ba6b3",
+  "version": "1",
+  "metadata": {
+    "timestamp": "2024-04-22T12:46:07",
+    "tools": {
+      "components": [
+        {
+          "group": "@sbom4rpms",
+          "name": "sbom4rpms",
+          "version": "0.0.1",
+          "type": "applicastion",
+          "author": "SBOM4RPMS",
+          "publisher": "SBOM4RPMS"
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "SBOM4RPMS"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "runtime"
+      }
+    ],
+    "component": {
+      "group": "",
+      "name": "bluechi-agent",
+      "version": "0.8.0",
+      "purl": "pkg:rpm/bluechi-agent@0.8.0-0.202404041101.git72c7ccb0.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/bluechi-agent@0.8.0-0.202404041101.git72c7ccb0.el9?arch=x86_64",
+      "properties": [],
+      "type": "application"
+    }
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "bluechi-agent",
+      "version": "0.8.0",
+      "purl": "pkg:rpm/bluechi-agent@0.8.0-0.202404041101.git72c7ccb0.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/bluechi-agent@0.8.0-0.202404041101.git72c7ccb0.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "systemd",
+      "version": "252",
+      "purl": "pkg:rpm/centos%2Fsystemd@252-32.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "util-linux",
+      "version": "2.37.4",
+      "purl": "pkg:rpm/centos%2Futil-linux@2.37.4-18.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "util-linux-core",
+      "version": "2.37.4",
+      "purl": "pkg:rpm/centos%2Futil-linux-core@2.37.4-18.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libuuid",
+      "version": "2.37.4",
+      "purl": "pkg:rpm/centos%2Flibuuid@2.37.4-18.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libuuid@2.37.4-18.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "glibc",
+      "version": "2.34",
+      "purl": "pkg:rpm/centos%2Fglibc@2.34-103.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/glibc@2.34-103.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libgcc",
+      "version": "11.4.1",
+      "purl": "pkg:rpm/centos%2Flibgcc@11.4.1-3.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libgcc@11.4.1-3.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "glibc-common",
+      "version": "2.34",
+      "purl": "pkg:rpm/centos%2Fglibc-common@2.34-103.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/glibc-common@2.34-103.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "tzdata",
+      "version": "2024a",
+      "purl": "pkg:rpm/centos%2Ftzdata@2024a-2.el9?arch=noarch",
+      "bom-ref": "pkg:rpm/centos/tzdata@2024a-2.el9?arch=noarch",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "basesystem",
+      "version": "11",
+      "purl": "pkg:rpm/centos%2Fbasesystem@11-13.el9?arch=noarch",
+      "bom-ref": "pkg:rpm/centos/basesystem@11-13.el9?arch=noarch",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "setup",
+      "version": "2.13.7",
+      "purl": "pkg:rpm/centos%2Fsetup@2.13.7-10.el9?arch=noarch",
+      "bom-ref": "pkg:rpm/centos/setup@2.13.7-10.el9?arch=noarch",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "filesystem",
+      "version": "3.16",
+      "purl": "pkg:rpm/centos%2Ffilesystem@3.16-2.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/filesystem@3.16-2.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "glibc-gconv-extra",
+      "version": "2.34",
+      "purl": "pkg:rpm/centos%2Fglibc-gconv-extra@2.34-103.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/glibc-gconv-extra@2.34-103.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "ncurses-libs",
+      "version": "6.2",
+      "purl": "pkg:rpm/centos%2Fncurses-libs@6.2-10.20210508.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/ncurses-libs@6.2-10.20210508.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "ncurses-base",
+      "version": "6.2",
+      "purl": "pkg:rpm/centos%2Fncurses-base@6.2-10.20210508.el9?arch=noarch",
+      "bom-ref": "pkg:rpm/centos/ncurses-base@6.2-10.20210508.el9?arch=noarch",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "systemd-libs",
+      "version": "252",
+      "purl": "pkg:rpm/centos%2Fsystemd-libs@252-32.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "sed",
+      "version": "4.8",
+      "purl": "pkg:rpm/centos%2Fsed@4.8-9.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/sed@4.8-9.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libselinux",
+      "version": "3.6",
+      "purl": "pkg:rpm/centos%2Flibselinux@3.6-1.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libselinux@3.6-1.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libsepol",
+      "version": "3.6",
+      "purl": "pkg:rpm/centos%2Flibsepol@3.6-1.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libsepol@3.6-1.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "pcre2",
+      "version": "10.40",
+      "purl": "pkg:rpm/centos%2Fpcre2@10.40-5.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/pcre2@10.40-5.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "pcre2-syntax",
+      "version": "10.40",
+      "purl": "pkg:rpm/centos%2Fpcre2-syntax@10.40-5.el9?arch=noarch",
+      "bom-ref": "pkg:rpm/centos/pcre2-syntax@10.40-5.el9?arch=noarch",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libacl",
+      "version": "2.3.1",
+      "purl": "pkg:rpm/centos%2Flibacl@2.3.1-4.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libacl@2.3.1-4.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libattr",
+      "version": "2.5.1",
+      "purl": "pkg:rpm/centos%2Flibattr@2.5.1-3.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libattr@2.5.1-3.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libzstd",
+      "version": "1.5.1",
+      "purl": "pkg:rpm/centos%2Flibzstd@1.5.1-2.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libzstd@1.5.1-2.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "p11-kit",
+      "version": "0.25.3",
+      "purl": "pkg:rpm/centos%2Fp11-kit@0.25.3-2.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/p11-kit@0.25.3-2.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libtasn1",
+      "version": "4.16.0",
+      "purl": "pkg:rpm/centos%2Flibtasn1@4.16.0-8.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libtasn1@4.16.0-8.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libffi",
+      "version": "3.4.2",
+      "purl": "pkg:rpm/centos%2Flibffi@3.4.2-8.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libffi@3.4.2-8.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "xz-libs",
+      "version": "5.2.5",
+      "purl": "pkg:rpm/centos%2Fxz-libs@5.2.5-8.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/xz-libs@5.2.5-8.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "lz4-libs",
+      "version": "1.9.3",
+      "purl": "pkg:rpm/centos%2Flz4-libs@1.9.3-5.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/lz4-libs@1.9.3-5.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libgcrypt",
+      "version": "1.10.0",
+      "purl": "pkg:rpm/centos%2Flibgcrypt@1.10.0-10.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libgcrypt@1.10.0-10.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libgpg-error",
+      "version": "1.42",
+      "purl": "pkg:rpm/centos%2Flibgpg-error@1.42-5.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libgpg-error@1.42-5.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "openssl-libs",
+      "version": "3.0.7",
+      "purl": "pkg:rpm/centos%2Fopenssl-libs@3.0.7-27.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/openssl-libs@3.0.7-27.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "zlib",
+      "version": "1.2.11",
+      "purl": "pkg:rpm/centos%2Fzlib@1.2.11-41.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/zlib@1.2.11-41.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "crypto-policies",
+      "version": "20240202",
+      "purl": "pkg:rpm/centos%2Fcrypto-policies@20240202-1.git283706d.el9?arch=noarch",
+      "bom-ref": "pkg:rpm/centos/crypto-policies@20240202-1.git283706d.el9?arch=noarch",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "ca-certificates",
+      "version": "2023.2.60_v7.0.306",
+      "purl": "pkg:rpm/centos%2Fca-certificates@2023.2.60_v7.0.306-90.1.el9?arch=noarch",
+      "bom-ref": "pkg:rpm/centos/ca-certificates@2023.2.60_v7.0.306-90.1.el9?arch=noarch",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "p11-kit-trust",
+      "version": "0.25.3",
+      "purl": "pkg:rpm/centos%2Fp11-kit-trust@0.25.3-2.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/p11-kit-trust@0.25.3-2.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "grep",
+      "version": "3.6",
+      "purl": "pkg:rpm/centos%2Fgrep@3.6-5.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/grep@3.6-5.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libsigsegv",
+      "version": "2.13",
+      "purl": "pkg:rpm/centos%2Flibsigsegv@2.13-4.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libsigsegv@2.13-4.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "pcre",
+      "version": "8.44",
+      "purl": "pkg:rpm/centos%2Fpcre@8.44-3.el9.3?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/pcre@8.44-3.el9.3?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "bash",
+      "version": "5.1.8",
+      "purl": "pkg:rpm/centos%2Fbash@5.1.8-6.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/bash@5.1.8-6.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libxcrypt",
+      "version": "4.4.18",
+      "purl": "pkg:rpm/centos%2Flibxcrypt@4.4.18-3.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libxcrypt@4.4.18-3.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libcap",
+      "version": "2.48",
+      "purl": "pkg:rpm/centos%2Flibcap@2.48-9.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libcap@2.48-9.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libsmartcols",
+      "version": "2.37.4",
+      "purl": "pkg:rpm/centos%2Flibsmartcols@2.37.4-18.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libsmartcols@2.37.4-18.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libmount",
+      "version": "2.37.4",
+      "purl": "pkg:rpm/centos%2Flibmount@2.37.4-18.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libmount@2.37.4-18.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libblkid",
+      "version": "2.37.4",
+      "purl": "pkg:rpm/centos%2Flibblkid@2.37.4-18.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libblkid@2.37.4-18.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libutempter",
+      "version": "1.2.1",
+      "purl": "pkg:rpm/centos%2Flibutempter@1.2.1-6.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libutempter@1.2.1-6.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "shadow-utils",
+      "version": "4.9",
+      "purl": "pkg:rpm/centos%2Fshadow-utils@4.9-8.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libsemanage",
+      "version": "3.6",
+      "purl": "pkg:rpm/centos%2Flibsemanage@3.6-1.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libsemanage@3.6-1.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "bzip2-libs",
+      "version": "1.0.8",
+      "purl": "pkg:rpm/centos%2Fbzip2-libs@1.0.8-8.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/bzip2-libs@1.0.8-8.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "audit-libs",
+      "version": "3.1.2",
+      "purl": "pkg:rpm/centos%2Faudit-libs@3.1.2-2.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/audit-libs@3.1.2-2.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libcap-ng",
+      "version": "0.8.2",
+      "purl": "pkg:rpm/centos%2Flibcap-ng@0.8.2-7.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libcap-ng@0.8.2-7.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "readline",
+      "version": "8.1",
+      "purl": "pkg:rpm/centos%2Freadline@8.1-4.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/readline@8.1-4.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "pam",
+      "version": "1.5.1",
+      "purl": "pkg:rpm/centos%2Fpam@1.5.1-19.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "openssl",
+      "version": "3.0.7",
+      "purl": "pkg:rpm/centos%2Fopenssl@3.0.7-27.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/openssl@3.0.7-27.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libpwquality",
+      "version": "1.4.4",
+      "purl": "pkg:rpm/centos%2Flibpwquality@1.4.4-8.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libpwquality@1.4.4-8.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "cracklib-dicts",
+      "version": "2.9.6",
+      "purl": "pkg:rpm/centos%2Fcracklib-dicts@2.9.6-27.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/cracklib-dicts@2.9.6-27.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "cracklib",
+      "version": "2.9.6",
+      "purl": "pkg:rpm/centos%2Fcracklib@2.9.6-27.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/cracklib@2.9.6-27.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "gzip",
+      "version": "1.12",
+      "purl": "pkg:rpm/centos%2Fgzip@1.12-1.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/gzip@1.12-1.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libeconf",
+      "version": "0.4.1",
+      "purl": "pkg:rpm/centos%2Flibeconf@0.4.1-3.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libeconf@0.4.1-3.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libdb",
+      "version": "5.3.28",
+      "purl": "pkg:rpm/centos%2Flibdb@5.3.28-53.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libdb@5.3.28-53.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libfdisk",
+      "version": "2.37.4",
+      "purl": "pkg:rpm/centos%2Flibfdisk@2.37.4-18.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libfdisk@2.37.4-18.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "systemd-rpm-macros",
+      "version": "252",
+      "purl": "pkg:rpm/centos%2Fsystemd-rpm-macros@252-32.el9?arch=noarch",
+      "bom-ref": "pkg:rpm/centos/systemd-rpm-macros@252-32.el9?arch=noarch",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "systemd-pam",
+      "version": "252",
+      "purl": "pkg:rpm/centos%2Fsystemd-pam@252-32.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "libseccomp",
+      "version": "2.5.2",
+      "purl": "pkg:rpm/centos%2Flibseccomp@2.5.2-2.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/libseccomp@2.5.2-2.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "kmod-libs",
+      "version": "28",
+      "purl": "pkg:rpm/centos%2Fkmod-libs@28-9.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/kmod-libs@28-9.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "dbus",
+      "version": "1.12.20",
+      "purl": "pkg:rpm/centos%2Fdbus@1.12.20-8.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/dbus@1.12.20-8.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "dbus-broker",
+      "version": "28",
+      "purl": "pkg:rpm/centos%2Fdbus-broker@28-7.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "expat",
+      "version": "2.5.0",
+      "purl": "pkg:rpm/centos%2Fexpat@2.5.0-2.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/expat@2.5.0-2.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "dbus-common",
+      "version": "1.12.20",
+      "purl": "pkg:rpm/centos%2Fdbus-common@1.12.20-8.el9?arch=noarch",
+      "bom-ref": "pkg:rpm/centos/dbus-common@1.12.20-8.el9?arch=noarch",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "acl",
+      "version": "2.3.1",
+      "purl": "pkg:rpm/centos%2Facl@2.3.1-4.el9?arch=x86_64",
+      "bom-ref": "pkg:rpm/centos/acl@2.3.1-4.el9?arch=x86_64",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "hashmap.c",
+      "version": "b32c16f9c717ab20b98246dc121ef47e5d0dd9e0",
+      "purl": "pkg%3Agithub.com%2Feclipse-bluechi%2Fhashmap.c@b32c16f9c717ab20b98246dc121ef47e5d0dd9e0",
+      "bom-ref": "pkg:github.com/eclipse-bluechi/hashmap.c@b32c16f9c717ab20b98246dc121ef47e5d0dd9e0",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "group": "",
+      "name": "inih",
+      "version": "9cecf0643da0846e77f64d10a126d9f48b9e05e8",
+      "purl": "pkg%3Agithub.com%2Fbenhoyt%2Finih@9cecf0643da0846e77f64d10a126d9f48b9e05e8",
+      "bom-ref": "pkg:github.com/benhoyt/inih@9cecf0643da0846e77f64d10a126d9f48b9e05e8",
+      "properties": [],
+      "type": "library",
+      "scope": "required"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:rpm/bluechi-agent@0.8.0-0.202404041101.git72c7ccb0.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/bluechi-agent@0.8.0-0.202404041101.git72c7ccb0.el9?arch=x86_64",
+        "pkg:rpm/bluechi-agent@0.8.0-0.202404041101.git72c7ccb0.el9?arch=x86_64",
+        "pkg:rpm/bluechi-agent@0.8.0-0.202404041101.git72c7ccb0.el9?arch=x86_64",
+        "pkg:rpm/bluechi-agent@0.8.0-0.202404041101.git72c7ccb0.el9?arch=x86_64",
+        "pkg:github.com/eclipse-bluechi/hashmap.c@b32c16f9c717ab20b98246dc121ef47e5d0dd9e0",
+        "pkg:github.com/benhoyt/inih@9cecf0643da0846e77f64d10a126d9f48b9e05e8"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd@252-32.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux@2.37.4-18.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/util-linux-core@2.37.4-18.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libuuid@2.37.4-18.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libuuid@2.37.4-18.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/glibc@2.34-103.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/glibc@2.34-103.el9?arch=x86_64",
+        "pkg:rpm/centos/glibc@2.34-103.el9?arch=x86_64",
+        "pkg:rpm/centos/glibc@2.34-103.el9?arch=x86_64",
+        "pkg:rpm/centos/glibc@2.34-103.el9?arch=x86_64",
+        "pkg:rpm/centos/glibc@2.34-103.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libgcc@11.4.1-3.el9?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:rpm/centos/glibc-common@2.34-103.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/glibc-common@2.34-103.el9?arch=x86_64",
+        "pkg:rpm/centos/glibc-common@2.34-103.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/tzdata@2024a-2.el9?arch=noarch",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:rpm/centos/basesystem@11-13.el9?arch=noarch",
+      "dependsOn": [
+        "pkg:rpm/centos/basesystem@11-13.el9?arch=noarch",
+        "pkg:rpm/centos/basesystem@11-13.el9?arch=noarch"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/setup@2.13.7-10.el9?arch=noarch",
+      "dependsOn": [
+        "pkg:rpm/centos/setup@2.13.7-10.el9?arch=noarch"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/filesystem@3.16-2.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/filesystem@3.16-2.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/glibc-gconv-extra@2.34-103.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/glibc-gconv-extra@2.34-103.el9?arch=x86_64",
+        "pkg:rpm/centos/glibc-gconv-extra@2.34-103.el9?arch=x86_64",
+        "pkg:rpm/centos/glibc-gconv-extra@2.34-103.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/ncurses-libs@6.2-10.20210508.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/ncurses-libs@6.2-10.20210508.el9?arch=x86_64",
+        "pkg:rpm/centos/ncurses-libs@6.2-10.20210508.el9?arch=x86_64",
+        "pkg:rpm/centos/ncurses-libs@6.2-10.20210508.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/ncurses-base@6.2-10.20210508.el9?arch=noarch",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-libs@252-32.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/sed@4.8-9.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/sed@4.8-9.el9?arch=x86_64",
+        "pkg:rpm/centos/sed@4.8-9.el9?arch=x86_64",
+        "pkg:rpm/centos/sed@4.8-9.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libselinux@3.6-1.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libselinux@3.6-1.el9?arch=x86_64",
+        "pkg:rpm/centos/libselinux@3.6-1.el9?arch=x86_64",
+        "pkg:rpm/centos/libselinux@3.6-1.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libsepol@3.6-1.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libsepol@3.6-1.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/pcre2@10.40-5.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/pcre2@10.40-5.el9?arch=x86_64",
+        "pkg:rpm/centos/pcre2@10.40-5.el9?arch=x86_64",
+        "pkg:rpm/centos/pcre2@10.40-5.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/pcre2-syntax@10.40-5.el9?arch=noarch",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:rpm/centos/libacl@2.3.1-4.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libacl@2.3.1-4.el9?arch=x86_64",
+        "pkg:rpm/centos/libacl@2.3.1-4.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libattr@2.5.1-3.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libattr@2.5.1-3.el9?arch=x86_64",
+        "pkg:rpm/centos/libattr@2.5.1-3.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libzstd@1.5.1-2.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libzstd@1.5.1-2.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/p11-kit@0.25.3-2.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/p11-kit@0.25.3-2.el9?arch=x86_64",
+        "pkg:rpm/centos/p11-kit@0.25.3-2.el9?arch=x86_64",
+        "pkg:rpm/centos/p11-kit@0.25.3-2.el9?arch=x86_64",
+        "pkg:rpm/centos/p11-kit@0.25.3-2.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libtasn1@4.16.0-8.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libtasn1@4.16.0-8.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libffi@3.4.2-8.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libffi@3.4.2-8.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/xz-libs@5.2.5-8.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/xz-libs@5.2.5-8.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/lz4-libs@1.9.3-5.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/lz4-libs@1.9.3-5.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libgcrypt@1.10.0-10.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libgcrypt@1.10.0-10.el9?arch=x86_64",
+        "pkg:rpm/centos/libgcrypt@1.10.0-10.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libgpg-error@1.42-5.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libgpg-error@1.42-5.el9?arch=x86_64",
+        "pkg:rpm/centos/libgpg-error@1.42-5.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/openssl-libs@3.0.7-27.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/openssl-libs@3.0.7-27.el9?arch=x86_64",
+        "pkg:rpm/centos/openssl-libs@3.0.7-27.el9?arch=x86_64",
+        "pkg:rpm/centos/openssl-libs@3.0.7-27.el9?arch=x86_64",
+        "pkg:rpm/centos/openssl-libs@3.0.7-27.el9?arch=x86_64",
+        "pkg:rpm/centos/openssl-libs@3.0.7-27.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/zlib@1.2.11-41.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/zlib@1.2.11-41.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/crypto-policies@20240202-1.git283706d.el9?arch=noarch",
+      "dependsOn": [
+        "pkg:rpm/centos/crypto-policies@20240202-1.git283706d.el9?arch=noarch"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/ca-certificates@2023.2.60_v7.0.306-90.1.el9?arch=noarch",
+      "dependsOn": [
+        "pkg:rpm/centos/ca-certificates@2023.2.60_v7.0.306-90.1.el9?arch=noarch",
+        "pkg:rpm/centos/ca-certificates@2023.2.60_v7.0.306-90.1.el9?arch=noarch",
+        "pkg:rpm/centos/ca-certificates@2023.2.60_v7.0.306-90.1.el9?arch=noarch",
+        "pkg:rpm/centos/ca-certificates@2023.2.60_v7.0.306-90.1.el9?arch=noarch",
+        "pkg:rpm/centos/ca-certificates@2023.2.60_v7.0.306-90.1.el9?arch=noarch",
+        "pkg:rpm/centos/ca-certificates@2023.2.60_v7.0.306-90.1.el9?arch=noarch"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/p11-kit-trust@0.25.3-2.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/p11-kit-trust@0.25.3-2.el9?arch=x86_64",
+        "pkg:rpm/centos/p11-kit-trust@0.25.3-2.el9?arch=x86_64",
+        "pkg:rpm/centos/p11-kit-trust@0.25.3-2.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/grep@3.6-5.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/grep@3.6-5.el9?arch=x86_64",
+        "pkg:rpm/centos/grep@3.6-5.el9?arch=x86_64",
+        "pkg:rpm/centos/grep@3.6-5.el9?arch=x86_64",
+        "pkg:rpm/centos/grep@3.6-5.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libsigsegv@2.13-4.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libsigsegv@2.13-4.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/pcre@8.44-3.el9.3?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/pcre@8.44-3.el9.3?arch=x86_64",
+        "pkg:rpm/centos/pcre@8.44-3.el9.3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/bash@5.1.8-6.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/bash@5.1.8-6.el9?arch=x86_64",
+        "pkg:rpm/centos/bash@5.1.8-6.el9?arch=x86_64",
+        "pkg:rpm/centos/bash@5.1.8-6.el9?arch=x86_64",
+        "pkg:rpm/centos/bash@5.1.8-6.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libxcrypt@4.4.18-3.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libxcrypt@4.4.18-3.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libcap@2.48-9.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libcap@2.48-9.el9?arch=x86_64",
+        "pkg:rpm/centos/libcap@2.48-9.el9?arch=x86_64",
+        "pkg:rpm/centos/libcap@2.48-9.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libsmartcols@2.37.4-18.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libsmartcols@2.37.4-18.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libmount@2.37.4-18.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libmount@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/libmount@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/libmount@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/libmount@2.37.4-18.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libblkid@2.37.4-18.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libblkid@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/libblkid@2.37.4-18.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libutempter@1.2.1-6.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libutempter@1.2.1-6.el9?arch=x86_64",
+        "pkg:rpm/centos/libutempter@1.2.1-6.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+        "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+        "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+        "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+        "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+        "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+        "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+        "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64",
+        "pkg:rpm/centos/shadow-utils@4.9-8.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libsemanage@3.6-1.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libsemanage@3.6-1.el9?arch=x86_64",
+        "pkg:rpm/centos/libsemanage@3.6-1.el9?arch=x86_64",
+        "pkg:rpm/centos/libsemanage@3.6-1.el9?arch=x86_64",
+        "pkg:rpm/centos/libsemanage@3.6-1.el9?arch=x86_64",
+        "pkg:rpm/centos/libsemanage@3.6-1.el9?arch=x86_64",
+        "pkg:rpm/centos/libsemanage@3.6-1.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/bzip2-libs@1.0.8-8.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/bzip2-libs@1.0.8-8.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/audit-libs@3.1.2-2.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/audit-libs@3.1.2-2.el9?arch=x86_64",
+        "pkg:rpm/centos/audit-libs@3.1.2-2.el9?arch=x86_64",
+        "pkg:rpm/centos/audit-libs@3.1.2-2.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libcap-ng@0.8.2-7.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libcap-ng@0.8.2-7.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/readline@8.1-4.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/readline@8.1-4.el9?arch=x86_64",
+        "pkg:rpm/centos/readline@8.1-4.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64",
+        "pkg:rpm/centos/pam@1.5.1-19.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/openssl@3.0.7-27.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/openssl@3.0.7-27.el9?arch=x86_64",
+        "pkg:rpm/centos/openssl@3.0.7-27.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libpwquality@1.4.4-8.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libpwquality@1.4.4-8.el9?arch=x86_64",
+        "pkg:rpm/centos/libpwquality@1.4.4-8.el9?arch=x86_64",
+        "pkg:rpm/centos/libpwquality@1.4.4-8.el9?arch=x86_64",
+        "pkg:rpm/centos/libpwquality@1.4.4-8.el9?arch=x86_64",
+        "pkg:rpm/centos/libpwquality@1.4.4-8.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/cracklib-dicts@2.9.6-27.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/cracklib-dicts@2.9.6-27.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/cracklib@2.9.6-27.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/cracklib@2.9.6-27.el9?arch=x86_64",
+        "pkg:rpm/centos/cracklib@2.9.6-27.el9?arch=x86_64",
+        "pkg:rpm/centos/cracklib@2.9.6-27.el9?arch=x86_64",
+        "pkg:rpm/centos/cracklib@2.9.6-27.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/gzip@1.12-1.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/gzip@1.12-1.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libeconf@0.4.1-3.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libeconf@0.4.1-3.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libdb@5.3.28-53.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libdb@5.3.28-53.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libfdisk@2.37.4-18.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libfdisk@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/libfdisk@2.37.4-18.el9?arch=x86_64",
+        "pkg:rpm/centos/libfdisk@2.37.4-18.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/systemd-rpm-macros@252-32.el9?arch=noarch",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64",
+        "pkg:rpm/centos/systemd-pam@252-32.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/libseccomp@2.5.2-2.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/libseccomp@2.5.2-2.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/kmod-libs@28-9.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/kmod-libs@28-9.el9?arch=x86_64",
+        "pkg:rpm/centos/kmod-libs@28-9.el9?arch=x86_64",
+        "pkg:rpm/centos/kmod-libs@28-9.el9?arch=x86_64",
+        "pkg:rpm/centos/kmod-libs@28-9.el9?arch=x86_64",
+        "pkg:rpm/centos/kmod-libs@28-9.el9?arch=x86_64",
+        "pkg:rpm/centos/kmod-libs@28-9.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/dbus@1.12.20-8.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/dbus@1.12.20-8.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64",
+        "pkg:rpm/centos/dbus-broker@28-7.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/expat@2.5.0-2.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/expat@2.5.0-2.el9?arch=x86_64",
+        "pkg:rpm/centos/expat@2.5.0-2.el9?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/dbus-common@1.12.20-8.el9?arch=noarch",
+      "dependsOn": [
+        "pkg:rpm/centos/dbus-common@1.12.20-8.el9?arch=noarch",
+        "pkg:rpm/centos/dbus-common@1.12.20-8.el9?arch=noarch"
+      ]
+    },
+    {
+      "ref": "pkg:rpm/centos/acl@2.3.1-4.el9?arch=x86_64",
+      "dependsOn": [
+        "pkg:rpm/centos/acl@2.3.1-4.el9?arch=x86_64",
+        "pkg:rpm/centos/acl@2.3.1-4.el9?arch=x86_64"
+      ]
+    }
+  ]
+}

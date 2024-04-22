@@ -1,0 +1,18 @@
+UUID: ece603c8-a19c-4299-9822-2691a40a8d63
+Name: hashmap.c
+Directory: subprojects/hashmap.c
+Remote URL: https://github.com/eclipse-bluechi/hashmap.c.git
+Git Hash: b32c16f9c717ab20b98246dc121ef47e5d0dd9e0
+Git Branch: v0.7.0
+License: MIT
+
+
+UUID: 3aa935eb-c5cb-4b56-a6e5-932a799310cf
+Name: inih
+Directory: subprojects/inih
+Remote URL: https://github.com/benhoyt/inih.git
+Git Hash: 9cecf0643da0846e77f64d10a126d9f48b9e05e8
+Git Branch: r57
+License: BSD-3-Clause
+
+

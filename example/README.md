@@ -42,7 +42,9 @@ pip3 install -r requirements.txt
 # ! This will take quite a while !
 # SBOM4RPMs will use all root rpms in
 #   /var/bluechi/artifacts/rpms-<datetime>
-# and save the collected RPM data in
+# and the cloned repository in
+#   /var/bluechi
+# and save the collected RPM data as well as git submodule data in
 #   /var/sbom-for-rpms/sboms/raw
 # and generate the SBOM data in SPDX format in
 #   /var/sbom-for-rpms/sboms/sboms 
@@ -51,4 +53,5 @@ python3 rpm2sbom.py \
     --collect-dependencies \
     --sbom-format=spdx \
     --sbom-dir=bluechi-sboms \
+    --git-dir=/var/bluechi
 ```

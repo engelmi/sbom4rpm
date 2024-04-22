@@ -1,27 +1,22 @@
 {
-  "python3-bluechi": [
-    "python3",
-    "python3-dasbus"
-  ],
-  "python3-dasbus": [
-    "python3",
-    "python3-gobject-base"
-  ],
-  "python3-gobject-base": [
-    "gobject-introspection",
+  "bluechi-ctl": [
+    "bluechi-controller",
     "glibc",
-    "libffi",
-    "glib2",
-    "python3",
-    "python3-gobject-base-noarch"
+    "libgcc",
+    "systemd-libs"
   ],
   "glibc": [
     "glibc-gconv-extra",
     "basesystem",
     "glibc",
     "glibc-common",
-    "glibc-all-langpacks",
+    "",
     "libgcc"
+  ],
+  "glibc-gconv-extra": [
+    "glibc-gconv-extra",
+    "glibc",
+    "glibc-common"
   ],
   "glibc-common": [
     "glibc",
@@ -33,53 +28,25 @@
   ],
   "setup": [
     "setup",
-    "centos-release-automotive"
+    ""
   ],
   "filesystem": [
     "setup"
   ],
-  "glibc-gconv-extra": [
-    "glibc-gconv-extra",
+  "systemd-libs": [
+    "",
+    "grep",
     "glibc",
-    "glibc-common"
-  ],
-  "python3-gobject-base-noarch": [
-    "python3",
-    "python3-gobject-base"
-  ],
-  "python3": [
-    "glibc",
-    "python3-libs"
-  ],
-  "python3-libs": [
-    "bzip2-libs",
-    "glibc",
+    "libcap",
     "libxcrypt",
     "openssl-libs",
-    "expat",
-    "libffi",
-    "gdbm-libs",
+    "libgcc",
+    "libgcrypt",
+    "lz4-libs",
     "xz-libs",
-    "ncurses-libs",
-    "python3-libs",
-    "readline",
-    "sqlite-libs",
-    "libuuid",
-    "zlib",
-    "python3-pip-wheel",
-    "python3-setuptools-wheel",
-    "tzdata"
-  ],
-  "python3-pip-wheel": [
-    "ca-certificates"
-  ],
-  "ca-certificates": [
-    "bash",
-    "ca-certificates",
-    "coreutils",
-    "grep",
     "p11-kit",
-    "p11-kit-trust",
+    "libselinux",
+    "libzstd",
     "sed"
   ],
   "sed": [
@@ -108,10 +75,8 @@
     "libattr",
     "glibc"
   ],
-  "p11-kit-trust": [
-    "glibc",
-    "p11-kit",
-    "libtasn1"
+  "libzstd": [
+    "glibc"
   ],
   "p11-kit": [
     "glibc",
@@ -124,6 +89,47 @@
   ],
   "libffi": [
     "glibc"
+  ],
+  "xz-libs": [
+    "glibc"
+  ],
+  "lz4-libs": [
+    "glibc"
+  ],
+  "libgcrypt": [
+    "glibc",
+    "libgpg-error"
+  ],
+  "libgpg-error": [
+    "glibc",
+    "libgpg-error"
+  ],
+  "openssl-libs": [
+    "ca-certificates",
+    "openssl-libs",
+    "crypto-policies",
+    "glibc",
+    "zlib"
+  ],
+  "zlib": [
+    "glibc"
+  ],
+  "crypto-policies": [
+    "crypto-policies"
+  ],
+  "ca-certificates": [
+    "bash",
+    "ca-certificates",
+    "",
+    "grep",
+    "p11-kit",
+    "p11-kit-trust",
+    "sed"
+  ],
+  "p11-kit-trust": [
+    "glibc",
+    "p11-kit",
+    "libtasn1"
   ],
   "grep": [
     "grep",
@@ -149,56 +155,162 @@
     "ncurses-libs",
     "ncurses-base"
   ],
-  "zlib": [
+  "libxcrypt": [
     "glibc"
   ],
-  "libuuid": [
-    "glibc"
-  ],
-  "openssl-libs": [
-    "ca-certificates",
-    "openssl-libs",
-    "crypto-policies",
+  "libcap": [
     "glibc",
+    "libcap",
+    "libgcc"
+  ],
+  "bluechi-controller": [
+    "glibc",
+    "libgcc",
+    "systemd-libs",
+    "systemd"
+  ],
+  "bluechi-selinux": [
+    "policycoreutils",
+    "selinux-policy"
+  ],
+  "selinux-policy": [
+    "selinux-policy",
+    "policycoreutils",
+    "rpm-plugin-selinux",
+    ""
+  ],
+  "rpm-plugin-selinux": [
+    "libacl",
+    "audit-libs",
+    "bzip2-libs",
+    "glibc",
+    "libcap",
+    "openssl-libs",
+    "lua-libs",
+    "xz-libs",
+    "popt",
+    "rpm-libs",
+    "libselinux",
+    "sqlite-libs",
+    "zlib",
+    "libzstd",
+    "selinux-policy"
+  ],
+  "rpm-libs": [
+    "glibc",
+    "libacl",
+    "audit-libs",
+    "bzip2-libs",
+    "libcap",
+    "openssl-libs",
+    "lua-libs",
+    "xz-libs",
+    "popt",
+    "rpm-libs",
+    "sqlite-libs",
+    "zlib",
+    "libzstd",
+    "rpm"
+  ],
+  "rpm": [
+    "rpm",
+    "",
+    "libarchive",
+    "glibc",
+    "popt",
+    "rpm-libs"
+  ],
+  "popt": [
+    "glibc"
+  ],
+  "libarchive": [
+    "libacl",
+    "bzip2-libs",
+    "glibc",
+    "openssl-libs",
+    "lz4-libs",
+    "xz-libs",
+    "libxml2",
+    "zlib",
+    "libzstd"
+  ],
+  "libxml2": [
+    "glibc",
+    "xz-libs",
+    "libxml2",
     "zlib"
   ],
-  "crypto-policies": [
-    "crypto-policies"
+  "bzip2-libs": [
+    "glibc"
   ],
   "sqlite-libs": [
     "glibc",
     "zlib"
   ],
-  "readline": [
-    "glibc",
-    "ncurses-libs"
-  ],
-  "xz-libs": [
+  "lua-libs": [
     "glibc"
   ],
-  "gdbm-libs": [
+  "audit-libs": [
+    "audit-libs",
     "glibc",
-    "gdbm-libs"
+    "libcap-ng"
   ],
-  "expat": [
-    "glibc",
-    "expat"
-  ],
-  "libxcrypt": [
+  "libcap-ng": [
     "glibc"
   ],
-  "bzip2-libs": [
-    "glibc"
-  ],
-  "glib2": [
+  "policycoreutils": [
+    "policycoreutils",
+    "",
+    "diffutils",
+    "gawk",
+    "grep",
+    "audit-libs",
     "glibc",
-    "libffi",
-    "glib2",
-    "gnutls",
-    "libmount",
-    "pcre",
+    "libselinux-utils",
     "libselinux",
-    "zlib"
+    "libsemanage",
+    "libsepol",
+    "rpm",
+    "sed",
+    "util-linux"
+  ],
+  "util-linux": [
+    "audit-libs",
+    "util-linux",
+    "",
+    "glibc",
+    "libblkid",
+    "libcap-ng",
+    "libxcrypt",
+    "libfdisk",
+    "libmount",
+    "ncurses-libs",
+    "pam",
+    "readline",
+    "libselinux",
+    "libsmartcols",
+    "systemd-libs",
+    "libutempter",
+    "libuuid",
+    "zlib",
+    "util-linux-core"
+  ],
+  "util-linux-core": [
+    "util-linux-core",
+    "glibc",
+    "libblkid",
+    "libmount",
+    "libselinux",
+    "libsmartcols",
+    "systemd-libs",
+    "ncurses-libs",
+    "libuuid"
+  ],
+  "libuuid": [
+    "glibc"
+  ],
+  "libsmartcols": [
+    "glibc"
   ],
   "libmount": [
     "libblkid",
@@ -207,46 +319,113 @@
     "libuuid"
   ],
   "libblkid": [
-    "coreutils",
+    "",
     "glibc",
     "libuuid"
   ],
-  "gnutls": [
-    "crypto-policies",
+  "pam": [
+    "audit-libs",
+    "pam",
     "glibc",
-    "nettle",
-    "libidn2",
-    "p11-kit",
-    "libtasn1",
-    "libunistring",
-    "p11-kit-trust"
+    "libxcrypt",
+    "openssl-libs",
+    "libdb",
+    "libeconf",
+    "libpwquality",
+    "libselinux",
+    "openssl"
   ],
-  "nettle": [
+  "openssl": [
+    "",
     "glibc",
-    "nettle"
+    "openssl-libs"
   ],
-  "libunistring": [
+  "libpwquality": [
+    "libpwquality",
+    "cracklib",
+    "cracklib-dicts",
+    "glibc",
+    "pam"
+  ],
+  "cracklib": [
+    "gzip",
+    "glibc",
+    "cracklib",
+    "zlib"
+  ],
+  "gzip": [
+    "",
     "glibc"
   ],
-  "libidn2": [
-    "glibc",
-    "libunistring"
+  "cracklib-dicts": [
+    "cracklib"
   ],
-  "gobject-introspection": [
-    "glib2",
-    "glibc",
-    "libffi"
+  "libeconf": [
+    "glibc"
   ],
-  "bluechi-controller": [
+  "libdb": [
+    "glibc"
+  ],
+  "libutempter": [
     "glibc",
-    "libgcc",
-    "systemd-libs",
-    "systemd"
+    "shadow-utils"
+  ],
+  "shadow-utils": [
+    "audit-libs",
+    "shadow-utils",
+    "libacl",
+    "libattr",
+    "glibc",
+    "libxcrypt",
+    "libselinux",
+    "libsemanage",
+    "setup"
+  ],
+  "libsemanage": [
+    "audit-libs",
+    "bzip2-libs",
+    "libsemanage",
+    "glibc",
+    "libselinux",
+    "libsepol"
+  ],
+  "readline": [
+    "glibc",
+    "ncurses-libs"
+  ],
+  "libfdisk": [
+    "glibc",
+    "libblkid",
+    "libuuid"
+  ],
+  "libselinux-utils": [
+    "glibc",
+    "pcre2",
+    "libselinux",
+    "libsepol"
+  ],
+  "gawk": [
+    "filesystem",
+    "glibc",
+    "gmp",
+    "mpfr",
+    "readline",
+    "libsigsegv"
+  ],
+  "mpfr": [
+    "glibc",
+    "gmp"
+  ],
+  "gmp": [
+    "glibc"
+  ],
+  "diffutils": [
+    "glibc"
   ],
   "systemd": [
     "acl",
     "systemd",
-    "coreutils",
+    "",
     "dbus",
     "grep",
     "glibc",
@@ -276,155 +455,6 @@
     "systemd-pam",
     "systemd-rpm-macros",
     "util-linux"
-  ],
-  "util-linux": [
-    "audit-libs",
-    "util-linux",
-    "coreutils",
-    "glibc",
-    "libblkid",
-    "libcap-ng",
-    "libxcrypt",
-    "libfdisk",
-    "libmount",
-    "ncurses-libs",
-    "pam",
-    "readline",
-    "libselinux",
-    "libsmartcols",
-    "systemd-libs",
-    "libutempter",
-    "libuuid",
-    "zlib",
-    "util-linux-core"
-  ],
-  "util-linux-core": [
-    "util-linux-core",
-    "glibc",
-    "libblkid",
-    "libmount",
-    "libselinux",
-    "libsmartcols",
-    "systemd-libs",
-    "ncurses-libs",
-    "libuuid"
-  ],
-  "systemd-libs": [
-    "coreutils",
-    "grep",
-    "glibc",
-    "libcap",
-    "libxcrypt",
-    "openssl-libs",
-    "libgcc",
-    "libgcrypt",
-    "lz4-libs",
-    "xz-libs",
-    "p11-kit",
-    "libselinux",
-    "libzstd",
-    "sed"
-  ],
-  "libzstd": [
-    "glibc"
-  ],
-  "lz4-libs": [
-    "glibc"
-  ],
-  "libgcrypt": [
-    "glibc",
-    "libgpg-error"
-  ],
-  "libgpg-error": [
-    "glibc",
-    "libgpg-error"
-  ],
-  "libcap": [
-    "glibc",
-    "libcap",
-    "libgcc"
-  ],
-  "libsmartcols": [
-    "glibc"
-  ],
-  "pam": [
-    "audit-libs",
-    "pam",
-    "glibc",
-    "libxcrypt",
-    "openssl-libs",
-    "libdb",
-    "libeconf",
-    "libpwquality",
-    "libselinux",
-    "openssl"
-  ],
-  "openssl": [
-    "coreutils",
-    "glibc",
-    "openssl-libs"
-  ],
-  "libpwquality": [
-    "libpwquality",
-    "cracklib",
-    "cracklib-dicts",
-    "glibc",
-    "pam"
-  ],
-  "cracklib": [
-    "gzip",
-    "glibc",
-    "cracklib",
-    "zlib"
-  ],
-  "gzip": [
-    "coreutils",
-    "glibc"
-  ],
-  "cracklib-dicts": [
-    "cracklib"
-  ],
-  "libeconf": [
-    "glibc"
-  ],
-  "libdb": [
-    "glibc"
-  ],
-  "audit-libs": [
-    "audit-libs",
-    "glibc",
-    "libcap-ng"
-  ],
-  "libcap-ng": [
-    "glibc"
-  ],
-  "libutempter": [
-    "glibc",
-    "shadow-utils"
-  ],
-  "shadow-utils": [
-    "audit-libs",
-    "shadow-utils",
-    "libacl",
-    "libattr",
-    "glibc",
-    "libxcrypt",
-    "libselinux",
-    "libsemanage",
-    "setup"
-  ],
-  "libsemanage": [
-    "audit-libs",
-    "bzip2-libs",
-    "libsemanage",
-    "glibc",
-    "libselinux",
-    "libsepol"
-  ],
-  "libfdisk": [
-    "glibc",
-    "libblkid",
-    "libuuid"
   ],
   "systemd-pam": [
     "glibc",
@@ -463,6 +493,10 @@
     "shadow-utils",
     "systemd"
   ],
+  "expat": [
+    "glibc",
+    "expat"
+  ],
   "dbus-common": [
     "dbus-common",
     "systemd"
@@ -471,131 +505,100 @@
     "libacl",
     "glibc"
   ],
-  "bluechi-selinux": [
-    "policycoreutils",
-    "selinux-policy"
+  "python3-bluechi": [
+    "python3",
+    "python3-dasbus"
   ],
-  "selinux-policy": [
-    "selinux-policy",
-    "policycoreutils",
-    "rpm-plugin-selinux",
-    "selinux-policy-mls"
+  "python3-dasbus": [
+    "python3",
+    "python3-gobject-base"
   ],
-  "rpm-plugin-selinux": [
-    "libacl",
-    "audit-libs",
+  "python3-gobject-base": [
+    "gobject-introspection",
+    "glibc",
+    "libffi",
+    "glib2",
+    "python3",
+    "python3-gobject-base-noarch"
+  ],
+  "python3-gobject-base-noarch": [
+    "python3",
+    "python3-gobject-base"
+  ],
+  "python3": [
+    "glibc",
+    "python3-libs"
+  ],
+  "python3-libs": [
     "bzip2-libs",
     "glibc",
-    "libcap",
+    "libxcrypt",
     "openssl-libs",
-    "lua-libs",
+    "expat",
+    "libffi",
+    "gdbm-libs",
     "xz-libs",
-    "popt",
-    "rpm-libs",
+    "ncurses-libs",
+    "python3-libs",
+    "readline",
+    "sqlite-libs",
+    "libuuid",
+    "zlib",
+    "python3-pip-wheel",
+    "python3-setuptools-wheel",
+    "tzdata"
+  ],
+  "python3-pip-wheel": [
+    "ca-certificates"
+  ],
+  "libxcrypt-compat": [
+    "glibc",
+    "libxcrypt"
+  ],
+  "gdbm-libs": [
+    "glibc",
+    "gdbm-libs"
+  ],
+  "glib2": [
+    "glibc",
+    "libffi",
+    "glib2",
+    "gnutls",
+    "libmount",
+    "pcre",
     "libselinux",
-    "sqlite-libs",
-    "zlib",
-    "libzstd",
-    "selinux-policy"
-  ],
-  "rpm-libs": [
-    "glibc",
-    "libacl",
-    "audit-libs",
-    "bzip2-libs",
-    "libcap",
-    "openssl-libs",
-    "lua-libs",
-    "xz-libs",
-    "popt",
-    "rpm-libs",
-    "sqlite-libs",
-    "zlib",
-    "libzstd",
-    "rpm"
-  ],
-  "rpm": [
-    "rpm",
-    "coreutils",
-    "curl",
-    "libarchive",
-    "glibc",
-    "popt",
-    "rpm-libs"
-  ],
-  "popt": [
-    "glibc"
-  ],
-  "libarchive": [
-    "libacl",
-    "bzip2-libs",
-    "glibc",
-    "openssl-libs",
-    "lz4-libs",
-    "xz-libs",
-    "libxml2",
-    "zlib",
-    "libzstd"
-  ],
-  "libxml2": [
-    "glibc",
-    "xz-libs",
-    "libxml2",
     "zlib"
   ],
-  "lua-libs": [
+  "gnutls": [
+    "crypto-policies",
+    "glibc",
+    "nettle",
+    "libidn2",
+    "p11-kit",
+    "libtasn1",
+    "libunistring",
+    "p11-kit-trust"
+  ],
+  "nettle": [
+    "glibc",
+    "nettle"
+  ],
+  "libunistring": [
     "glibc"
   ],
-  "policycoreutils": [
-    "policycoreutils",
-    "coreutils",
-    "diffutils",
-    "gawk",
-    "grep",
-    "audit-libs",
+  "libidn2": [
     "glibc",
-    "libselinux-utils",
-    "libselinux",
-    "libsemanage",
-    "libsepol",
-    "rpm",
-    "sed",
-    "util-linux"
+    "libunistring"
   ],
-  "libselinux-utils": [
+  "gobject-introspection": [
+    "glib2",
     "glibc",
-    "pcre2",
-    "libselinux",
-    "libsepol"
-  ],
-  "gawk": [
-    "filesystem",
-    "glibc",
-    "gmp",
-    "mpfr",
-    "readline",
-    "libsigsegv"
-  ],
-  "mpfr": [
-    "glibc",
-    "gmp"
-  ],
-  "gmp": [
-    "glibc"
-  ],
-  "diffutils": [
-    "glibc"
+    "libffi"
   ],
   "bluechi-agent": [
     "glibc",
     "libgcc",
     "systemd-libs",
     "systemd"
-  ],
-  "bluechi-ctl": [
-    "",
-    "glibc",
-    "libgcc",
-    "systemd-libs"
   ]
 }
