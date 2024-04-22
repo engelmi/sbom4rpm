@@ -1,9 +1,10 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+
 from datetime import datetime
 from typing import Any, Dict, List
-from urllib.parse import quote
 
 from model import RPMPackage
+from sbom.lib.purl import build_purl
 
 
 def to_template_data(
@@ -41,19 +42,13 @@ def to_template_data(
                         to_explore = [all_rpms[uuid]] + to_explore
                         recommends.append(uuid)
 
-        # purl based on: https://github.com/hexpm/specifications/blob/main/package-url.md
-        purl = "pkg:supplier"
-        if elem.Vendor != "":
-            purl = f"{purl}/{quote(elem.Vendor).lower()}"
-        purl = f"{purl}/{elem.Name.lower()}@{elem.Version}"
-
         pkg = {
             "name": elem.Name,
             "uuid": elem.UUID,
             "version": elem.Version,
             "licenses": elem.License,
             "homepage": elem.URL,
-            "purl": purl,
+            "purl": build_purl(elem),
             "is_root": elem.UUID == root_rpm.UUID,
             "requires": requires,
             "recommended_by": recommends,
