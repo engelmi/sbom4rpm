@@ -18,4 +18,6 @@ def build_purl(rpm: RPMPackage, mask_name=True):
     if mask_name:
         vendor_and_name = quote_plus(vendor_and_name)
 
-    return f"{purl}/{vendor_and_name}@{rpm.Version}-{rpm.Release}?arch={rpm.Architecture}"
+    return (
+        f"{purl}/{vendor_and_name}@{rpm.Version}-{rpm.Release}?arch={rpm.Architecture}"
+    )

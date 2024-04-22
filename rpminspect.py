@@ -7,18 +7,20 @@ from typing import Dict, List, Set, Tuple, Union
 
 from command import Command
 from consts import (
+    DIRECTORY_RAW_DATA,
     FILE_PATH_ALL_RPMS,
+    FILE_PATH_RECOMMENDED_BY_RPMS,
     FILE_PATH_REQUIRED_BY_RPMS,
     FILE_PATH_REQUIRED_RPMS,
-    FILE_PATH_RECOMMENDED_BY_RPMS,
     FILE_PATH_ROOT_RPMS,
-    DIRECTORY_RAW_DATA,
 )
 from model import RPMPackage, get_init_data_structures
 
 
 def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
-    root_rpms, required_rpms, required_by_rpms, recommended_by_rpms, all_rpms = get_init_data_structures()
+    root_rpms, required_rpms, required_by_rpms, recommended_by_rpms, all_rpms = (
+        get_init_data_structures()
+    )
 
     def list_rpms(rpm_dir: str) -> List[str]:
         root_rpm_names: List[str] = []
@@ -72,7 +74,8 @@ def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
             # fallback to local repo and check if it is a dependency between
             # the inspected root rpms
             output, _ = Command(
-                f'dnf repoquery --whatprovides "{required_package}" --repo local-rpms --repofrompath local-rpms,file://{rpm_dir}').run()
+                f'dnf repoquery --whatprovides "{required_package}" --repo local-rpms --repofrompath local-rpms,file://{rpm_dir}'
+            ).run()
             lines = output.split("\n")
             if len(lines) <= 0:
                 return None
@@ -142,7 +145,9 @@ def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
             f.write(json.dumps(required_by_rpms, indent=2))
             f.flush()
 
-        recommended_by_rpms_path = os.path.join(output_dir, FILE_PATH_RECOMMENDED_BY_RPMS)
+        recommended_by_rpms_path = os.path.join(
+            output_dir, FILE_PATH_RECOMMENDED_BY_RPMS
+        )
         with open(recommended_by_rpms_path, "w") as f:
             f.write(json.dumps(recommended_by_rpms, indent=2))
             f.flush()
@@ -199,7 +204,9 @@ def read_rpm_data(sbom_dir: str) -> Tuple[
     - recommended_by_rpms,
     - all_rpms
     """
-    root_rpms, required_rpms, _, recommended_by_rpms, all_rpms = get_init_data_structures()
+    root_rpms, required_rpms, _, recommended_by_rpms, all_rpms = (
+        get_init_data_structures()
+    )
 
     all_rpms_file = os.path.join(sbom_dir, FILE_PATH_ALL_RPMS)
     with open(all_rpms_file, "r") as f:

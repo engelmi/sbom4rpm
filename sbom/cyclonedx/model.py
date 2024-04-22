@@ -36,10 +36,10 @@ def build_dependency(
         for required_rpm_name in required_rpms[rpm.Name]:
             # workaround:
             # current data has package name instead of uuid in required files
-            for uuid, pkg in all_rpms.items():
+            for rpm_uuid, pkg in all_rpms.items():
                 if required_rpm_name == pkg.Name:
                     dependency["dependsOn"].append(build_purl(rpm, mask_name=False))
-                    rpms.append(all_rpms[uuid])
+                    rpms.append(all_rpms[rpm_uuid])
     return dependency, rpms
 
 
@@ -61,14 +61,15 @@ def to_template_data(
     result["metadata"] = {
         "timestamp": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
         "tools": {
-            "components": [{
-                "group": "@sbom4rpms",
-                "name": "sbom4rpms",
-                "version": "0.0.1",
-                "type": "applicastion",
-                "author": "SBOM4RPMS",
-                "publisher": "SBOM4RPMS"
-            },
+            "components": [
+                {
+                    "group": "@sbom4rpms",
+                    "name": "sbom4rpms",
+                    "version": "0.0.1",
+                    "type": "applicastion",
+                    "author": "SBOM4RPMS",
+                    "publisher": "SBOM4RPMS",
+                },
             ]
         },
         "authors": [
@@ -88,7 +89,7 @@ def to_template_data(
             "purl": build_purl(root_rpm),
             "bom-ref": build_purl(root_rpm, mask_name=False),
             "properties": [],
-            "type": "application"
+            "type": "application",
         },
     }
     result["components"] = []
