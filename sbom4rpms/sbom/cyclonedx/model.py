@@ -51,7 +51,7 @@ def build_dependency(
             # current data has package name instead of uuid in required files
             for rpm_uuid, pkg in all_rpms.items():
                 if required_rpm_name == pkg.Name:
-                    dependency["dependsOn"].append(build_rpm_purl(rpm, mask_name=False))
+                    dependency["dependsOn"].append(build_rpm_purl(pkg, mask_name=False))
                     rpms.append(all_rpms[rpm_uuid])
     return dependency, rpms
 
