@@ -17,7 +17,7 @@ from sbom4rpms.consts import (
 from sbom4rpms.model import RPMPackage, get_init_data_structures
 
 
-def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
+def collect_rpm_data(rpm_dir: str, out_dir: str, explore_depth: int) -> None:
     root_rpms, required_rpms, required_by_rpms, recommended_by_rpms, all_rpms = (
         get_init_data_structures()
     )
@@ -172,9 +172,11 @@ def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
         root_rpms.append(p)
 
     already_explored: Set = set()
-    to_explore = [rpm for rpm in root_rpms]
+    to_explore = [(rpm, 0) for rpm in root_rpms]
     while to_explore:
-        elem = to_explore.pop()
+        elem, level = to_explore.pop()
+        if explore_depth != 0 and explore_depth <= level:
+            continue
 
         if elem.Name in already_explored:
             print(f"{elem.Name} already explored, skipping...")
@@ -183,9 +185,9 @@ def collect_rpm_data(rpm_dir: str, out_dir: str) -> None:
         print(f"exploring {elem.Name}...")
 
         for pkg in get_required_packages(elem.Name):
-            to_explore.append(pkg)
+            to_explore.append((pkg, level+1))
         for pkg in get_recommended_packages(elem.Name):
-            to_explore.append(pkg)
+            to_explore.append((pkg, level+1))
 
     output(out_dir)
 
