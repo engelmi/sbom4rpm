@@ -2,6 +2,7 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 
 import argparse
+from typing import List
 
 from sbom4rpms.consts import SUPPORTED_SBOM_FORMATS
 from sbom4rpms.gitinspect import collect_git_submodules, read_submodule_data
@@ -9,11 +10,18 @@ from sbom4rpms.rpminspect import collect_rpm_data, read_rpm_data
 from sbom4rpms.sbom.generator import create_sbom_generator
 
 
-def collect_rpm_dependencies(rpm_dir: str, output_dir: str, explore_depth: int) -> None:
+def collect_rpm_dependencies(
+    packages: List[str], output_dir: str, explore_depth: int, local_rpm_repo: str
+) -> None:
     """
-    Collect all RPMs required by the RPMs in root_path (direct and indirect).
+    Collect all RPMs required by the RPMs.
     """
-    collect_rpm_data(rpm_dir=rpm_dir, out_dir=output_dir, explore_depth=explore_depth)
+    collect_rpm_data(
+        packages=packages,
+        out_dir=output_dir,
+        explore_depth=explore_depth,
+        local_rpm_repo=local_rpm_repo,
+    )
 
 
 def generate_sboms_of_rpms(sbom_dir: str, sbom_format: str) -> None:
@@ -35,15 +43,16 @@ def generate_sboms_of_rpms(sbom_dir: str, sbom_format: str) -> None:
 
 
 def run(
+    packages: List[str],
+    local_rpm_repo: str,
     sbom_dir: str,
     sbom_format: str,
     git_dir: str,
-    rpm_dir: str,
     collect_dependencies: bool,
     explore_depth: str,
 ) -> None:
     if collect_dependencies:
-        collect_rpm_dependencies(rpm_dir, sbom_dir, explore_depth)
+        collect_rpm_dependencies(packages, sbom_dir, explore_depth, local_rpm_repo)
     if git_dir != "":
         collect_git_submodules(git_dir, sbom_dir)
     generate_sboms_of_rpms(sbom_dir, sbom_format)
@@ -53,8 +62,17 @@ def arg_parse_check_number(value):
     return int(value)
 
 
-def main():
-    parser = argparse.ArgumentParser(description="RPM to SBOM Generator")
+def setup_argparser(parser: argparse.ArgumentParser):
+    parser.add_argument(
+        "packages",
+        nargs="+",
+        help="List of packages to generate an SBOM for",
+    )
+    parser.add_argument(
+        "--local-rpm-repo",
+        default="",
+        help="Directory containing locally installed RPMs. Useful if a package in 'packages' has a dependency on an RPM in the local repo.",
+    )
 
     parser.add_argument(
         "--sbom-dir",
@@ -75,11 +93,6 @@ def main():
     )
 
     parser.add_argument(
-        "--rpm-dir",
-        required=True,
-        help="Root directory containing RPMs to inspect.",
-    )
-    parser.add_argument(
         "--collect-dependencies",
         action=argparse.BooleanOptionalAction,
         help="Flag to indicate if dependencies of RPMs in 'rpm-dir' are resolved.",
@@ -91,12 +104,19 @@ def main():
         help="The depth of indirect dependencies to explore of the RPMs",
     )
 
+
+def main():
+    parser = argparse.ArgumentParser(description="RPM to SBOM Generator")
+
+    setup_argparser(parser)
     args = parser.parse_args()
+
     run(
+        args.packages,
+        args.local_rpm_repo,
         args.sbom_dir,
         args.sbom_format,
         args.git_dir,
-        args.rpm_dir,
         args.collect_dependencies,
         args.explore_depth,
     )

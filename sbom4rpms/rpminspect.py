@@ -17,20 +17,12 @@ from sbom4rpms.consts import (
 from sbom4rpms.model import RPMPackage, get_init_data_structures
 
 
-def collect_rpm_data(rpm_dir: str, out_dir: str, explore_depth: int) -> None:
+def collect_rpm_data(
+    packages: List[str], out_dir: str, explore_depth: int, local_rpm_repo: str
+) -> None:
     root_rpms, required_rpms, required_by_rpms, recommended_by_rpms, all_rpms = (
         get_init_data_structures()
     )
-
-    def list_rpms(rpm_dir: str) -> List[str]:
-        root_rpm_names: List[str] = []
-        for entry in os.listdir(rpm_dir):
-            if entry.endswith(".src.rpm"):
-                # get build dependencies
-                pass
-            elif entry.endswith(".rpm") and "debug" not in entry:
-                root_rpm_names.append(os.path.join(rpm_dir, entry))
-        return root_rpm_names
 
     def get_builddep_of_srpm(srpm_path: str) -> List[Tuple[str, str]]:
         output, _ = Command(f"dnf builddep --assumeno {srpm_path}").run()
@@ -70,11 +62,11 @@ def collect_rpm_data(rpm_dir: str, out_dir: str, explore_depth: int) -> None:
         if len(lines) <= 0:
             return None
 
-        if lines[0] == "":
+        if lines[0] == "" and local_rpm_repo != "":
             # fallback to local repo and check if it is a dependency between
             # the inspected root rpms
             output, _ = Command(
-                f'dnf repoquery --whatprovides "{required_package}" --repo local-rpms --repofrompath local-rpms,file://{rpm_dir}'
+                f'dnf repoquery --whatprovides "{required_package}" --repo local-rpms --repofrompath local-rpms,file://{local_rpm_repo}'
             ).run()
             lines = output.split("\n")
             if len(lines) <= 0:
@@ -164,9 +156,7 @@ def collect_rpm_data(rpm_dir: str, out_dir: str, explore_depth: int) -> None:
                 f.write("\n\n")
             f.flush()
 
-    root_rpm_names = list_rpms(rpm_dir)
-
-    for root_rpm_name in root_rpm_names:
+    for root_rpm_name in packages:
         p = get_package_info(root_rpm_name)
         all_rpms[p.Name] = p
         root_rpms.append(p)
@@ -185,9 +175,9 @@ def collect_rpm_data(rpm_dir: str, out_dir: str, explore_depth: int) -> None:
         print(f"exploring {elem.Name}...")
 
         for pkg in get_required_packages(elem.Name):
-            to_explore.append((pkg, level+1))
+            to_explore.append((pkg, level + 1))
         for pkg in get_recommended_packages(elem.Name):
-            to_explore.append((pkg, level+1))
+            to_explore.append((pkg, level + 1))
 
     output(out_dir)
 
